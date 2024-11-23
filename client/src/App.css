@@ -1,0 +1,19 @@
+:root {
+	--dark-purple: #1a1332;
+	--dogwood-rose: #dc1666;
+	--russian-violet: #281650;
+	--raisin-black: #1c1e27;
+	--white: #ffffff;
+}
+
+.App {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 1rem;
+	/* Add padding if needed */
+	padding-right: 1rem;
+	/* Add padding if needed */
+}
