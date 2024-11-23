@@ -12,7 +12,7 @@ function App() {
 				<Navbar />
 				<div className="flex flex-col min-h-screen mx-auto px-4">
 					{/* <ContactUs/> */}
-					{/* <Timer /> */}d
+					{/* <Timer /> */}
 				</div>
 				<Foot />
 			</BrowserRouter>
