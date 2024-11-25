@@ -11,8 +11,6 @@ export default {
         'white': 'var(--white)',
       },
     },
-    
   },
   plugins: [],
 }
-
