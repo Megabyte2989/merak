@@ -1,50 +1,137 @@
-import React from "react";
+import { useState, useEffect, useCallback } from "react";
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Gallery = () => {
-  const heroStyle = {
-    backgroundImage: "url('/Web_Photo_Editor.jpg')",
-  };
-
-  // Portfolio items with example images from the internet
-  const items = [
-    { title: "A Cinematic Journey", img: "https://example.com/images/camera.jpg" },
-    { title: "Wedding Wonders", img: "https://example.com/images/wedding.jpg" },
-    { title: "Corporate Stories", img: "https://example.com/images/corporate.jpg" },
-    { title: "Aerial Adventures", img: "https://example.com/images/aerial.jpg" },
-    { title: "Documentary Diaries", img: "https://example.com/images/documentary.jpg" },
-    { title: "Event Captures", img: "https://example.com/images/events.jpg" },
+  const images = [
+    {
+        url: "images.unsplash.com/photo-1517433456452-f9633a875f6f",
+        title: "Innovation in Technology",
+        description: "Discover groundbreaking advancements shaping our future"
+      },
+      {
+        url: "images.unsplash.com/photo-1504384308090-c894fdcc538d",
+        title: "AI Revolution",
+        description: "Dive into the world of artificial intelligence and machine learning"
+      },
+      {
+        url: "images.unsplash.com/photo-1498050108023-c5249f4df085",
+        title: "Building the Web",
+        description: "Explore the infrastructure powering the digital age"
+      }
   ];
 
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+
+  const nextSlide = useCallback(() => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
+  }, [images.length]);
+
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
+  };
+
+  const goToSlide = (index) => {
+    setCurrentIndex(index);
+  };
+
+  useEffect(() => {
+    let intervalId;
+    if (isAutoPlaying) {
+      intervalId = setInterval(nextSlide, 5000);
+    }
+    return () => clearInterval(intervalId);
+  }, [isAutoPlaying, nextSlide]);
+
+  const handleKeyDown = (e) => {
+    if (e.key === "ArrowLeft") prevSlide();
+    if (e.key === "ArrowRight") nextSlide();
+  };
+
   return (
-    <div>
-    <section
-        className="bg-cover bg-center h-[400px] flex items-center justify-center"
-        style={heroStyle}
+    <div
+      className="relative h-screen w-full overflow-hidden"
+      onKeyDown={handleKeyDown}
+      tabIndex={0}
+      role="region"
+      aria-label="Image slider"
     >
-        <h1 className="text-4xl text-white font-extrabold mx-auto md:text-5xl">Our latest news</h1>
-    </section>
-
-
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-8">Our Finest Works</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-            {items.map((item, index) => (
-              <div key={index} className="bg-purple-800 rounded-lg shadow-lg overflow-hidden">
-                <img
-                  src={item.img}
-                  alt={item.title}
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-4">
-                  <h3 className="text-lg font-bold">{item.title}</h3>
-                  <p className="text-sm">Lorem ipsum dolor sit amet.</p>
-                </div>
-              </div>
-            ))}
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={currentIndex}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.3 }}
+          className="relative h-full w-full"
+        >
+          <img
+            src={`https://${images[currentIndex].url}`}
+            alt={images[currentIndex].title}
+            className="h-full w-full object-cover"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-black bg-opacity-40">
+            <div className="flex h-full items-center justify-center">
+              <motion.div
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.2 }}
+                className="text-center text-white"
+              >
+                <h1 className="mb-4 text-4xl font-bold md:text-6xl">
+                  {images[currentIndex].title}
+                </h1>
+                <p className="text-lg md:text-xl">
+                  {images[currentIndex].description}
+                </p>
+              </motion.div>
+            </div>
           </div>
-        </div>
-      </section>
+        </motion.div>
+      </AnimatePresence>
+
+      <button
+        onClick={prevSlide}
+        className="absolute left-4 top-1/2 -translate-y-1/2 transform rounded-full bg-white/80 p-2 text-gray-800 transition hover:bg-white focus:outline-none focus:ring-2 focus:ring-white"
+        aria-label="Previous slide"
+      >
+        <FiChevronLeft size={24} />
+      </button>
+
+      <button
+        onClick={nextSlide}
+        className="absolute right-4 top-1/2 -translate-y-1/2 transform rounded-full bg-white/80 p-2 text-gray-800 transition hover:bg-white focus:outline-none focus:ring-2 focus:ring-white"
+        aria-label="Next slide"
+      >
+        <FiChevronRight size={24} />
+      </button>
+
+      <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 transform space-x-2">
+        {images.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => goToSlide(index)}
+            className={`h-2 w-2 rounded-full transition-all duration-300 ${
+              currentIndex === index ? "w-8 bg-white" : "bg-white/50"
+            }`}
+            aria-label={`Go to slide ${index + 1}`}
+          />
+        ))}
+      </div>
+
+      <button
+        onClick={() => setIsAutoPlaying(!isAutoPlaying)}
+        className="absolute bottom-4 right-4 rounded-full bg-white/80 px-4 py-2 text-sm text-gray-800 transition hover:bg-white focus:outline-none focus:ring-2 focus:ring-white"
+        aria-label={isAutoPlaying ? "Pause slideshow" : "Play slideshow"}
+      >
+        {isAutoPlaying ? "Pause" : "Play"}
+      </button>
     </div>
   );
 };
