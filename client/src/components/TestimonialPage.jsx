@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Rating } from "@material-tailwind/react";
 
 const TestimonialPage = () => {
+    const [name, setName] = useState('');
+    const [role, setRole] = useState('');
+    const [message, setMessage] = useState('');
+    const [submitted, setSubmitted] = useState(false);
   const testimonials = [
     {
       quote:
@@ -28,7 +32,21 @@ const TestimonialPage = () => {
         "https://thumbs.wbm.im/pw/small/b6dc1f20e82f11ab0cf61a9958441a16.jpg",
     },
   ];
-
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Here you can handle the submission logic, e.g., send the data to an API
+    // For now, we'll just show a confirmation message
+    setSubmitted(true);
+    // Clear the form fields
+    setName('');
+    setRole('');
+    setMessage('');
+    
+    // Optionally, you can hide the confirmation message after a few seconds
+    setTimeout(() => {
+      setSubmitted(false);
+    }, 5000);
+  };
   return (
     <div>
       <section>
@@ -142,7 +160,7 @@ const TestimonialPage = () => {
           </div>
         </div>
  </section>
-      <section id="your-opinion-section">
+ <section id="your-opinion-section">
         <div className="min-h-screen bg-dark-purple py-6 flex flex-col justify-center sm:py-12">
           <div className="py-3 sm:max-w-xl sm:mx-auto">
             <div className="bg-raisin-black min-w-1xl flex flex-col rounded-xl shadow-lg">
@@ -150,34 +168,46 @@ const TestimonialPage = () => {
                 <h2 className="text-white text-3xl font-semibold">Your opinion matters to us!</h2>
               </div>
               <div className="bg-russian-violet w-full flex flex-col items-center">
-                <div className="flex flex-col items-center py-6 space-y-3">
-                  <span className="text-xl text-white ">How was your experience?</span>
-                  <div>
-                    <Rating unratedColor="black" ratedColor="white" className="flex flex-row gap-3 " />
+                {submitted ? (
+                  <div className="mt-6 p-4 text-white text-lg bgb-600 rounded-lg">
+                    Thank you! We received your opinion and it will be reviewed and published soon.
                   </div>
-                </div>
-                <div className="w-3/4 flex flex-col">
-                  <textarea
-                    rows="1"
-                    className="p-4 text-gray-500 rounded-xl resize-none"
-                    defaultValue="your name"
-                  />
-                  <br />
-                  <textarea
-                    rows="1"
-                    className="p-4 text-gray-500 rounded-xl resize-none"
-                    defaultValue="your role"
-                  />
-                  <br />
-                  <textarea
-                    rows="3"
-                    className="p-4 text-gray-500 rounded-xl resize-none"
-                    defaultValue="Leave a message, if you want"
-                  />
-                  <button className="py-3 my-8 text-lg bg-gradient-to-r from-dogwood-rose to-purple-600 rounded-xl text-white transition-transform duration-300 hover:scale-105">
-                    Rate now
-                  </button>
-                </div>
+                ) : (
+                  <form className="w-3/4 flex flex-col" onSubmit={handleSubmit}>
+                    <div className="flex flex-col items-center py-6 space-y-3">
+                      <span className="text-xl text-white ">How was your experience?</span>
+                      <div>
+                        <Rating unratedColor="black" ratedColor="white" className="flex flex-row gap-3 " />
+                      </div>
+                    </div>
+                    <textarea
+                      rows="1"
+                      className="p-4 text-gray-500 rounded-xl resize-none"
+                      placeholder="Your name"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
+                    />
+                    <br />
+                    <textarea
+                      rows="1"
+                      className="p-4 text-gray-500 rounded-xl resize-none"
+                      placeholder="Your role"
+                      value={role}
+                      onChange={(e) => setRole(e.target.value)}
+                    />
+                    <br />
+                    <textarea
+                      rows="3"
+                      className="p-4 text-gray-500 rounded-xl resize-none"
+                      placeholder="Leave a message, if you want"
+                      value={message}
+                      onChange={(e) => setMessage(e.target.value)}
+                    />
+                    <button type="submit" className="py-3 my-8 text-lg bg-gradient-to-r from-dogwood-rose to-purple-600 rounded-xl text-white transition-transform duration-300 hover:scale-105">
+                      Rate now
+                    </button>
+                  </form>
+                )}
               </div>
             </div>
           </div>
