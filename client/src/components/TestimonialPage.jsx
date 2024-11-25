@@ -178,8 +178,8 @@ const TestimonialPage = () => {
           <div className="bg-russian-violet w-full flex flex-col items-center">
             <div className="flex flex-col items-center py-6 space-y-3">
               <span className="text-lg text-white">How was your experience?</span>
-              <div className="flex flex-col gap-4">
-               <Rating unratedColor="black" ratedColor="rose" />
+              <div >
+               <Rating unratedColor="black" ratedColor="rose" className="flex flex-row gap-3 "/>
                </div>
             </div>
             <div className="w-3/4 flex flex-col">
