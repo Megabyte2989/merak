@@ -41,7 +41,7 @@ function AboutUs() {
         <div className="container mx-auto">
           <div className="lg:grid grid-cols-3 gap-5 px-3">
             <div className="leading-7 flex flex-col item-center my-5 lg:my-0 bg-ghost-white rounded-xl lg:min-h-[564px]">
-              <h2 className="text-2xl bg-dark-purple text-white font-semibold p-5 rounded-xl">
+              <h2 className="text-xl bg-dark-purple text-white font-semibold p-5 rounded-xl">
                 Large Selection of Courses
               </h2>
               <div className=" p-8 ">
@@ -75,7 +75,7 @@ function AboutUs() {
             </div>
 
             <div className="leading-7 flex flex-col item-center my-5 lg:my-0 bg-ghost-white rounded-xl lg:min-h-[564px]">
-              <h2 className="text-2xl bg-dark-purple text-white font-semibold p-5 rounded-xl">
+              <h2 className="text-xl bg-dark-purple text-white font-semibold p-5 rounded-xl">
                 Innovative & Flexible Learning Methods
               </h2>
               <div className=" p-8 ">
@@ -111,7 +111,7 @@ function AboutUs() {
             </div>
 
             <div className="leading-7 flex flex-col item-center my-5 lg:my-0 bg-ghost-white rounded-xl lg:min-h-[564px]">
-              <h2 className="text-2xl bg-dark-purple text-white font-semibold p-5 rounded-xl">
+              <h2 className="text-xl bg-dark-purple text-white font-semibold p-5 rounded-xl">
                 Certified Instruction
               </h2>
               <div className=" p-8 ">
