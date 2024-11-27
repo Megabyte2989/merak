@@ -3,9 +3,9 @@ import React from "react";
 function AboutUs() {
   return (
     <div>
+      {/* aboutUs brief */}
       <div className="pt-20 pb-12 bg-russian-violet">
         <div className="container mx-auto">
-          {/* aboutUs brief */}
           <h1 className="text-4xl md:text-7xl leading-none font-bold text-center text-white">
             What Are We About?
             <span className="block mx-auto mt-4 h-[2px] w-20 bg-dogwood-rose"></span>
