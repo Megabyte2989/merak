@@ -9,7 +9,7 @@ import React from 'react';
 
 function Foot() {
 	return (
-		<div className="flex flex-col lg:flex-row gap-5 justify-between items-center mt-auto text-white bg-black rounded-md p-5">
+		<div className="flex flex-col lg:flex-row gap-5 justify-between items-center mt-auto text-white bg-raisin-black rounded-md p-5">
 			<div>
 				<img
 					className="m-auto mb-[20px] lg:m-0 lg:mb-[20px] w-[40vw] lg:w-[20vw] "

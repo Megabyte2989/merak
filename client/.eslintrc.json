@@ -23,7 +23,8 @@
 	"rules": {
 		"react/react-in-jsx-scope": "off", // React 17+ doesn't require React to be in scope
 		"react/prop-types": "off", // Optional: Disable prop-types if using TypeScript
-		"jsx-a11y/anchor-is-valid": "warn" // Adjust rules as needed
+		"jsx-a11y/anchor-is-valid": "warn", // Adjust rules as needed,
+		"react/no-unknown-property": "warn"
 	},
 	"settings": {
 		"react": {
