@@ -1,48 +1,64 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Example from './Example';
 
 function Navbar() {
+	const [fontNav, setFontNav] = useState(1);
+	const [photoWidth, setPhotoWidth] = useState(18);
+	const [Navcolor, setNavColor] = useState('white');
+	useEffect(() => {
+		const handlefont = () => {
+			const scrollY = window.scrollY;
+			const newFont = Math.max(0.8, 1 - window.scrollY / 200);
+			setFontNav(newFont);
+
+			const newPhotoWidth = Math.max(10, 18 - window.scrollY / 100);
+			setPhotoWidth(newPhotoWidth);
+			setNavColor('#EBA3B3');
+			if (scrollY > 0) {
+				setNavColor('#DAA520'); // Change color when scrolling down
+			} else {
+				setNavColor('white'); // Reset color to white when at the top
+			}
+		};
+
+		window.addEventListener('scroll', handlefont);
+
+		return () => {
+			window.removeEventListener('scroll', handlefont);
+		};
+	}, []);
 
 	return (
 		<>
-			<div className="flex justify-around p-3">
+			<div
+				className={`flex justify-around p-3 sticky top-0 bg-white z-10 `}
+				style={{
+					backgroundColor: `${Navcolor}`,
+					transition: `background-color 0.3s ease`,
+				}}
+			>
 				<div>
 					<Link to={'/'}>
-						<img className="w-[18rem]" src="/New Horizons Logo.png" alt="" />
+						<img
+							style={{
+								width: `${photoWidth}rem`,
+								transition: 'width 0.2s ease',
+							}}
+							src="/New Horizons Logo.png"
+							alt=""
+						/>
 					</Link>
 				</div>
-				<div className="items-center justify-center flex">
-				<Example />
+				<div
+					className={`items-center justify-center flex`}
+					style={{
+						fontSize: `${fontNav}rem`,
+						transition: 'font-size 0.2s ease',
+					}}
+				>
+					<Example />
 				</div>
-				{/* 
-					<ul className="flex text-[0.9rem] space-x-10 cursor-pointer">
-						<li className="flex items-center hover:bg-blue-700 p-3 rounded-md hover:text-white transition duration-300">
-							<Link to={'/'}>About Us</Link>
-							<FontAwesomeIcon icon={faChevronDown} className="ml-1" />
-						</li>
-						<li className="flex items-center hover:bg-blue-700 p-3 rounded-md hover:text-white ">
-							Field Training
-							<FontAwesomeIcon icon={faChevronDown} className="ml-1" />
-						</li>
-						<li className="flex items-center hover:bg-blue-700 p-3 rounded-md hover:text-white ">
-							Resources
-							<FontAwesomeIcon icon={faChevronDown} className="ml-1" />
-						</li>
-						<li className="flex items-center hover:bg-blue-700 p-3 rounded-md hover:text-white ">
-							Authorization & Partner
-							<FontAwesomeIcon icon={faChevronDown} className="ml-1" />
-						</li>
-						<li className="flex items-center hover:bg-blue-700 p-3 rounded-md hover:text-white ">
-							Contact Us
-							<FontAwesomeIcon icon={faChevronDown} className="ml-1" />
-						</li>
-						<li className="flex items-center hover:bg-blue-700 p-3 rounded-md hover:text-white ">
-							Location
-							<FontAwesomeIcon icon={faChevronDown} className="ml-1" />
-						</li>
-					</ul>
-				</div> */}
 			</div>
 		</>
 	);

@@ -1,18 +1,23 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Foot from './components/Foot';
+import Landing from './components/Landing';
 import Navbar from './components/Navbar';
 
 function App() {
 	return (
 		<>
-			<h1></h1>
 			<BrowserRouter>
 				<Navbar />
-				<div className="flex flex-col min-h-screen mx-auto px-4">
-					{/* <ContactUs/> */}
-					{/* <Timer /> */}d
+				<div className="flex flex-col min-h-screen mx-auto ">
+					<Routes>
+						{/* Define individual routes here */}
+						<Route path="/" element={<Landing />} />
+						{/* Uncomment or add additional routes as needed */}
+						{/* <Route path="/contact-us" element={<ContactUs />} /> */}
+						{/* <Route path="/timer" element={<Timer />} /> */}
+					</Routes>
 				</div>
 				<Foot />
 			</BrowserRouter>

@@ -4,7 +4,11 @@
 
 /* Common hover styles for links */
 .link-hover {
-	@apply rounded-lg hover:bg-dogwood-rose hover:px-2 hover:py-1 duration-150;
+	@apply rounded-lg duration-150;
+}
+
+.link-hover:hover {
+	@apply bg-dogwood-rose px-2 py-1;
 }
 
 /* Common styles for active links */
@@ -20,4 +24,18 @@
 /* Visible state for the grid */
 .visible-grid {
 	@apply opacity-100;
+}
+
+.buttonMain {
+	border-radius: 2rem;
+	padding: 1rem;
+	color: white;
+	cursor: pointer;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+
+.heading {
+	font-size: xx-large;
+	margin-bottom: 2rem;
 }
