@@ -204,7 +204,7 @@ const AboutUsContent = () => {
         </a>
         <a
           className="rounded-lg hover:bg-dogwood-rose hover:px-10 hover:py-2 duration-150"
-          href=""
+          href="crop-projects"
         >
           Crop. Projects
         </a>

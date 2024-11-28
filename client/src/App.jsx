@@ -5,6 +5,7 @@ import Foot from "./components/Foot";
 import Navbar from "./components/Navbar";
 import AboutUs from "./components/AboutUs";
 import GovProjects from "./components/GovProjects";
+import CropProjects from "./components/CropProjects";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Routes>
           <Route path="/aboutUs" element={<AboutUs />} />
           <Route path="/gov-projects" element={<GovProjects />} />
+          <Route path="/crop-projects" element={<CropProjects />} />
         </Routes>
         <Foot />
       </BrowserRouter>
