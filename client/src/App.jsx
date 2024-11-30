@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import TestimonialPage from './components/TestimonialPage';
 import Success from './components/Success';
 import Gallery from './components/Gallery';
+import PartnersAndAuthorizations from './components/PartnersAndAuthorizations';
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
         <Route path="/testimonials" element={<TestimonialPage />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/success" element={<Success />} />
+        <Route path="/PartnersAndAuthorizations" element={<PartnersAndAuthorizations />} />
+        
       </Routes>
       <Foot />
     </BrowserRouter>

@@ -20,7 +20,7 @@ const Gallery = () => {
         description: "Explore the infrastructure powering the digital age"
       }
   ];
-
+  
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
