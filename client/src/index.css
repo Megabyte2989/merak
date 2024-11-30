@@ -1,10 +1,13 @@
+@import "./App";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* Common hover styles for links */
 .link-hover {
-	@apply rounded-lg duration-150;
+  @apply rounded-lg hover:bg-dogwood-rose hover:px-2 hover:py-1 duration-150;
+
+	/* @apply rounded-lg duration-150; */
 }
 
 .link-hover:hover {
@@ -13,17 +16,17 @@
 
 /* Common styles for active links */
 .link-active {
-	@apply bg-dogwood-rose px-2 py-1;
+  @apply bg-dogwood-rose px-2 py-1;
 }
 
 /* Hidden state for the grid */
 .hidden-grid {
-	@apply opacity-0 pointer-events-none transition-opacity duration-300;
+  @apply opacity-0 pointer-events-none transition-opacity duration-300;
 }
 
 /* Visible state for the grid */
 .visible-grid {
-	@apply opacity-100;
+  @apply opacity-100;
 }
 
 .buttonMain {

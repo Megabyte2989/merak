@@ -1,12 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./index.html', './src/**/*.{js,jsx,ts,tsx}'],
+  content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       fontFamily: {
         cairo: ['Cairo', 'sans-serif'],
       },
       colors: {
+
+
+        "ghost-white": "var(--ghost-white)",
+
         'dark-purple': 'var(--dark-purple)',
         'dogwood-rose': 'var(--dogwood-rose)',
         'russian-violet': 'var(--russian-violet)',
@@ -22,10 +26,9 @@ export default {
         'peach-puff': 'var(--peach-puff)', /* A warm highlight shade */
         'teal': 'var(--teal)', /* Cool, fresh, and balancing for gradients or hover effects*/ 
         'goldenrod': 'var(--goldenrod)', /* A luxurious accent color */
+
       },
     },
-    
   },
   plugins: [],
-}
-
+};
