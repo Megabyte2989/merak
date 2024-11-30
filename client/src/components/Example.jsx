@@ -30,6 +30,7 @@ function Example() {
       <div
         className={`lg:hidden absolute top-20 left-0 right-0 bg-white shadow-lg ${menuOpen ? "block" : "hidden"} p-5 flex items-center
 				justify-center flex-col bg-slate-600 gap-2`}
+
       >
         <MobileFlyoutLink
           href="/aboutUs"
@@ -88,6 +89,7 @@ function Example() {
       </div>
     </>
   );
+
 }
 
 const FlyoutLink = ({ children, href, FlyoutContent }) => {
@@ -175,42 +177,44 @@ const MobileFlyoutLink = ({
 };
 
 const AboutUsContent = () => {
-  return (
-    <div className="w-[100vw] lg:w-64 bg-raisin-black text-white p-6 shadow-xl ">
-      <ul className="flex flex-col justify-center items-center">
-        <a
-          className="rounded-lg hover:bg-dogwood-rose hover:px-10 hover:py-2 duration-150"
-          href=""
-        >
-          Testimonails
-        </a>
-        <a
-          className="rounded-lg hover:bg-dogwood-rose hover:px-10 hover:py-2 duration-150"
-          href=""
-        >
-          Sucess Stories
-        </a>
-        <a
-          className="rounded-lg hover:bg-dogwood-rose hover:px-10 hover:py-2 duration-150"
-          href=""
-        >
-          NH Gallery
-        </a>
-        <a
-          className="rounded-lg hover:bg-dogwood-rose hover:px-10 hover:py-2 duration-150"
-          href="/gov-projects"
-        >
-          Gov. Projects
-        </a>
-        <a
-          className="rounded-lg hover:bg-dogwood-rose hover:px-10 hover:py-2 duration-150"
-          href="crop-projects"
-        >
-          Crop. Projects
-        </a>
-      </ul>
-    </div>
-  );
+
+	return (
+		<div className="w-[100vw] lg:w-64 bg-raisin-black text-white p-6 shadow-xl ">
+			<ul className="flex flex-col justify-center items-center">
+				<a
+					className="rounded-lg hover:bg-dogwood-rose hover:px-10 hover:py-2 duration-150"
+					href="/Testimonials"
+				>
+					Testimonails
+				</a>
+				<a
+					className="rounded-lg hover:bg-dogwood-rose hover:px-10 hover:py-2 duration-150"
+					href="/Success"
+				>
+					Sucess Stories
+				</a>
+				<a
+					className="rounded-lg hover:bg-dogwood-rose hover:px-10 hover:py-2 duration-150"
+					href="/Gallery"
+				>
+					NH Gallery
+				</a>
+				<a
+					className="rounded-lg hover:bg-dogwood-rose hover:px-10 hover:py-2 duration-150"
+					href=""
+				>
+					Gov. Projects
+				</a>
+				<a
+					className="rounded-lg hover:bg-dogwood-rose hover:px-10 hover:py-2 duration-150"
+					href=""
+				>
+					Crop. Projects
+				</a>
+			</ul>
+		</div>
+	);
+
 };
 
 const CoursesContent = () => {

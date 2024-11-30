@@ -1,4 +1,16 @@
+
 @import "./App";
+
+:root {
+  --dark-purple: #1a1332;
+  --dogwood-rose: #dc1666;
+  --russian-violet: #281650;
+  --raisin-black: #1c1e27;
+  --white: #ffffff;
+}
+
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
