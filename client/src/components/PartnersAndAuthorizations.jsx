@@ -51,37 +51,37 @@ const PartnersAndAuthorizations = () => {
                 title: 'Microsoft Learning Partner',
                 description:
                   'Every Microsoft course at New Horizons Cairo follows Microsoft Office Curriculum (MOC), and is taught by Microsoft Certified instructors to ensure the best possible training in Microsoft products.',
-                icon: 'https://example.com/microsoft-icon.png',
+                icon: 'microsoftlogo.png', 
               },
               {
                 title: 'Cisco Learning Partner',
                 description:
                   'Cisco learning partners are the only authorized sources for commercial Cisco training. This ensures instructors at New Horizons Cairo are distinctively qualified to provide Cisco authorized training.',
-                icon: 'https://example.com/cisco-icon.png',
+                icon: 'ciscologo.png',
               },
               {
                 title: 'CompTIA Authorized Partner',
                 description:
                   'As a member of the CompTIA Authorized Partner program, New Horizons Cairo delivers CompTIA-approved curriculum designed for industry-recognized CompTIA certifications.',
-                icon: 'https://example.com/comptia-icon.png',
+                icon: 'comptia.png',
               },
               {
                 title: 'VMware Authorized Training Partner',
                 description:
                   'New Horizons Cairo is a VMware training partner, preparing students to manage server and desktop virtualization while achieving VMware certifications.',
-                icon: 'https://example.com/vmware-icon.png',
+                icon: 'vmware.png',
               },
               {
                 title: 'IBM Training Partner',
                 description:
                   'New Horizons Cairo provides IBM authorized training on the design, installation, maintenance, and troubleshooting of IBM software and systems.',
-                icon: 'https://example.com/ibm-icon.png',
+                icon: 'ibm.png',
               },
               {
                 title: 'Citrix Learning Partner',
                 description:
                   'New Horizons Cairo is a Citrix Authorized Learning Center. Our training equips you with real-world skills to enhance productivity with Citrix mobile technology solutions.',
-                icon: 'https://example.com/citrix-icon.png',
+                icon: 'citrix.png',
               },
             ].map((partner, index) => (
               <div
@@ -92,11 +92,11 @@ const PartnersAndAuthorizations = () => {
                   <img
                     src={partner.icon}
                     alt={partner.title}
-                    className="h-16 w-16 mx-auto"
+                    className="h-18 w-18 mx-auto"
                   />
                 </div>
-                <h2 className="text-lg font-semibold mb-4">{partner.title}</h2>
-                <p className="text-sm leading-relaxed text-gray-400">
+                <h2 className="text-xl font-semibold mb-4">{partner.title}</h2>
+                <p className="text-sm leading-relaxed text-gray-800">
                   {partner.description}
                 </p>
               </div>
