@@ -5,11 +5,11 @@ function LandingSec6() {
 		<div className="px-5 py-5 sm:p-14 text-center bg-lavender text-black">
 			<h1
 				className="heading   
-			 lg:text-5xl xl:text-5xl   font-bold font-sans text-russian-violet my-5"
+			 lg:text-5xl xl:text-5xl   font-bold text-russian-violet my-5"
 			>
 				We Empower Results
 			</h1>
-			<p className="font-cairo text-sm w-[60%] text-center m-auto text-black mb-10">
+			<p className="text-sm  md:w-[60%] text-center m-auto text-black mb-10">
 				Our commitment to quality is only matched by our commitment to your
 				success. We provide top rated instruction, along with the in-class and
 				post-class tools and support you need to achieve your goals.
@@ -60,7 +60,7 @@ function Card({ head, pragraph }) {
 	return (
 		<div className="border border-gray-300 p-5 rounded-lg shadow-lg bg-white">
 			<h3 className="text-lg font-bold text-dogwood-rose mb-2">{head}</h3>
-			<p className="font-cairo text-sm text-black w-[70%] m-auto">{pragraph}</p>
+			<p className=" text-sm text-black w-[70%] m-auto">{pragraph}</p>
 		</div>
 	);
 }

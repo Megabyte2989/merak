@@ -7,10 +7,10 @@ function LandingSec5() {
        flex-col md:flex-row md:text-left md:items-center "
 		>
 			<div>
-				<h2 className="heading lg:text-5xl font-bold font-sans text-dogwood-rose mt-10 md:text-5xl lg:w-fit">
+				<h2 className="heading lg:text-5xl font-bold  text-dogwood-rose mt-10 md:text-5xl lg:w-fit">
 					Trusted Training Partner
 				</h2>
-				<p className="font-cairo text-sm w-[80%] text-center m-auto md:ml-0 md:text-left md:text-xl lg:w-[70%]">
+				<p className=" text-sm md:w-[80%] text-center m-auto md:ml-0 md:text-left md:text-xl lg:w-[70%]">
 					We offer authorized training solutions from over 30 industry leading
 					partners for tools & technologies that you use every day including
 					Microsoft, Amazon, Red Hat, and more.
@@ -24,7 +24,7 @@ function LandingSec5() {
 			</div>
 
 			<div
-				className="grid grid-cols-3 grid-rows-3 gap-10 lg:gap-20 border-[0.5px]
+				className="grid grid-cols-3 grid-rows-3 gap-10 lg:gap-[2.5rem] border-[0.5px]
 			 border-red-300 rounded-lg p-5 items-center m-auto w-[70%] md:w-[130%] 
 			 lg:w-[700px]"
 				style={{

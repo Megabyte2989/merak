@@ -7,10 +7,10 @@ function LandingSec4() {
 	return (
 		<>
 			<div className="px-5 py-5 sm:p-14 text-white text-center bg-lavender">
-				<h1 className="heading  lg:text-5xl xl:text-5xl font-bold font-sans text-russian-violet">
+				<h1 className="heading  lg:text-5xl xl:text-5xl font-bold text-russian-violet">
 					Realize Your Potential. Get Certified.
 				</h1>
-				<p className="text-black font-cairo mb-5 w-[50%] m-auto">
+				<p className="text-black  mb-5 md:w-[50%] m-auto">
 					No business wants to be left behind. With technology and business
 					advancements moving at lightning-fast speeds, keeping your team's
 					skills top-notch can be challenging. We understand this struggle and
@@ -61,10 +61,10 @@ function Certification({ ImageSrc, Fpragraph, Spragraph }) {
 				alt=""
 			/>
 			<div className=" text-black w-[60%] text-left">
-				<p className="w-fit  font-bold font-sans sm:text-[1rem] xl:text-2xl my-3">
+				<p className="w-fit  font-bold sm:text-[1rem] xl:text-2xl my-3">
 					{Fpragraph}
 				</p>
-				<p className="w-fit text-left sm:text-[0.8rem] xl:text-[0.9rem] font-cairo  ">
+				<p className="w-fit text-left sm:text-[0.8rem] xl:text-[0.9rem]  ">
 					{Spragraph}
 				</p>
 			</div>

@@ -6,6 +6,7 @@ function Navbar() {
 	const [fontNav, setFontNav] = useState(1);
 	const [photoWidth, setPhotoWidth] = useState(18);
 	const [Navcolor, setNavColor] = useState('white');
+	const [fontColor, setFontcolor] = useState('black');
 	useEffect(() => {
 		const handlefont = () => {
 			const scrollY = window.scrollY;
@@ -15,10 +16,12 @@ function Navbar() {
 			const newPhotoWidth = Math.max(10, 18 - window.scrollY / 100);
 			setPhotoWidth(newPhotoWidth);
 			setNavColor('#EBA3B3');
+			setFontcolor('white');
 			if (scrollY > 0) {
-				setNavColor('#DAA520'); // Change color when scrolling down
+				setNavColor('#1a1332'); // Change color when scrolling down
 			} else {
 				setNavColor('white'); // Reset color to white when at the top
+				setFontcolor('black');
 			}
 		};
 
@@ -36,6 +39,7 @@ function Navbar() {
 				style={{
 					backgroundColor: `${Navcolor}`,
 					transition: `background-color 0.3s ease`,
+					color: `${fontColor}`,
 				}}
 			>
 				<div>

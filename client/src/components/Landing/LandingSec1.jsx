@@ -14,7 +14,7 @@ function LandingSec1() {
 					<Typewriter text={'Potential'} />
 				</h1>
 
-				<p className="text-sm lg:text-base font-cairo font-bold mb-5">
+				<p className="text-sm lg:text-base  mb-5">
 					New Horizons offers hands-on virtual and in-person modern IT &
 					Technology training for team optimization and career development. We
 					deliver the IT Training and Certification outcomes you are looking
@@ -27,7 +27,7 @@ function LandingSec1() {
 					<li>4.8/5 Instructor Rating</li>
 				</ul>
 
-				<p className="text-sm lg:text-base font-cairo font-bold mb-5">
+				<p className="text-sm lg:text-base  mb-5">
 					Whether you're looking to upskill your team, advance your own skills,
 					or would like private training for your organization, New Horizons can
 					provide the real-world training to take you and your team to the next

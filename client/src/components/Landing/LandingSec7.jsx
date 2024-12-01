@@ -36,7 +36,7 @@ function LandingSec7() {
 
 	return (
 		<div className="px-5 py-5 sm:p-14 bg-dark-purple text-white text-center">
-			<h1 className="heading lg:text-5xl font-bold font-sans text-dogwood-rose">
+			<h1 className="heading lg:text-5xl font-bold text-dogwood-rose">
 				Our Client Success Says It All
 			</h1>
 			<div className="flex items-center flex-col sm:flex-row sm:justify-center">
@@ -46,7 +46,7 @@ function LandingSec7() {
 					className="lg:mb-32 mr-auto sm:mr-4 sm:mb-60 sm:text-[6rem] lg:text-[10rem]"
 				/>
 				<div className="flex flex-col sm:w-[60%] lg:w-[35%]">
-					<p className="lg:mt-16 lg:ml-6">{testimonials[currentIndex].text}</p>
+					<p className="">{testimonials[currentIndex].text}</p>
 					<p className="self-end mt-4 mr-4 lg:mt-4 lg:mr-10 text-gray-400 text-[1.0rem]">
 						{testimonials[currentIndex].author}
 					</p>

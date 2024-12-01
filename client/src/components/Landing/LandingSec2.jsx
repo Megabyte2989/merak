@@ -17,11 +17,11 @@ function LandingSec2() {
 	return (
 		<div className="Container sm:p-14 p-5 grid grid-cols-12 bg-lavender text-black text-center md:text-left   md:gap-0 lg:gap-10">
 			<div className="col-span-12 md:col-span-5 lg:col-span-5 p-4 sm:p-6">
-				<h2 className="text-3xl sm:text-5xl font-medium font-sans mb-8 text-dogwood-rose drop-shadow-xl">
+				<h2 className="text-3xl sm:text-5xl font-bold mb-8 text-russian-violet drop-shadow-xl">
 					Get Your Team <br />
 					On The Right Path
 				</h2>
-				<p className="text-sm lg:text-base font-cairo font-bold mb-5 px-3">
+				<p className="text-sm lg:text-base  mb-5 px-3">
 					From Cybersecurity to AI & Machine Learning, our best-in-class
 					training has you covered with courses that cover all of your IT and
 					Professional Training needs. With technology and business advancements

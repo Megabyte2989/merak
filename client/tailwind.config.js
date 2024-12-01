@@ -5,6 +5,8 @@ export default {
     extend: {
       fontFamily: {
         cairo: ['Cairo', 'sans-serif'],
+        sans: ['Poppins', 'Roboto', 'Open Sans', 'sans-serif'],
+
       },
       colors: {
 

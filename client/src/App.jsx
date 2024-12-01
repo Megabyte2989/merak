@@ -1,17 +1,16 @@
-
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import AboutUs from './components/AboutUs/AboutUs';
+import CropProjects from './components/AboutUs/CropProjects';
+import Gallery from './components/AboutUs/Gallery';
+import GovProjects from './components/AboutUs/GovProjects';
+import Success from './components/AboutUs/Success';
+import TestimonialPage from './components/AboutUs/TestimonialPage';
 import Foot from './components/Foot';
-import Landing from './components/Landing';
+import Landing from './components/Landing/Landing';
 import Navbar from './components/Navbar';
-import TestimonialPage from './components/TestimonialPage';
-import Success from './components/Success';
-import Gallery from './components/Gallery';
 import PartnersAndAuthorizations from './components/PartnersAndAuthorizations';
-import AboutUs from "./components/AboutUs";
-import GovProjects from "./components/GovProjects";
-import CropProjects from "./components/CropProjects";
 
 function App() {
 	return (
@@ -21,16 +20,20 @@ function App() {
 				<div className="flex flex-col min-h-screen mx-auto ">
 					<Routes>
 						{/* Define individual routes here */}
-        <Route path="/testimonials" element={<TestimonialPage />} />
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/success" element={<Success />} />
-        <Route path="/PartnersAndAuthorizations" element={<PartnersAndAuthorizations />} />
+						<Route path="/testimonials" element={<TestimonialPage />} />
+						<Route path="/gallery" element={<Gallery />} />
+						<Route path="/success" element={<Success />} />
+						<Route
+							path="/PartnersAndAuthorizations"
+							element={<PartnersAndAuthorizations />}
+						/>
 						<Route path="/" element={<Landing />} />
-                      <Route path="/aboutUs" element={<AboutUs />} />
-          <Route path="/gov-projects" element={<GovProjects />} />
-          <Route path="/crop-projects" element={<CropProjects />} />
-						{/* Uncomment or add additional routes as needed */}
+						<Route path="/aboutUs" element={<AboutUs />} />
+						<Route path="/gov-projects" element={<GovProjects />} />
+						<Route path="/crop-projects" element={<CropProjects />} />
 						{/* <Route path="/contact-us" element={<ContactUs />} /> */}
+						{/* Uncomment or add additional routes as needed */}
+
 						{/* <Route path="/timer" element={<Timer />} /> */}
 					</Routes>
 				</div>
@@ -38,7 +41,6 @@ function App() {
 			</BrowserRouter>
 		</>
 	);
-
 }
 
 export default App;
