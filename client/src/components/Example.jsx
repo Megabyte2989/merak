@@ -65,7 +65,7 @@ function Example() {
           Resources
           <FontAwesomeIcon icon={faChevronDown} className="ml-1" />
         </MobileFlyoutLink>
-        <MobileFlyoutLink href="#">Authorization & Partner</MobileFlyoutLink>
+        <MobileFlyoutLink href="/PartnersAndAuthorizations">Authorization & Partner</MobileFlyoutLink>
         <MobileFlyoutLink href="#">Contact Us</MobileFlyoutLink>
         <MobileFlyoutLink href="#">Log in</MobileFlyoutLink>
       </div>
@@ -83,7 +83,8 @@ function Example() {
           Resources
           <FontAwesomeIcon icon={faChevronDown} className="ml-1" />
         </FlyoutLink>
-        <FlyoutLink href="#">Authorization & Partner</FlyoutLink>
+
+        <FlyoutLink href="/PartnersAndAuthorizations" >Authorization & Partner</FlyoutLink>
         <FlyoutLink href="#">Contact Us</FlyoutLink>
         <FlyoutLink href="#">Log in</FlyoutLink>
       </div>
