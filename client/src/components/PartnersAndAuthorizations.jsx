@@ -39,7 +39,7 @@ const PartnersAndAuthorizations = () => {
             <p className="text-center text-lg text-[#ffffff] mb-12">
               Collaborating with industry leaders to provide world-class training and certifications.
             </p>
-            <div className="grid md:grid-cols-2 gap-10">
+            <div className="grid md:grid-cols-3 gap-10">
               {/* Card component with hover effect */}
               {[
                 {
