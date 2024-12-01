@@ -2,7 +2,7 @@ import React from 'react';
 
 const PartnersAndAuthorizations = () => {
   return (
-    <div className="bg-gradient-to-b from-dark-purple to-[#6d002d] text-white min-h-screen py-10">
+    <div className="bg-gradient-to-b from-dark-purple to-[#000000] text-white min-h-screen py-10">
       <div className="max-w-7xl mx-auto px-6">
         {/* Hero Section */}
         <section className="bg-[#ffffffb4] text-gray-800 py-28 rounded-lg shadow-lg mb-16">
