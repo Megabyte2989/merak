@@ -11,6 +11,7 @@
 	--russian-violet: #281650;
 	--raisin-black: #1c1e27;
 	--white: #ffffff;
+	--ghost-white: #f5f7fb;
 	--dark-purple-light: #9a7fbc;
 	--dogwood-rose-light: #eba3b3;
 	--russian-violet-dark: #1b0034;
@@ -21,6 +22,7 @@
 	--peach-puff: #ffdab9;
 	--teal: #008080;
 	--goldenrod: #daa520;
+
 }
 
 .App {

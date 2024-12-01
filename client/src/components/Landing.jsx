@@ -5,7 +5,7 @@ import LandingSec3 from './Landing/LandingSec3';
 import LandingSec4 from './Landing/LandingSec4';
 import LandingSec5 from './Landing/LandingSec5';
 import LandingSec6 from './Landing/LandingSec6';
-
+import LandingSec7 from './Landing/LandingSec7';
 function Landing() {
 	return (
 		<>
@@ -15,6 +15,7 @@ function Landing() {
 			<LandingSec4 />
 			<LandingSec5 />
 			<LandingSec6 />
+			<LandingSec7 />
 		</>
 	);
 }
