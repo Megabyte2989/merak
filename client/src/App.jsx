@@ -12,6 +12,7 @@ import PartnersAndAuthorizations from './components/PartnersAndAuthorizations';
 import AboutUs from "./components/AboutUs";
 import GovProjects from "./components/GovProjects";
 import Webinars from './components/Webinars';
+import Register from './components/Register';
 import CropProjects from "./components/CropProjects";
 
 function App() {
@@ -22,15 +23,17 @@ function App() {
 				<div className="flex flex-col min-h-screen mx-auto ">
 					<Routes>
 						{/* Define individual routes here */}
-		<Route path="/webinars" element={<Webinars />} />
         <Route path="/testimonials" element={<TestimonialPage />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/success" element={<Success />} />
+		<Route path="/webinars" element={<Webinars />} />
+		<Route path="/register/:id" element={<Register />} />
         <Route path="/PartnersAndAuthorizations" element={<PartnersAndAuthorizations />} />
 						<Route path="/" element={<Landing />} />
                       <Route path="/aboutUs" element={<AboutUs />} />
           <Route path="/gov-projects" element={<GovProjects />} />
           <Route path="/crop-projects" element={<CropProjects />} />
+		
 						{/* Uncomment or add additional routes as needed */}
 						{/* <Route path="/contact-us" element={<ContactUs />} /> */}
 						{/* <Route path="/timer" element={<Timer />} /> */}
