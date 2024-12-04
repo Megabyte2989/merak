@@ -9,21 +9,21 @@ const Webinars = () => {
             title: "Introduction to React",
             description: "Learn the basics of React and build your first application.",
             link: "/register/1",
-            image: "https://via.placeholder.com/400x200?text=React+Webinar",
+            image: "https://t4.ftcdn.net/jpg/02/34/09/25/360_F_234092554_wF3dTfJtJHS8AIkJ8ouIdLiDHgL3iodU.jpg",
         },
         {
             id: 2,
             title: "Advanced JavaScript",
             description: "Deep dive into JavaScript concepts and patterns.",
             link: "/register/2",
-            image: "https://via.placeholder.com/400x200?text=JavaScript+Webinar",
+            image: "https://usa.bootcampcdn.com/wp-content/uploads/sites/119/2020/12/tes_gen_blog_code7-1-800x412.jpg",
         },
         {
             id: 3,
             title: "UI/UX Design Principles",
             description: "Explore best practices for designing user-friendly interfaces.",
             link: "/register/3",
-            image: "https://via.placeholder.com/400x200?text=UI/UX+Webinar",
+            image: "https://lazyprogrammer.me/wp-content/uploads/2024/03/programmer_cmd_line.jpg",
         },
         // Add more webinars as needed
     ];
@@ -45,7 +45,7 @@ const Webinars = () => {
                     Explore Upcoming Webinars
                 </h1>
                 <p className="mb-8 text-lg font-normal text-dogwood-rose md:text-xl lg:text-xl sm:px-16 xl:px-48">
-                    From Educate 360
+                    From New Horizons
                 </p>
 
                 {/* Search Bar */}
@@ -53,7 +53,7 @@ const Webinars = () => {
                     <input
                         type="text"
                         placeholder="Search webinars..."
-                        className="w-full p-3 text-gray-900 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-300"
+                        className="w-full p-3 text-gray-900 rounded-lg border border-gray-300 focus:ring-2 focus:ring-dark-purple-light focus:outline-none"
                         value={searchTerm}
                         onChange={(e) => setSearchTerm(e.target.value)}
                     />
@@ -66,14 +66,14 @@ const Webinars = () => {
                     filteredWebinars.map((webinar) => (
                         <div
                             key={webinar.id}
-                            className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700"
+                            className="max-w-sm p-6 bg-white border border-purple-300 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-900 dark:border-dark-purple dark:hover:bg-dark-purple" 
                         >
                             <img
                                 src={webinar.image}
                                 alt={webinar.title}
-                                className="mb-4 rounded-lg"
+                                className="mb-4 rounded-lg w-full h-48 object-cover" // Set fixed height and width
                             />
-                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white ">
                                 {webinar.title}
                             </h5>
                             <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
@@ -81,7 +81,7 @@ const Webinars = () => {
                             </p>
                             <Link
                                 to={webinar.link}
-                                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-600 rounded-lg hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+                                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-700 rounded-lg hover:bg-dogwood-rose focus:ring-4 focus:outline-none focus:ring-gray-700"
                             >
                                 Register
                             </Link>
