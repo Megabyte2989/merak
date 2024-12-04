@@ -318,7 +318,7 @@ const ResourceContent = () => {
           </a>
           <a
             className="link-hover"
-            href="#"
+            href="/Webinars"
             onMouseEnter={() => setIsLearningActive(false)}
           >
             Webinars
