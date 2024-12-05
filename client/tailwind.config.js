@@ -7,10 +7,7 @@ export default {
         cairo: ['Cairo', 'sans-serif'],
       },
       colors: {
-
-
         "ghost-white": "var(--ghost-white)",
-
         'dark-purple': 'var(--dark-purple)',
         'dogwood-rose': 'var(--dogwood-rose)',
         'russian-violet': 'var(--russian-violet)',

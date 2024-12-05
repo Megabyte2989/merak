@@ -14,7 +14,7 @@ const LearningMethods = () => {
         "Collaborate in virtual rooms for team activities.",
       ],
       button: "Find Training",
-      image: "https://source.unsplash.com/400x300/?education,training",
+      image: "https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       title: "Private Group Training",
@@ -27,7 +27,7 @@ const LearningMethods = () => {
         "Flexible scheduling to ensure productivity.",
       ],
       button: "Contact Us to Learn More",
-      image: "https://source.unsplash.com/400x300/?teamwork,meeting",
+      image: "https://images.unsplash.com/photo-1622674777904-386b3ef30c4a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZGV2ZWxvcGVyfGVufDB8fDB8fHww",
     },
     {
       title: "Custom Training Solutions",
@@ -39,7 +39,7 @@ const LearningMethods = () => {
         "Augment your team with Instructional Designers, LMS Experts, and more.",
       ],
       button: "Learn More and Start Customizing",
-      image: "https://source.unsplash.com/400x300/?custom,design",
+      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       title: "Educate 360 Pro",
@@ -52,7 +52,7 @@ const LearningMethods = () => {
         "Track progress and take notes.",
       ],
       button: "Learn More About Educate 360 Pro",
-      image: "https://source.unsplash.com/400x300/?learning,online",
+      image: "https://www.acacia.edu/wp-content/uploads/2023/06/acacia-blog-image-1024x578.jpg",
     },
   ];
 
@@ -61,11 +61,6 @@ const LearningMethods = () => {
       {/* Hero Section */}
       <div
         className="relative bg-dark-purple text-white py-16 rounded-lg shadow-lg text-center mb-12"
-        style={{
-          backgroundImage: `url('https://source.unsplash.com/1920x400/?technology,education')`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
       >
         <h1 className="text-4xl font-bold mb-4">Learning and Delivery Methods</h1>
         <p className="text-lg max-w-2xl mx-auto">
@@ -78,7 +73,7 @@ const LearningMethods = () => {
         {methods.map((method, index) => (
           <div
             key={index}
-            className="bg-white shadow-xl rounded-lg overflow-hidden flex flex-col"
+            className="bg-white shadow-xl rounded-lg overflow-hidden flex flex-col transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
           >
             <img
               src={method.image}
@@ -106,33 +101,40 @@ const LearningMethods = () => {
       </div>
 
       {/* Contact Section */}
-      <div className="mt-16 bg-white p-8 rounded-xl shadow-lg">
-        <h2 className="text-2xl font-semibold text-center mb-6 text-dark-purple">
-          Have Additional Questions? Contact Us Below
-        </h2>
-        <form className="grid grid-cols-1 gap-4">
-          <input
-            type="text"
-            placeholder="Your Name"
-            className="p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-dogwood-rose"
-          />
-          <input
-            type="email"
-            placeholder="Your Email"
-            className="p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-dogwood-rose"
-          />
-          <textarea
-            placeholder="Your Message"
-            className="p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-dogwood-rose"
-            rows="4"
-          />
-          <button
-            type="submit"
-            className="p-4 bg-dogwood-rose text-white rounded-lg hover:bg-dogwood-rose-light transition-colors"
-          >
-            Submit
-          </button>
-        </form>
+      <div
+        className="mt-16 p-8 rounded-xl shadow-lg bg-cover bg-center"
+        style={{
+          backgroundImage: "url('https://images.unsplash.com/photo-1535136104956-115a2cd67fc4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHRlY2h8ZW58MHx8MHx8fDA%3D')",
+        }}
+      >
+        <div className="bg-white p-8 rounded-lg shadow-lg">
+          <h2 className="text-2xl font-semibold text-center mb-6 text-dark-purple">
+            Have Additional Questions? Contact Us Below
+          </h2>
+          <form className="grid grid-cols-1 gap-4">
+            <input
+              type="text"
+              placeholder="Your Name"
+              className="p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-dogwood-rose"
+            />
+            <input
+              type="email"
+              placeholder="Your Email"
+              className="p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-dogwood-rose"
+            />
+            <textarea
+              placeholder="Your Message"
+              className="p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-dogwood-rose"
+              rows="4"
+            />
+            <button
+              type="submit"
+              className="p-4 w-full bg-dogwood-rose text-white rounded-lg hover:bg-dogwood-rose-light transition-colors"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   );
