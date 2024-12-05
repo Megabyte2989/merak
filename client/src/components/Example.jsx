@@ -303,19 +303,12 @@ const ResourceContent = () => {
           <a
             onMouseEnter={() => setIsLearningActive(true)}
             className={`link-hover ${isLearningActive ? "link-active" : ""} duration-75`}
-            href="#"
+            href="learning-methods"
           >
             Learning Methods
           </a>
 
           {/* Other Links */}
-          <a
-            className="link-hover"
-            href="#"
-            onMouseEnter={() => setIsLearningActive(false)}
-          >
-            Blog
-          </a>
           <a
             className="link-hover"
             href="/Webinars"
