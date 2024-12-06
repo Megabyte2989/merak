@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 const AboutUs = () => {
   const [activeFAQ, setActiveFAQ] = useState(null);
@@ -10,202 +11,245 @@ const AboutUs = () => {
   const missionItems = [
     {
       title: "Empowerment",
-      description:
-        "Empowering individuals to achieve their full potential through quality education.",
+      description: "Empowering individuals to achieve their full potential through quality education.",
+      image: "https://plus.unsplash.com/premium_photo-1681131450196-57e6df9bc2fd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZW1wb3dlcm1lbnR8ZW58MHx8MHx8fDA%3D",
     },
     {
       title: "Innovation",
-      description:
-        "Continuously updating our programs to include the latest industry trends.",
+      description: "Continuously updating our programs to include the latest industry trends.",
+      image: "https://images.unsplash.com/photo-1480506132288-68f7705954bd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dGVjaCUyMHB1cnBsZXxlbnwwfHwwfHx8MA%3D%3D",
     },
     {
       title: "Community",
-      description:
-        "Building a supportive community for learners and professionals alike.",
-    },
-  ];
-
-  const teamMembers = [
-    {
-      name: "Ahmed Khaled",
-      position: "Chief Executive Officer",
-      image: "https://via.placeholder.com/150",
-    },
-    {
-      name: "Sara Ali",
-      position: "Head of Training",
-      image: "https://via.placeholder.com/150",
-    },
-    {
-      name: "Mohamed Hassan",
-      position: "Lead Instructor",
-      image: "https://via.placeholder.com/150",
+      description: "Building a supportive community for learners and professionals alike.",
+      image: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y291cnNlfGVufDB8fDB8fHww",
     },
   ];
 
   const faqs = [
     {
       question: "What types of courses do you offer?",
-      answer:
-        "We offer a wide range of courses in technical and business applications.",
+      answer: "We offer a wide range of courses in technical and business applications.",
     },
     {
       question: "Do you offer online classes?",
-      answer:
-        "Yes, we offer both in-person and online classes to suit your preferences.",
+      answer: "Yes, we offer both in-person and online classes to suit your preferences.",
     },
     {
       question: "How can I register for a course?",
-      answer:
-        "You can register by contacting us via phone or email, or by visiting our website.",
+      answer: "You can register by contacting us via phone or email, or by visiting our website.",
+    },
+    {
+      question: "What are the benefits of professional training?",
+      answer: "Professional training can help you advance your career and gain new skills.",
+    },
+    {
+      question: "Do you offer group discounts?",
+      answer: "Yes, we offer group discounts for companies and organizations.",
+    },
+    {
+      question: "What is the refund policy?",
+      answer: "Refunds are available up to 7 days before the start of the course.",
     },
   ];
 
   return (
-    <div className="bg-raisin-black text-white">
+    <div className="about-us-container">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-b from-white to-dark-purple text-center py-20 px-6">
-        <h1 className="text-5xl md:text-6xl font-extrabold text-dogwood-rose mb-6 leading-tight">
-          Discover New Horizons
-        </h1>
-        <p className="text-lg md:text-xl text-ghost-white max-w-2xl mx-auto">
-          Your trusted partner in professional training and personal growth.
-          Elevate your potential with cutting-edge programs designed to inspire
-          and transform.
-        </p>
-        <img
-          src="https://via.placeholder.com/1000x400"
-          alt="Hero image"
-          className="mx-auto mt-10 rounded-lg shadow-lg w-full md:w-3/4 object-cover"
+      <section className="hero-section relative bg-white text-center py-20 px-6 flex flex-col md:flex-row items-center">
+        <div className="hero-text md:w-1/2 text-left">
+          <motion.h1
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="hero-title text-5xl md:text-6xl font-extrabold bg-clip-text tracking-tight text-transparent bg-dark-purple"
+          >
+            Discover New Horizons
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="hero-description text-gray-600 text-lg tracking-tight md:text-xl max-w-2xl mx-auto mt-4"
+          >
+            Your trusted partner in professional training and personal <br /> growth Elevate your potential with cutting-edge programs
+          </motion.p>
+        </div>
+        <motion.img
+          initial={{ scale: 0.9, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 1, delay: 0.4 }}
+          src="about-us.jpg"
+          alt="Hero"
+          className="hero-image mx-auto mt-6 rounded-lg shadow-xl w-full md:w-1/2"
         />
       </section>
 
-      {/* About New Horizons Cairo */}
-      <section className="py-20 px-6 bg-dark-purple-light">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-dogwood-rose mb-8">
-            About New Horizons Cairo
-          </h2>
-          <p className="text-lg text-ghost-white leading-relaxed">
-            Located conveniently in Cairo, New Horizons provides a variety of
-            technical and business applications training. Whether you prefer
-            in-person or online classes, we are here to serve the local
-            community's needs.
-          </p>
-          <ul className="list-disc list-inside text-left mt-6">
-            <li>
-              <strong>Local Training:</strong> Classes tailored for Cairo’s
-              business and individual needs.
-            </li>
-            <li>
-              <strong>Large Selection of Courses:</strong> From beginner
-              applications to advanced technical skills.
-            </li>
-            <li>
-              <strong>Innovative Learning Methods:</strong> Customized classes,
-              online or on-site.
-            </li>
-          </ul>
-        </div>
-      </section>
-
       {/* Mission Section */}
-      <section className="bg-raisin-black-light py-20 px-6">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-dogwood-rose mb-8">
+      <section className="mission-section h-full py-16 px-6" style={{ backgroundColor: "var(--dark-purple)" }}>
+        <div className="max-w-7xl mx-auto text-center">
+          < h2 className="mission-title text-4xl font-bold mb-10" style={{ color: "var(--dogwood-rose)" }}>
             Our Mission
           </h2>
-          <p className="text-lg text-ghost-white leading-relaxed max-w-3xl mx-auto">
-            At New Horizons Training, we aim to empower individuals and
-            organizations to thrive in an ever-evolving world. Through our
-            dynamic programs, we ignite passion, creativity, and resilience in
-            every learner.
-          </p>
-          <div className="grid md:grid-cols-3 gap-8 mt-12">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={{
+              hidden: { opacity: 0, scale: 0.8 },
+              visible: {
+                opacity: 1,
+                scale: 1,
+                transition: { duration: 0.6, staggerChildren: 0.2 },
+              },
+            }}
+            className="mission-items grid md:grid-cols-3 gap-10 mt-10"
+          >
             {missionItems.map((item, index) => (
-              <div
+              <motion.div
                 key={index}
-                className="bg-dark-purple-light p-6 rounded-lg"
+                variants={{
+                  hidden: { opacity: 0, y: 50 },
+                  visible: { opacity: 1, y: 0 },
+                }}
+                className="mission-card p-8 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
+                style={{
+                  backgroundColor: "var(--white)",
+                  overflow: "visible",
+                  border: "1px solid var(--dogwood-rose)",
+                }}
               >
-                <h3 className="text-2xl font-bold text-dogwood-rose mb-4">
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="mission-image w-full h-64 object-cover rounded-lg mb-6"
+                />
+                <h3 className="mission-title text-2xl font-bold mb-4" style={{ color: "var(--dogwood-rose)" }}>
                   {item.title}
                 </h3>
-                <p className="text-ghost-white">{item.description}</p>
-              </div>
+                <p className="mission-description text-base text-gray-700">{item.description}</p>
+              </motion.div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Team Section */}
-      <section className="py-20 px-6">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-dogwood-rose text-center mb-8">
-            Meet Our Team
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {teamMembers.map((team, index) => (
-              <div key={index} className="text-center">
-                <img
-                  src={team.image}
-                  alt={team.name}
-                  className="w-40 h-40 object-cover rounded-full mx-auto mb-4"
-                />
-                <h3 className="text-2xl font-bold text-dogwood-rose">
-                  {team.name}
-                </h3>
-                <p className="text-lg text-ghost-white">{team.position}</p>
-              </div>
-            ))}
-          </div>
+          </motion.div>
         </div>
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 px-6">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-4xl font-bold text-dogwood-rose text-center mb-8">
-            Frequently Asked Questions
-          </h2>
-          <div className="space-y-4">
-            {faqs.map((faq, index) => (
-              <div key={index} className="border-b border-ghost-white pb-4">
-                <button
+      <section className="faq-section py-20 px-6">
+  <div className="py-4 bg-white">
+    <div className="max-w-screen-md mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-between">
+      <div className="text-center">
+        <h3 className="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight text-gray-900">
+          Frequently Asked <span className="text-dogwood-rose">Questions</span>
+        </h3>
+      </div>
+
+      <div className="mt-20">
+        <ul>
+          {faqs.map((faq, index) => (
+            <li key={index} className="text-left mb-10">
+              <div className="flex flex-row items-start mb-5">
+                <div
+                  className="hidden sm:flex items-center justify-center p-3 mr-3 rounded-full bg-dogwood-rose text-white border-4 border-white text-xl font-semibold cursor-pointer"
                   onClick={() => toggleFAQ(index)}
-                  className="w-full text-left focus:outline-none"
                 >
-                  <h3 className="text-2xl font-bold text-dogwood-rose">
-                    {faq.question}
-                  </h3>
-                </button>
-                {activeFAQ === index && (
-                  <p className="mt-2 text-ghost-white">{faq.answer}</p>
-                )}
+                  <svg width="30px" fill="white" height="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <g data-name="Layer 2">
+                      <g data-name="menu-arrow">
+                        <rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"></rect>
+                        <path d="M17 9A5 5 0 0 0 7 9a1 1 0 0 0 2 0 3 3 0 1 1 3 3 1 1 0 0 0-1 1v2a1 1 0 0 0 2 0v-1.1A5 5 0 0 0 17 9z"></path>
+                        <circle cx="12" cy="19" r="1"></circle>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div className="bg-gray-100 p-5 px-10 w-full flex items-center cursor-pointer" onClick={() => toggleFAQ(index)}>
+                  <h4 className="text-md leading-6 font-medium text-gray-900">{faq.question}</h4>
+                </div>
               </div>
-            ))}
+
+              {activeFAQ === index && (
+                <div className="flex flex-row items-start">
+                  <div className="bg-purple-200 p-5 px-10 w-full flex items-center">
+                    <p className="text-gray-700 text-sm">{faq.answer}</p>
+                  </div>
+                  <div className="hidden sm:flex items-center justify-center p-3 ml-3 rounded-full bg-dogwood-rose text-white border-4 border-white text-xl font-semibold">
+                    <svg
+                      height="25px"
+                      fill="white"
+                      version="1.1"
+                      id="Layer_1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      x="0px"
+                      y="0px"
+                      viewBox="0 0 295.238 295.238"
+                      xmlSpace="preserve"
+                    >
+                      <g>
+                        <g>
+                          <g>
+                            <path d="M277.462,0.09l-27.681,20.72l-27.838,64.905h-22.386l-8.79-19.048h5.743c10.505,0,19.048-8.452,19.048-18.957V28.571h9.524V0H196.51v28.571h9.524V47.71c0,5.248-4.271,9.433-9.524,9.433h-10.138L174.2,30.81l14.581-7.267L141.038,3.095l-11.224,39.281c-0.305-23.371-19.386-42.29-42.829-42.29c-23.633,0-42.857,19.224-42.857,42.857c0,14.281,7.233,27.676,19.048,35.595v7.176H51.643L50.9,89.619c-2.314,12.005-2.529,24.343-0.638,36.648l-32.486,57.905l35.876,8.195v60.014h47.619v42.857h114.286v-66.357c33.333-23.581,52.371-61.495,52.343-101.943l0.01-17.371c0-6.548-0.605-13.276-1.824-19.905l-0.705-3.948h-9.348l21.429-51.338V0.09z M206.033,19.138V9.614h9.524v9.524H206.033z M189.067,85.714h-18.062l-8.657-19.048h17.929L189.067,85.714z M147.219,16.119l18.929,8.11l-4.467,2.19l14.2,30.724h-17.862l-11.605-25.471l-4.262,2.152L147.219,16.119z M160.543,85.715h-21.176v-9.433c0-5.252,4.271-9.614,9.524-9.614h2.995v-0.001L160.543,85.715z M141.843,44.652l5.776,12.71c-9.905,0.667-17.776,8.848-17.776,18.919v9.433h-19.048v-7.176c9.529-6.386,15.995-16.352,18.176-27.452L141.843,44.652z M53.653,42.948c0-18.376,14.957-33.333,33.333-33.333c18.376,0,33.333,14.957,33.333,33.333c0,11.829-6.39,22.881-16.671,28.838l-2.376,1.371v12.557h-9.524V56.352c5.529-1.971,9.524-7.21,9.524-13.41c0-7.876-6.41-14.286-14.286-14.286c-7.876,0-14.286,6.411-14.286,14.287c0,6.2,3.995,11.438,9.524,13.41v29.362H72.7V73.157l-2.376-1.376C60.043,65.824,53.653,54.776,53.653,42.948z M86.986,47.71c-2.629,0-4.762-2.139-4.762-4.762c0-2.629,2.133-4.762,4.762-4.762c2.629,0,4.762,2.133,4.762,4.762S89.615,47.71,86.986,47.71z M257.366,95.239c0.691,4.761,1.039,9.59,1.039,14.285l0.01,17.405c0.029,38.148-18.795,73.871-50.286,95.552l-2.095,1.429v61.805h-95.238v-42.857h-47.62v-58.086l-30.862-7.043l27.876-49.7l-0.271-1.7c-1.771-10.419-1.871-21.567-0.333-31.09h3.59h47.619H257.366z M245.714,85.714H232.3l23.738-55.343l10.557,5.257L245.714,85.714z M267.938,25.714l-5.267-2.633l5.267-3.943V25.714z"></path>
+                            <path d="M96.51,123.81c-7.876,0-14.286-4.762-14.286-14.286H72.7c0,14.286,10.681,23.81,23.81,23.81c13.129,0,23.81-9.524,23.81-23.81h-9.524C110.795,119.048,104.386,123.81,96.51,123.81z"></path>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              )}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+      {/* Contact Us Section */}
+      <section className="bg-white dark:bg-gray-900 py-20">
+        <div className="container px-6 py-12 mx-auto">
+          <div className="text-center">
+            <p className="font-medium text-dogwood-rose dark:text-dogwood-rose">Contact us</p>
+            <h1 className="mt-2 text-2xl font-semibold text-gray-800 md:text-3xl dark:text-white">Get in touch</h1>
+            <p className="mt-3 text-gray-500 dark:text-gray-400">Our friendly team is always here to chat.</p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-12 mt-10 md:grid-cols-2 lg:grid-cols-3">
+            <div className="flex flex-col items-center justify-center text-center">
+              <span className="p-3 text-dogwood-rose rounded-full bg-blue-100/80 dark:bg-gray-800">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a 2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                </svg>
+              </span>
+              <h2 className="mt-4 text-lg font-medium text-gray-800 dark:text-white">Email</h2>
+              <p className="mt-2 text-gray-500 dark:text-gray-400">Our friendly team is here to help.</p>
+              <p className="mt-2 text-dogwood-rose dark:text-dogwood-rose">cairo.sales@newhorizons.com</p>
+            </div>
+
+            <div className="flex flex-col items-center justify-center text-center">
+              <span className="p-3 text-dogwood-rose rounded-full bg-blue-100/80 dark:bg-gray-800">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                </svg>
+              </span>
+              <h2 className="mt-4 text-lg font-medium text-gray-800 dark:text-white">Office</h2>
+              <p className="mt-2 text-gray-500 dark:text-gray-400">Come say hello at our office</p>
+              <p className="mt-2 text-dogwood-rose dark:text-dogwood-rose">99 Mostafa El-Nahaas, Floor 6, Nasr City, Cairo, 11461</p>
+            </div>
+
+            <div className="flex flex-col items-center justify-center text-center">
+              <span className="p-3 text-dogwood-rose rounded-full bg-blue-100/80 dark:bg-gray-800">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                </svg>
+              </span>
+              <h2 className="mt-4 text-lg font-medium text-gray-800 dark:text-white">Phone</h2>
+              <p className=" mt-2 text-gray-500 dark:text-gray-400">Call us anytime</p>
+              <p className="mt-2 text-dogwood-rose dark:text-dogwood-rose">02 22718620 - 02 22718615</p>
+            </div>
           </div>
         </div>
-      </section>
-
-      {/* Contact Us */}
-      <section className="bg-gradient-to-br from-dark-purple to-russian-violet py-20 px-6 text-center">
-        <h2 className="text-4xl font-bold text-dogwood-rose mb-4">
-          Contact Us Today
-        </h2>
-        <p className="text-lg text-ghost-white mb-8">
-          99 Mostafa El-Nahaas, Floor 6, Al Manteqah Ath Thamenah, Nasr City,
-          Cairo, 11461 <br />
-          Phone: 02 22718615 - 02 22718620 |{" "}
-          <a
-            href="mailto:cairo.sales@newhorizons.com"
-            className="underline text-dogwood-rose"
-          >
-            cairo.sales@newhorizons.com
-          </a>
-        </p>
-        <button className="bg-dogwood-rose hover:bg-dogwood-rose-light text-white py-4 px-8 rounded-lg font-bold">
-          Email Us
-        </button>
       </section>
     </div>
   );
