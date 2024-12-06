@@ -325,7 +325,7 @@ const ResourceContent = () => {
           </a>
           <a
             className="link-hover"
-            href="#"
+            href="/CertificationVerification"
             onMouseEnter={() => setIsLearningActive(false)}
           >
             Certification Verification

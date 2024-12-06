@@ -13,6 +13,7 @@ import AboutUs from "./components/AboutUs";
 import GovProjects from "./components/GovProjects";
 import Webinars from './components/Webinars';
 import Register from './components/Register';
+import CertificationVerification from './components/CertificationVerification';
 import LearningMethods from './components/LearningMethods';
 import CropProjects from "./components/CropProjects";
 
@@ -29,6 +30,7 @@ function App() {
         <Route path="/success" element={<Success />} />
 		<Route path="/learning-methods" element={<LearningMethods />} />
 		<Route path="/webinars" element={<Webinars />} />
+		<Route path="/CertificationVerification" element={<CertificationVerification />} />
 
 		<Route path="/register/:id" element={<Register />} />
         <Route path="/PartnersAndAuthorizations" element={<PartnersAndAuthorizations />} />
