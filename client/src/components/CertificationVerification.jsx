@@ -51,7 +51,7 @@ const CertificationVerification = () => {
       </div>
 
       {/* Certification Verification Form */}
-      <div className="w-full max-w-lg bg-white bg-opacity-90 shadow-lg rounded-lg p-6">
+      <div className="w-full max-w-lg bg-white bg-opacity-90 shadow-lg rounded-lg p-6 mb-5">
         <h2 className="text-2xl font-bold text-gray-800 text-center mb-4">
           Certification Verification
         </h2>
