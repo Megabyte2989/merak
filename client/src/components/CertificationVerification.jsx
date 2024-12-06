@@ -33,25 +33,30 @@ const CertificationVerification = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-dark-purple  to-dogwood-rose flex flex-col items-center justify-center px-4 py-8">
+    <div
+      className="min-h-screen bg-cover bg-center flex flex-col items-center justify-center px-4"
+      style={{
+        backgroundImage: "url('https://images.unsplash.com/photo-1571624436279-b272aff752b5?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')", // Replace with your image path
+      }}
+    >
       {/* Marketing Section */}
-      <div className="text-center text-white mb-10 max-w-3xl">
-        <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
-          Empower Your Future with Verified Certifications
+      <div className="text-center text-dark-purple mb-8 max-w-2xl bg-white bg-opacity-70 p-6 rounded-lg">
+        <h1 className="text-3xl md:text-5xl font-bold leading-tight">
+          Empowering Future Tech Leaders
         </h1>
-        <p className="text-lg md:text-xl font-light">
-          Unlock career opportunities by showcasing your achievements. At New
-          Horizons Tech Training, we believe in building a stronger tomorrow.
+        <p className="mt-4 text-lg md:text-xl">
+          Verify your certifications and showcase your skills. New Horizons
+          Tech Training is your gateway to a brighter career.
         </p>
       </div>
 
       {/* Certification Verification Form */}
-      <div className="w-full max-w-md bg-white bg-opacity-90 shadow-2xl rounded-lg p-8">
+      <div className="w-full max-w-lg bg-white bg-opacity-90 shadow-lg rounded-lg p-6">
         <h2 className="text-2xl font-bold text-gray-800 text-center mb-4">
-          Verify Your Certification
+          Certification Verification
         </h2>
         <p className="text-gray-600 text-center mb-6">
-          Enter your certification code below to verify its authenticity.
+          Enter the certification code below to verify its authenticity.
         </p>
         <form onSubmit={handleVerification} className="space-y-4">
           <div>
@@ -67,16 +72,16 @@ const CertificationVerification = () => {
               name="certCode"
               value={certCode}
               onChange={(e) => setCertCode(e.target.value)}
-              className="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-purple-500 focus:border-purple-500 sm:text-sm"
+              className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
               placeholder="Enter code here"
               required
             />
           </div>
           <button
             type="submit"
-            className="w-full py-3 px-4 bg-purple-600 text-white font-medium rounded-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2"
+            className="w-full py-2 px-4 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
           >
-            Verify Certification
+            Verify
           </button>
         </form>
 
