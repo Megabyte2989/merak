@@ -1,180 +1,214 @@
-import React from "react";
+import React, { useState } from "react";
 
-function AboutUs() {
+const AboutUs = () => {
+  const [activeFAQ, setActiveFAQ] = useState(null);
+
+  const toggleFAQ = (index) => {
+    setActiveFAQ(activeFAQ === index ? null : index);
+  };
+
+  const missionItems = [
+    {
+      title: "Empowerment",
+      description:
+        "Empowering individuals to achieve their full potential through quality education.",
+    },
+    {
+      title: "Innovation",
+      description:
+        "Continuously updating our programs to include the latest industry trends.",
+    },
+    {
+      title: "Community",
+      description:
+        "Building a supportive community for learners and professionals alike.",
+    },
+  ];
+
+  const teamMembers = [
+    {
+      name: "Ahmed Khaled",
+      position: "Chief Executive Officer",
+      image: "https://via.placeholder.com/150",
+    },
+    {
+      name: "Sara Ali",
+      position: "Head of Training",
+      image: "https://via.placeholder.com/150",
+    },
+    {
+      name: "Mohamed Hassan",
+      position: "Lead Instructor",
+      image: "https://via.placeholder.com/150",
+    },
+  ];
+
+  const faqs = [
+    {
+      question: "What types of courses do you offer?",
+      answer:
+        "We offer a wide range of courses in technical and business applications.",
+    },
+    {
+      question: "Do you offer online classes?",
+      answer:
+        "Yes, we offer both in-person and online classes to suit your preferences.",
+    },
+    {
+      question: "How can I register for a course?",
+      answer:
+        "You can register by contacting us via phone or email, or by visiting our website.",
+    },
+  ];
+
   return (
-    <div>
-      {/* aboutUs brief */}
-      <div className="pt-20 pb-12 bg-russian-violet">
-        <div className="container mx-auto">
-          <h1 className="text-4xl md:text-7xl leading-none font-bold text-center text-white">
-            What Are We About?
-            <span className="block mx-auto mt-4 h-[2px] w-20 bg-dogwood-rose"></span>
-          </h1>
+    <div className="bg-raisin-black text-white">
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-b from-white to-dark-purple text-center py-20 px-6">
+        <h1 className="text-5xl md:text-6xl font-extrabold text-dogwood-rose mb-6 leading-tight">
+          Discover New Horizons
+        </h1>
+        <p className="text-lg md:text-xl text-ghost-white max-w-2xl mx-auto">
+          Your trusted partner in professional training and personal growth.
+          Elevate your potential with cutting-edge programs designed to inspire
+          and transform.
+        </p>
+        <img
+          src="https://via.placeholder.com/1000x400"
+          alt="Hero image"
+          className="mx-auto mt-10 rounded-lg shadow-lg w-full md:w-3/4 object-cover"
+        />
+      </section>
 
-          <div className="md:grid grid-cols-2 md:gap-6 px-3 pt-24">
-            <div className="leading-7 flex flex-col justify-center">
-              <h3 className="text-2xl font-semibold pb-3 text-white">
-                Local Training
-              </h3>
-              <p className="pb-5 text-white">
-                With a convenient location in Cairo, New Horizons provides
-                classes on a variety of technical and business applications.
-              </p>
-              <p className="text-white">
-                Because we're local, we understand the needs of business and
-                individuals in our community. Whether you choose to take classes
-                in person or online, you're always welcome to call or stop by.
-              </p>
-            </div>
+      {/* About New Horizons Cairo */}
+      <section className="py-20 px-6 bg-dark-purple-light">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-4xl font-bold text-dogwood-rose mb-8">
+            About New Horizons Cairo
+          </h2>
+          <p className="text-lg text-ghost-white leading-relaxed">
+            Located conveniently in Cairo, New Horizons provides a variety of
+            technical and business applications training. Whether you prefer
+            in-person or online classes, we are here to serve the local
+            community's needs.
+          </p>
+          <ul className="list-disc list-inside text-left mt-6">
+            <li>
+              <strong>Local Training:</strong> Classes tailored for Cairo’s
+              business and individual needs.
+            </li>
+            <li>
+              <strong>Large Selection of Courses:</strong> From beginner
+              applications to advanced technical skills.
+            </li>
+            <li>
+              <strong>Innovative Learning Methods:</strong> Customized classes,
+              online or on-site.
+            </li>
+          </ul>
+        </div>
+      </section>
 
-            <div className="relative w-full md:flex justify-center items-center hidden">
-              <img className="z-10" src="aboutUs.jpg" alt="aboutUs" />
-              <div className="absolute inset-0 before:content-[''] before:absolute before:bg-dogwood-rose before:w-10  before:h-full before:-left-6 before:bottom-10 before:z-20"></div>
-              <div className="absolute inset-0 after:content-[''] after:absolute after:bg-dogwood-rose after:w-14 after:h-full after:-right-10 after:top-24 after:z-0"></div>
-            </div>
+      {/* Mission Section */}
+      <section className="bg-raisin-black-light py-20 px-6">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-4xl font-bold text-dogwood-rose mb-8">
+            Our Mission
+          </h2>
+          <p className="text-lg text-ghost-white leading-relaxed max-w-3xl mx-auto">
+            At New Horizons Training, we aim to empower individuals and
+            organizations to thrive in an ever-evolving world. Through our
+            dynamic programs, we ignite passion, creativity, and resilience in
+            every learner.
+          </p>
+          <div className="grid md:grid-cols-3 gap-8 mt-12">
+            {missionItems.map((item, index) => (
+              <div
+                key={index}
+                className="bg-dark-purple-light p-6 rounded-lg"
+              >
+                <h3 className="text-2xl font-bold text-dogwood-rose mb-4">
+                  {item.title}
+                </h3>
+                <p className="text-ghost-white">{item.description}</p>
+              </div>
+            ))}
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* informatoin */}
-      <div className="pt-20 pb-12 bg-white">
-        <div className="container mx-auto">
-          <div className="lg:grid grid-cols-3 gap-5 px-3">
-            <div className="leading-7 flex flex-col item-center my-5 lg:my-0 bg-ghost-white rounded-xl lg:min-h-[564px]">
-              <h2 className="text-xl bg-dark-purple text-white font-semibold p-5 rounded-xl">
-                Large Selection of Courses
-              </h2>
-              <div className=" p-8 ">
-                <p className="pb-5">
-                  New Horizons Cairo offers an extensive selection of
-                  vendor-authorized training classes for top technology
-                  providers like Adobe, Cisco, Citrix, Microsoft, and VMware.
-                </p>
-                <p className="pb-5 font-bold">
-                  Find your desired training with:
-                </p>
-                <ul className="list-disc">
-                  <li className="p-3">
-                    Application Courses - Beginner to advanced skills in major
-                    business applications
-                  </li>
-                  <li className="p-3">
-                    Technical Skills Courses - Designed to advance your IT
-                    skills
-                  </li>
-                  <li className="p-3">
-                    Certification Courses - Classes to help you prepare for
-                    certification
-                  </li>
-                  <li className="p-3">
-                    Business Skills Courses - Improve your employee business
-                    skills
-                  </li>
-                </ul>
+      {/* Team Section */}
+      <section className="py-20 px-6">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-dogwood-rose text-center mb-8">
+            Meet Our Team
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            {teamMembers.map((team, index) => (
+              <div key={index} className="text-center">
+                <img
+                  src={team.image}
+                  alt={team.name}
+                  className="w-40 h-40 object-cover rounded-full mx-auto mb-4"
+                />
+                <h3 className="text-2xl font-bold text-dogwood-rose">
+                  {team.name}
+                </h3>
+                <p className="text-lg text-ghost-white">{team.position}</p>
               </div>
-            </div>
-
-            <div className="leading-7 flex flex-col item-center my-5 lg:my-0 bg-ghost-white rounded-xl lg:min-h-[564px]">
-              <h2 className="text-xl bg-dark-purple text-white font-semibold p-5 rounded-xl">
-                Innovative & Flexible Learning Methods
-              </h2>
-              <div className=" p-8 ">
-                <p className="pb-5">
-                  New Horizons of Cairo understands that not everyone's learning
-                  needs or preferred methods are the same. Therefore, our
-                  flexible training approach gives us the ability to customize
-                  dedicated classes to satisfy specific needs.
-                </p>
-                <p className="pb-5 font-bold">We offer:</p>
-                <ul className="list-disc">
-                  <li className="p-3">
-                    <a className="text-dogwood-rose" href="#">
-                      Online LIVE
-                    </a>{" "}
-                    - Online classes with the live interaction of an instructor
-                    &amp; fellow students
-                  </li>
-                  <li className="p-3">
-                    <a className="text-dogwood-rose" href="#">
-                      On-Site Training
-                    </a>{" "}
-                    - We bring the classroom to you
-                  </li>
-                  <li className="p-3">
-                    <a className="text-dogwood-rose" href="#">
-                      Private Classes
-                    </a>{" "}
-                    - Train large groups of employees with custom solutions
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="leading-7 flex flex-col item-center my-5 lg:my-0 bg-ghost-white rounded-xl lg:min-h-[564px]">
-              <h2 className="text-xl bg-dark-purple text-white font-semibold p-5 rounded-xl">
-                Certified Instruction
-              </h2>
-              <div className=" p-8 ">
-                <p className="pb-5">
-                  New Horizons Computer Learning Centers of Cairo courses are
-                  taught by experienced, vendor-certified instructors. This
-                  means you are getting the most up to date information to apply
-                  to real situations.
-                </p>
-                <p className="pb-5 font-bold">Limitless Possibilities</p>
-                <p>
-                  Whether you are looking to increase your technical knowledge
-                  or pass a professional certification exam, New Horizons of
-                  Cairo will help you get there.
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* statics */}
-      <div className="pt-20 pb-16 bg-russian-violet">
-        <div className="container mx-auto">
-          <div className="leading-7 flex flex-col item-center my-5 lg:my-0 rounded-xl ">
-            <h2 className="text-3xl md:text-5xl text-center font-bold p-5 pb-10 rounded-xl text-white">
-              New Horizons Training Statistics
-              <span className="block mx-auto mt-4 h-[2px] w-20 bg-dogwood-rose"></span>
-            </h2>
-            <div className=" p-8 flex flex-col justify-center item-center">
-              <p className="pb-5 text-3xl font-semibold text-white">
-                Demonstrated Results:
-              </p>
-              <ul className="pb-7 list-disc text-white">
-                <li className="p-3 ">
-                  70% of skills acquired at New Horizons are applied on the job
-                  within the first 8 weeks
-                </li>
-                <li className="p-3">
-                  59% of New Horizons students say training received was
-                  critical to their job performance
-                </li>
-                <li className="p-3">
-                  44% of time on the job is spent applying new knowledge and
-                  skills gained from New Horizons
-                </li>
-              </ul>
-              <p className="text-white">
-                With assistance from your own Account Executive, we can help you
-                manage your learning objectives and deliver cost effective
-                solutions that exceed your expectations. Contact us today at{" "}
-                <span className="text-dogwood-rose">00202 22718615 </span> or{" "}
-                <span className="text-dogwood-rose">
-                  cairo.sales@newhorizons.com
-                </span>{" "}
-                to get started!
-              </p>
-            </div>
+      {/* FAQ Section */}
+      <section className="py-20 px-6">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-4xl font-bold text-dogwood-rose text-center mb-8">
+            Frequently Asked Questions
+          </h2>
+          <div className="space-y-4">
+            {faqs.map((faq, index) => (
+              <div key={index} className="border-b border-ghost-white pb-4">
+                <button
+                  onClick={() => toggleFAQ(index)}
+                  className="w-full text-left focus:outline-none"
+                >
+                  <h3 className="text-2xl font-bold text-dogwood-rose">
+                    {faq.question}
+                  </h3>
+                </button>
+                {activeFAQ === index && (
+                  <p className="mt-2 text-ghost-white">{faq.answer}</p>
+                )}
+              </div>
+            ))}
           </div>
         </div>
-      </div>
+      </section>
+
+      {/* Contact Us */}
+      <section className="bg-gradient-to-br from-dark-purple to-russian-violet py-20 px-6 text-center">
+        <h2 className="text-4xl font-bold text-dogwood-rose mb-4">
+          Contact Us Today
+        </h2>
+        <p className="text-lg text-ghost-white mb-8">
+          99 Mostafa El-Nahaas, Floor 6, Al Manteqah Ath Thamenah, Nasr City,
+          Cairo, 11461 <br />
+          Phone: 02 22718615 - 02 22718620 |{" "}
+          <a
+            href="mailto:cairo.sales@newhorizons.com"
+            className="underline text-dogwood-rose"
+          >
+            cairo.sales@newhorizons.com
+          </a>
+        </p>
+        <button className="bg-dogwood-rose hover:bg-dogwood-rose-light text-white py-4 px-8 rounded-lg font-bold">
+          Email Us
+        </button>
+      </section>
     </div>
   );
-}
+};
 
 export default AboutUs;
