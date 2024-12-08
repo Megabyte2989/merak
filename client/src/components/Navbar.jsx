@@ -10,10 +10,10 @@ function Navbar() {
 	useEffect(() => {
 		const handlefont = () => {
 			const scrollY = window.scrollY;
-			const newFont = Math.max(0.8, 1 - window.scrollY / 200);
+			const newFont = Math.max(0.8, 1 - scrollY / 200);
 			setFontNav(newFont);
 
-			const newPhotoWidth = Math.max(10, 18 - window.scrollY / 100);
+			const newPhotoWidth = Math.max(10, 18 - scrollY / 100);
 			setPhotoWidth(newPhotoWidth);
 			setNavColor('#EBA3B3');
 			setFontcolor('white');
@@ -26,10 +26,7 @@ function Navbar() {
 		};
 
 		window.addEventListener('scroll', handlefont);
-
-		return () => {
-			window.removeEventListener('scroll', handlefont);
-		};
+		return () => window.removeEventListener('scroll', handlefont);
 	}, []);
 
 	return (
@@ -59,6 +56,7 @@ function Navbar() {
 					style={{
 						fontSize: `${fontNav}rem`,
 						transition: 'font-size 0.2s ease',
+						color: `${textColor}`,
 					}}
 				>
 					<Example />

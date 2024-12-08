@@ -40,13 +40,13 @@ p {
 }
 
 .App {
-	min-height: 100vh;
+	min-block-size: 100vh;
 	display: flex;
 	flex-direction: column;
-	margin-left: auto;
-	margin-right: auto;
-	padding-left: 1rem;
-	padding-right: 1rem;
+	margin-inline-start: auto;
+	margin-inline-end: auto;
+	padding-inline-start: 1rem;
+	padding-inline-end: 1rem;
 }
 
 .buttonMain {
