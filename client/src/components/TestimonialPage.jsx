@@ -218,3 +218,5 @@ const TestimonialPage = () => {
 };
 
 export default TestimonialPage;
+const rootStyles = document.documentElement.style;
+rootStyles.setProperty("scroll-behavior", "smooth");

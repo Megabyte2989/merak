@@ -11,6 +11,10 @@ import Gallery from './components/Gallery';
 import PartnersAndAuthorizations from './components/PartnersAndAuthorizations';
 import AboutUs from "./components/AboutUs";
 import GovProjects from "./components/GovProjects";
+import Webinars from './components/Webinars';
+import Register from './components/Register';
+import CertificationVerification from './components/CertificationVerification';
+import LearningMethods from './components/LearningMethods';
 import CropProjects from "./components/CropProjects";
 
 function App() {
@@ -24,11 +28,17 @@ function App() {
         <Route path="/testimonials" element={<TestimonialPage />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/success" element={<Success />} />
+		<Route path="/learning-methods" element={<LearningMethods />} />
+		<Route path="/webinars" element={<Webinars />} />
+		<Route path="/CertificationVerification" element={<CertificationVerification />} />
+
+		<Route path="/register/:id" element={<Register />} />
         <Route path="/PartnersAndAuthorizations" element={<PartnersAndAuthorizations />} />
 						<Route path="/" element={<Landing />} />
                       <Route path="/aboutUs" element={<AboutUs />} />
           <Route path="/gov-projects" element={<GovProjects />} />
           <Route path="/crop-projects" element={<CropProjects />} />
+		
 						{/* Uncomment or add additional routes as needed */}
 						{/* <Route path="/contact-us" element={<ContactUs />} /> */}
 						{/* <Route path="/timer" element={<Timer />} /> */}

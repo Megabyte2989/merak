@@ -65,7 +65,7 @@ function Example() {
           Resources
           <FontAwesomeIcon icon={faChevronDown} className="ml-1" />
         </MobileFlyoutLink>
-        <MobileFlyoutLink href="#">Authorization & Partner</MobileFlyoutLink>
+        <MobileFlyoutLink href="/PartnersAndAuthorizations">Authorization & Partner</MobileFlyoutLink>
         <MobileFlyoutLink href="#">Contact Us</MobileFlyoutLink>
         <MobileFlyoutLink href="#">Log in</MobileFlyoutLink>
       </div>
@@ -83,7 +83,8 @@ function Example() {
           Resources
           <FontAwesomeIcon icon={faChevronDown} className="ml-1" />
         </FlyoutLink>
-        <FlyoutLink href="#">Authorization & Partner</FlyoutLink>
+
+        <FlyoutLink href="/PartnersAndAuthorizations" >Authorization & Partner</FlyoutLink>
         <FlyoutLink href="#">Contact Us</FlyoutLink>
         <FlyoutLink href="#">Log in</FlyoutLink>
       </div>
@@ -302,7 +303,7 @@ const ResourceContent = () => {
           <a
             onMouseEnter={() => setIsLearningActive(true)}
             className={`link-hover ${isLearningActive ? "link-active" : ""} duration-75`}
-            href="#"
+            href="learning-methods"
           >
             Learning Methods
           </a>
@@ -310,14 +311,7 @@ const ResourceContent = () => {
           {/* Other Links */}
           <a
             className="link-hover"
-            href="#"
-            onMouseEnter={() => setIsLearningActive(false)}
-          >
-            Blog
-          </a>
-          <a
-            className="link-hover"
-            href="#"
+            href="/Webinars"
             onMouseEnter={() => setIsLearningActive(false)}
           >
             Webinars
@@ -331,7 +325,7 @@ const ResourceContent = () => {
           </a>
           <a
             className="link-hover"
-            href="#"
+            href="/CertificationVerification"
             onMouseEnter={() => setIsLearningActive(false)}
           >
             Certification Verification

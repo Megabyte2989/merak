@@ -2,91 +2,99 @@ import React from 'react';
 
 const PartnersAndAuthorizations = () => {
   return (
-    <div className="bg-raisin-black text-white min-h-screen py-10">
+    <div className="bg-gradient-to-b from-dark-purple to-[#000000] text-white min-h-screen py-10">
       <div className="max-w-7xl mx-auto px-6">
-        {/* Page Header */}
-        <header className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-dark-purple">
-            Partners and Authorizations
-          </h1>
-          <p className="mt-4 text-dogwood-rose">
-            New Horizons Cairo Learning Partners & Authorizations
-          </p>
-        </header>
-
-        {/* Introduction */}
-        <section className="mb-12 text-center">
-          <p className="text-lg leading-relaxed">
-            New Horizons Cairo is an authorized training partner for many
-            industry-recognized software and certification companies and
-            organizations. These partnerships allow New Horizons to deliver the
-            most up-to-date curriculum with specific standards set in alignment
-            with these top vendors.
-          </p>
+        {/* Hero Section */}
+        <section className="bg-[#ffffffb4] text-gray-800 py-28 rounded-lg shadow-lg mb-16">
+          <div className="max-w-screen-xl mx-auto px-4 gap-12 md:px-8">
+            <div className="space-y-5 max-w-4xl mx-auto text-center">
+              <h1 className="text-sm text-dogwood-rose font-medium md:text-base">
+                Collaborating with top vendors to provide world-class training
+              </h1>
+              <h2 className="text-4xl text-gray-900 font-extrabold mx-auto md:text-5xl">
+                New Horizons Cairo{' '}
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#020d70] to-[#94086a]">
+                  Partners & Authorizations
+                </span>
+              </h2>
+              <p className="text-gray-800 max-w-2xl mx-auto">
+                New Horizons Cairo is an authorized training partner <br /> for many industry-recognized software
+                and certification companies and <br /> organizations.
+              </p>
+              <div className="items-center justify-center gap-x-3 space-y-3 sm:flex sm:space-y-0">
+                <a href="#contact-page" className="block py-2 px-4 text-white font-medium bg-dogwood-rose duration-150 hover:bg-purple-900 rounded-lg shadow-lg hover:shadow-none">
+                  contact us now
+                </a>
+                <a href="#courses-section" className="block py-2 px-4 text-purple-900 hover:text-gray-800 hover:bg-gray-200 font-medium duration-150 active:bg-gray-100 border rounded-lg">
+                  Explore courses
+                </a>
+              </div>
+            </div>
+          </div>
         </section>
 
-        {/* Partners List */}
-        <section>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Partner Card */}
-            {[
-              {
-                title: 'Microsoft Learning Partner',
-                description:
-                  'Every Microsoft course at New Horizons Cairo follows Microsoft Office Curriculum (MOC), and is taught by Microsoft Certified instructors to ensure the best possible training in Microsoft products. We also accept Microsoft SATV vouchers.',
-                icon: 'microsoft-icon',
-              },
-              {
-                title: 'Cisco Learning Partner',
-                description:
-                  'Cisco learning partners are the only authorized sources for commercial Cisco training. This ensures instructors at New Horizons Cairo are distinctively qualified to provide Cisco authorized training and prepare you for Cisco Certification exams.',
-                icon: 'cisco-icon',
-              },
-              {
-                title: 'CompTIA Authorized Partner',
-                description:
-                  'As a member of the CompTIA Authorized Partner program, New Horizons Cairo delivers CompTIA-approved curriculum designed for industry-recognized CompTIA certifications, supporting successful entry or advancement into an IT career.',
-                icon: 'comptia-icon',
-              },
-              {
-                title: 'VMware Authorized Training Partner',
-                description:
-                  'New Horizons Cairo is a VMware training partner, preparing students to manage server and desktop virtualization while achieving VMware certifications. Learn from experts in virtualization and cloud infrastructure.',
-                icon: 'vmware-icon',
-              },
-              {
-                title: 'IBM Training Partner',
-                description:
-                  'New Horizons Cairo provides IBM authorized training on the design, installation, maintenance, and troubleshooting of IBM software and systems. Redeem your IBM Education Packs with us for top-tier training.',
-                icon: 'ibm-icon',
-              },
-              {
-                title: 'Citrix Learning Partner',
-                description:
-                  'New Horizons Cairo is a Citrix Authorized Learning Center. Our training equips you with real-world skills to enhance productivity with Citrix mobile technology solutions.',
-                icon: 'citrix-icon',
-              },
-            ].map((partner, index) => (
-              <div
-                key={index}
-                className="bg-dark-purple rounded-lg shadow-lg p-6 text-center"
-              >
-                <div className="mb-4">
-                  {/* Placeholder for icons */}
-                  <div
-                    className={`h-16 w-16 mx-auto bg-dogwood-rose rounded-full flex items-center justify-center`}
-                  >
-                    <span className="text-white text-xl font-bold">
-                      {partner.icon.split('-')[0][0]}
-                    </span>
+        <section className="py-12 ">
+          <div className="container mx-auto px-4">
+            <h2 className="text-center text-3xl font-bold mb-8">Our Trusted Partners</h2>
+            <p className="text-center text-lg text-[#ffffff] mb-12">
+              Collaborating with industry leaders to provide world-class training and certifications.
+            </p>
+            <div className="grid md:grid-cols-3 gap-10">
+              {/* Card component with hover effect */}
+              {[
+                {
+                  img: "microsoftlogo.jpg",
+                  title: "Microsoft Learning Partner",
+                  description: "Every Microsoft course at New Horizons Cairo follows Microsoft Office Curriculum (MOC), and is taught by Microsoft Certified instructors to ensure the best possible training in Microsoft products.",
+                  link: "https://www.microsoft.com/"
+                },
+                {
+                  img: "ciscologo.jpg",
+                  title: "Cisco Learning Partner",
+                  description: "Cisco learning partners are the only authorized sources for commercial Cisco training. This ensures instructors at New Horizons Cairo are distinctively qualified to provide Cisco authorized training.",
+                  link: "https://www.cisco.com/"
+                },
+                {
+                  img: "comptia.jpg",
+                  title: "CompTIA Authorized Partner",
+                  description: "As a member of the CompTIA Authorized Partner program, New Horizons Cairo delivers CompTIA-approved curriculum designed for industry-recognized CompTIA certifications.",
+                  link: "https://www.comptia.org/"
+                },
+                {
+                  img: "vmware.jpg",
+                  title: "VMware Authorized Training Partner",
+                  description: "New Horizons Cairo is a VMware training partner, preparing students to manage server and desktop virtualization while achieving VMware certifications.",
+                  link: "https://www.vmware.com/"
+                },
+                {
+                  img: "ibm.jpg",
+                  title: "IBM Training Partner",
+                  description: "New Horizons Cairo provides IBM authorized training on the design, installation, maintenance, and troubleshooting of IBM software and systems.",
+                  link: "https://www.ibm.com/"
+                },
+                {
+                  img: "citrix.jpg",
+                  title: "Citrix Learning Partner",
+                  description: "New Horizons Cairo is a Citrix Authorized Learning Center. Our training equips you with real-world skills to enhance productivity with Citrix mobile technology solutions.",
+                  link: "https://www.citrix.com/"
+                }
+              ].map((partner, index) => (
+                <div key={index} className="bg-[#ffffff] shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-2xl">
+                  <img
+                    src={partner.img} // replace with your actual image path
+                    alt={partner.title}
+                    className="w-full object-cover"
+                  />
+                  <div className="p-6">
+                    <h3 className="text-dark-purple text-xl font-semibold mb-4">{partner.title}</h3>
+                    <p className="text-gray-600 mb-4">
+                      {partner.description}
+                    </p>
+                    <a href={partner.link} className="text-dogwood-rose font-medium hover:text-russian-violet">learn more</a>
                   </div>
                 </div>
-                <h2 className="text-lg font-semibold text-russian-violet mb-4">
-                  {partner.title}
-                </h2>
-                <p className="text-sm leading-relaxed">{partner.description}</p>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </section>
       </div>
@@ -95,3 +103,7 @@ const PartnersAndAuthorizations = () => {
 };
 
 export default PartnersAndAuthorizations;
+
+/* Smooth Scroll CSS */
+const rootStyles = document.documentElement.style;
+rootStyles.setProperty("scroll-behavior", "smooth");

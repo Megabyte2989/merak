@@ -182,3 +182,5 @@ const Gallery = () => {
 };
 
 export default Gallery;
+const rootStyles = document.documentElement.style;
+rootStyles.setProperty("scroll-behavior", "smooth");
