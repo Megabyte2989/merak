@@ -7,16 +7,20 @@ import Gallery from './components/AboutUs/Gallery';
 import GovProjects from './components/AboutUs/GovProjects';
 import Success from './components/AboutUs/Success';
 import TestimonialPage from './components/AboutUs/TestimonialPage';
+import ContactUsMain from './components/ContactUs/ContactUsMain';
 import Foot from './components/Foot';
 import Landing from './components/Landing/Landing';
 import Navbar from './components/Navbar';
 import PartnersAndAuthorizations from './components/PartnersAndAuthorizations';
+import LearningMethods from './components/Resources/LearningMethods';
+import WeHire from './components/Resources/WeHire';
 
 function App() {
 	return (
 		<>
 			<BrowserRouter>
 				<Navbar />
+
 				<div className="flex flex-col min-h-screen mx-auto ">
 					<Routes>
 						{/* Define individual routes here */}
@@ -24,14 +28,16 @@ function App() {
 						<Route path="/gallery" element={<Gallery />} />
 						<Route path="/success" element={<Success />} />
 						<Route
-							path="/PartnersAndAuthorizations"
+							path="/Authorization-and-partner"
 							element={<PartnersAndAuthorizations />}
 						/>
 						<Route path="/" element={<Landing />} />
 						<Route path="/aboutUs" element={<AboutUs />} />
 						<Route path="/gov-projects" element={<GovProjects />} />
 						<Route path="/crop-projects" element={<CropProjects />} />
-						{/* <Route path="/contact-us" element={<ContactUs />} /> */}
+						<Route path="/contact-us" element={<ContactUsMain />} />
+						<Route path="/we-hire" element={<WeHire />} />
+						<Route path="/learning-methods" element={<LearningMethods />} />
 						{/* Uncomment or add additional routes as needed */}
 
 						{/* <Route path="/timer" element={<Timer />} /> */}

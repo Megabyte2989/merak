@@ -2,6 +2,7 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { AnimatePresence, motion } from 'framer-motion';
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Example() {
 	const [activeFlyout, setActiveFlyout] = useState(null);
@@ -16,20 +17,20 @@ function Example() {
 		<>
 			{' '}
 			<div
-				className="lg:hidden cursor-pointer "
+				className="lg:hidden cursor-pointer  "
 				onClick={() => {
 					setMenuOpen(!menuOpen);
 					setActiveFlyout(null);
 				}}
 			>
-				<div className="w-6 h-0.5 bg-black mb-1"></div>
-				<div className="w-6 h-0.5 bg-black mb-1"></div>
-				<div className="w-6 h-0.5 bg-black"></div>
+				<div className="w-6 h-0.5 bg-white mb-1"></div>
+				<div className="w-6 h-0.5 bg-white mb-1"></div>
+				<div className="w-6 h-0.5 bg-white"></div>
 			</div>
 			{/* MOBILE */}
 			<div
-				className={`lg:hidden absolute top-20 left-0 right-0 bg-white shadow-lg ${menuOpen ? 'block' : 'hidden'} p-5 flex items-center
-				justify-center flex-col bg-slate-600 gap-2`}
+				className={`lg:hidden absolute top-20 left-0 right-0 bg-dogwood-rose shadow-lg ${menuOpen ? 'block' : 'hidden'} p-5 flex items-center
+				justify-center flex-col gap-2`}
 			>
 				<MobileFlyoutLink
 					href="/aboutUs"
@@ -64,7 +65,9 @@ function Example() {
 					Resources
 					<FontAwesomeIcon icon={faChevronDown} className="ml-1" />
 				</MobileFlyoutLink>
-				<MobileFlyoutLink href="#">Authorization & Partner</MobileFlyoutLink>
+				<MobileFlyoutLink href="/Authorization-and-partner">
+					Authorization & Partner
+				</MobileFlyoutLink>
 				<MobileFlyoutLink href="/contact-us">Contact Us</MobileFlyoutLink>
 				<MobileFlyoutLink href="#">Log in</MobileFlyoutLink>
 			</div>
@@ -82,7 +85,9 @@ function Example() {
 					Resources
 					<FontAwesomeIcon icon={faChevronDown} className="ml-1" />
 				</FlyoutLink>
-				<FlyoutLink href="#">Authorization & Partner</FlyoutLink>
+				<FlyoutLink href="/Authorization-and-partner">
+					Authorization & Partner
+				</FlyoutLink>
 				<FlyoutLink href="/contact-us">Contact Us</FlyoutLink>
 				<FlyoutLink href="#">Log in</FlyoutLink>
 			</div>
@@ -99,8 +104,8 @@ const FlyoutLink = ({ children, href, FlyoutContent }) => {
 			onMouseLeave={() => setOpen(false)}
 			className="group relative h-fit w-fit"
 		>
-			<a
-				href={href}
+			<Link
+				to={href}
 				className={`relative duration-100 p-2 rounded-md font-medium font-sans
 				${!FlyoutContent ? 'hover:bg-dogwood-rose' : ''}
 				 ${!FlyoutContent ? 'hover:text-white' : ''} `}
@@ -117,7 +122,7 @@ const FlyoutLink = ({ children, href, FlyoutContent }) => {
 					}}
 					className=" absolute -bottom-2 -left-2 -right-2 lg:h-1 origin-left rounded-full bg-dogwood-rose transitions-transform duration-300 ease-out"
 				/>
-			</a>
+			</Link>
 			<AnimatePresence>
 				{showFlyout && (
 					<motion.div
@@ -178,36 +183,36 @@ const AboutUsContent = () => {
 	return (
 		<div className="w-[100vw] lg:w-64 bg-raisin-black text-white p-6 shadow-xl ">
 			<ul className="flex flex-col justify-center items-center">
-				<a
+				<Link
 					className="rounded-lg hover:bg-dogwood-rose hover:px-10 hover:py-2 duration-150"
-					href="/Testimonials"
+					to={'Testimonials'}
 				>
 					Testimonails
-				</a>
-				<a
+				</Link>
+				<Link
 					className="rounded-lg hover:bg-dogwood-rose hover:px-10 hover:py-2 duration-150"
-					href="/Success"
+					to={'Success'}
 				>
 					Sucess Stories
-				</a>
-				<a
+				</Link>
+				<Link
 					className="rounded-lg hover:bg-dogwood-rose hover:px-10 hover:py-2 duration-150"
-					href="/Gallery"
+					to={'Gallery'}
 				>
 					NH Gallery
-				</a>
-				<a
+				</Link>
+				<Link
 					className="rounded-lg hover:bg-dogwood-rose hover:px-10 hover:py-2 duration-150"
-					href="/gov-projects"
+					to={'gov-projects'}
 				>
 					Gov. Projects
-				</a>
-				<a
+				</Link>
+				<Link
 					className="rounded-lg hover:bg-dogwood-rose hover:px-10 hover:py-2 duration-150"
-					href="/crop-projects"
+					to={'crop-projects'}
 				>
 					Crop. Projects
-				</a>
+				</Link>
 			</ul>
 		</div>
 	);
@@ -222,29 +227,29 @@ const CoursesContent = () => {
 			<div className="col-span-4 border-r border-gray-300 p-1">
 				<ul className="flex flex-col space-y-2">
 					{/* Certifications */}
-					<a
+					<Link
 						onMouseEnter={() => setIsCertificationsActive(true)}
 						className={`link-hover ${isCertificationsActive ? 'link-active' : ''} duration-75`}
-						href="#"
+						to={''}
 					>
 						Certifications
-					</a>
+					</Link>
 
 					{/* Other Links */}
-					<a
+					<Link
 						className="link-hover"
-						href="#"
+						to={''}
 						onMouseEnter={() => setIsCertificationsActive(false)}
 					>
 						Promotions
-					</a>
-					<a
+					</Link>
+					<Link
 						className="link-hover"
-						href="#"
+						to={''}
 						onMouseEnter={() => setIsCertificationsActive(false)}
 					>
 						Schedules
-					</a>
+					</Link>
 				</ul>
 			</div>
 
@@ -254,33 +259,33 @@ const CoursesContent = () => {
 					isCertificationsActive ? 'visible-grid' : 'hidden-grid'
 				}`}
 			>
-				<a className="link-hover" href="#">
+				<Link className="link-hover" to={''}>
 					- Microsoft Office
-				</a>
-				<a className="link-hover" href="#">
+				</Link>
+				<Link className="link-hover" to={''}>
 					- Microsoft Technical
-				</a>
-				<a className="link-hover" href="#">
+				</Link>
+				<Link className="link-hover" to={''}>
 					- Technical Courses
-				</a>
-				<a className="link-hover" href="#">
+				</Link>
+				<Link className="link-hover" to={''}>
 					- Adobe Courses
-				</a>
-				<a className="link-hover" href="#">
+				</Link>
+				<Link className="link-hover" to={''}>
 					- Amazon Web Service
-				</a>
-				<a className="link-hover" href="#">
+				</Link>
+				<Link className="link-hover" to={''}>
 					- Business Courses
-				</a>
-				<a className="link-hover" href="#">
+				</Link>
+				<Link className="link-hover" to={''}>
 					- English Courses
-				</a>
-				<a className="link-hover" href="#">
+				</Link>
+				<Link className="link-hover" to={''}>
 					- AI Tracks
-				</a>
-				<a className="link-hover" href="#">
+				</Link>
+				<Link className="link-hover" to={''}>
 					- MCT
-				</a>
+				</Link>
 			</div>
 		</div>
 	);
@@ -295,43 +300,43 @@ const ResourceContent = () => {
 			<div className="col-span-4 border-r border-gray-300 p-1">
 				<ul className="flex flex-col space-y-2">
 					{/* Certifications */}
-					<a
+					<Link
 						onMouseEnter={() => setIsLearningActive(true)}
 						className={`link-hover ${isLearningActive ? 'link-active' : ''} duration-75`}
-						href="#"
+						to={'learning-methods'}
 					>
 						Learning Methods
-					</a>
+					</Link>
 
 					{/* Other Links */}
-					<a
+					<Link
 						className="link-hover"
-						href="#"
+						to={''}
 						onMouseEnter={() => setIsLearningActive(false)}
 					>
 						Blog
-					</a>
-					<a
+					</Link>
+					<Link
 						className="link-hover"
-						href="#"
+						to={''}
 						onMouseEnter={() => setIsLearningActive(false)}
 					>
 						Webinars
-					</a>
-					<a
+					</Link>
+					<Link
 						className="link-hover"
-						href="#"
+						to={'we-hire'}
 						onMouseEnter={() => setIsLearningActive(false)}
 					>
 						We hire
-					</a>
-					<a
+					</Link>
+					<Link
 						className="link-hover"
-						href="#"
+						to={''}
 						onMouseEnter={() => setIsLearningActive(false)}
 					>
 						Certification Verification
-					</a>
+					</Link>
 				</ul>
 			</div>
 
@@ -341,18 +346,18 @@ const ResourceContent = () => {
 					isLearningActive ? 'visible-grid' : 'hidden-grid'
 				}`}
 			>
-				<a className="link-hover" href="#">
+				<Link className="link-hover" to={''}>
 					- Instructor led training
-				</a>
-				<a className="link-hover" href="#">
+				</Link>
+				<Link className="link-hover" to={''}>
 					- On site training
-				</a>
-				<a className="link-hover" href="#">
+				</Link>
+				<Link className="link-hover" to={''}>
 					- Online any time
-				</a>
-				<a className="link-hover" href="#">
+				</Link>
+				<Link className="link-hover" to={''}>
 					- Online live
-				</a>
+				</Link>
 			</div>
 		</div>
 	);

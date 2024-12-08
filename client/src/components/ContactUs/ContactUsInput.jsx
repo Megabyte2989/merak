@@ -12,8 +12,8 @@ function ContactUsInput({
 	pattern,
 	readOnly = false,
 	inputMode,
+	onChange,
 }) {
-	const [inputValue, setInputValue] = useState(value); // State for controlled input
 	const [showError, setShowError] = useState(false);
 
 	const handleBlur = e => {
@@ -34,7 +34,7 @@ function ContactUsInput({
 	};
 
 	return (
-		<div className="m-4">
+		<div className="my-4">
 			<label htmlFor={name} className="block text-sm font-medium mb-1">
 				{title} {showError && <span className="text-red-500">*</span>}
 			</label>
@@ -43,11 +43,11 @@ function ContactUsInput({
 					id={name}
 					name={name}
 					placeholder={placeholder}
-					value={inputValue}
+					value={value}
 					className={`w-full px-3 py-2 border border-gray-300 rounded-2xl focus:outline-none focus:ring focus:ring-blue-300 bg-slate-100 ${className}`}
 					required={required}
 					onBlur={handleBlur}
-					onChange={handleChange}
+					onChange={onChange}
 					onFocus={() => setShowError(false)}
 				/>
 			) : (
@@ -60,11 +60,11 @@ function ContactUsInput({
 					contentEditable={edit}
 					placeholder={placeholder}
 					readOnly={readOnly}
-					value={inputValue}
+					value={value}
 					className={`w-full px-3 flex-1 py-2 border border-gray-300 rounded-2xl focus:outline-none focus:ring focus:ring-blue-300 bg-slate-100 ${className}`}
 					required={required}
 					onBlur={handleBlur}
-					onChange={handleChange}
+					onChange={onChange}
 					onFocus={() => setShowError(false)}
 				/>
 			)}

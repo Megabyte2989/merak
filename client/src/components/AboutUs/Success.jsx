@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 
 const Success = () => {
+	// TODO: Remove the share story Form
+
 	const [formSubmitted, setFormSubmitted] = useState(false);
 
 	const handleSubmit = e => {

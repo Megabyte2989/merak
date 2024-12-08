@@ -23,17 +23,27 @@ const testimonials = [
 
 function LandingSec7() {
 	const [currentIndex, setcurrentIndex] = useState(0);
+	const [isFading, setIsFading] = useState(false);
 
 	const handlePrevious = () => {
-		setcurrentIndex(prev =>
-			prev - 1 === -1 ? testimonials.length - 1 : prev - 1
-		);
+		setIsFading(true);
+		setTimeout(() => {
+			setcurrentIndex(prev =>
+				prev - 1 === -1 ? testimonials.length - 1 : prev - 1
+			);
+			setIsFading(false);
+		}, 500);
 	};
 
 	const handleNext = () => {
-		setcurrentIndex(prev => (prev + 1 === testimonials.length ? 0 : prev + 1));
+		setIsFading(true);
+		setTimeout(() => {
+			setcurrentIndex(prev =>
+				prev + 1 === testimonials.length ? 0 : prev + 1
+			);
+			setIsFading(false);
+		}, 500);
 	};
-
 	return (
 		<div className="px-5 py-5 sm:p-14 bg-dark-purple text-white text-center">
 			<h1 className="heading lg:text-5xl font-bold text-dogwood-rose">
@@ -46,8 +56,15 @@ function LandingSec7() {
 					className="lg:mb-32 mr-auto sm:mr-4 sm:mb-60 sm:text-[6rem] lg:text-[10rem]"
 				/>
 				<div className="flex flex-col sm:w-[60%] lg:w-[35%]">
-					<p className="">{testimonials[currentIndex].text}</p>
-					<p className="self-end mt-4 mr-4 lg:mt-4 lg:mr-10 text-gray-400 text-[1.0rem]">
+					<p
+						className={` transition-opacity duration-500 ${isFading ? 'opacity-0' : 'opacity-100'}`}
+					>
+						{testimonials[currentIndex].text}
+					</p>
+					<p
+						className={`self-end mt-4 mr-4 lg:mt-4 lg:mr-10 text-gray-400 text-[1.0rem] 
+					 transition-opacity duration-500 ${isFading ? 'opacity-0' : 'opacity-100'} `}
+					>
 						{testimonials[currentIndex].author}
 					</p>
 				</div>
