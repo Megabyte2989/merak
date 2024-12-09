@@ -46,7 +46,7 @@ function Navbar() {
 								width: `${photoWidth}rem`,
 								transition: 'width 0.2s ease',
 							}}
-							src="/New Horizons Logo.png"
+							src="/images/New Horizons Logo.png"
 							alt=""
 						/>
 					</Link>
@@ -56,7 +56,7 @@ function Navbar() {
 					style={{
 						fontSize: `${fontNav}rem`,
 						transition: 'font-size 0.2s ease',
-						color: `${textColor}`,
+						color: `${fontColor}`,
 					}}
 				>
 					<Example />

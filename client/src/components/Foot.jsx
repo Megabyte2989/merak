@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export const Foot = () => {
 	return (
@@ -11,15 +11,17 @@ export const Foot = () => {
 						title="New Horizons Cairo"
 						className="inline-flex items-center"
 					>
-						<img src="New Horizons Logo.png" alt="logo" className="w-18" />
-						
-
-					
+						<img
+							src="New Horizons Logo.png"
+							alt="New Hoirzons Logo"
+							className="w-18"
+						/>
 					</a>
 					<div className="mt-4 lg:max-w-sm">
 						<p className="text-sm text-gray-800">
-							New Horizons Cairo is an authorized training partner for many industry
-							 recognized software and certification companies and organizations.
+							New Horizons Cairo is an authorized training partner for many
+							industry recognized software and certification companies and
+							organizations.
 						</p>
 					</div>
 				</div>
@@ -29,16 +31,86 @@ export const Foot = () => {
 							Applications
 						</p>
 						<ul className="mt-2 space-y-2">
-							<li><a href="/" className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400">Office 365</a></li>
-							<li><a href="/" className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400">Access</a></li>
-							<li><a href="/" className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400">Excel</a></li>
-							<li><a href="/" className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400">One Note</a></li>
-							<li><a href="/" className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400">Outlook</a></li>
-							<li><a href="/" className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400">PowerPoint</a></li>
-							<li><a href="/" className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400">Project</a></li>
-							<li><a href="/" className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400">Publisher</a></li>
-							<li><a href="/" className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400">Visio</a></li>
-							<li><a href="/" className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400">Word</a></li>
+							<li>
+								<a
+									href="/"
+									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+								>
+									Office 365
+								</a>
+							</li>
+							<li>
+								<a
+									href="/"
+									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+								>
+									Access
+								</a>
+							</li>
+							<li>
+								<a
+									href="/"
+									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+								>
+									Excel
+								</a>
+							</li>
+							<li>
+								<a
+									href="/"
+									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+								>
+									One Note
+								</a>
+							</li>
+							<li>
+								<a
+									href="/"
+									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+								>
+									Outlook
+								</a>
+							</li>
+							<li>
+								<a
+									href="/"
+									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+								>
+									PowerPoint
+								</a>
+							</li>
+							<li>
+								<a
+									href="/"
+									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+								>
+									Project
+								</a>
+							</li>
+							<li>
+								<a
+									href="/"
+									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+								>
+									Publisher
+								</a>
+							</li>
+							<li>
+								<a
+									href="/"
+									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+								>
+									Visio
+								</a>
+							</li>
+							<li>
+								<a
+									href="/"
+									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+								>
+									Word
+								</a>
+							</li>
 						</ul>
 					</div>
 					<div>
@@ -46,51 +118,202 @@ export const Foot = () => {
 							Technical
 						</p>
 						<ul className="mt-2 space-y-2">
-							<li><a href="/" className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400">Azure</a></li>
-							<li><a href="/" className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400">Dynamics CRM</a></li>
-							<li><a href="/" className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400">Exchange</a></li>
-							<li><a href="/" className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400">SharePoint</a></li>
-							<li><a href="/" className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400">Skype for Business</a></li>
-							<li><a href="/" className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400">SQL Server</a></li>
-							<li><a href="/" className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400">System Center</a></li>
-							<li><a href="/" className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400">Visual Studio</a></li>
-							<li><a href="/" className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400">Windows</a></li>
-							<li><a href="/" className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400">Windows Server</a></li>
-							<li><a href="/" className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400">Cisco</a></li>
-							<li><a href="/" className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400">Cloud Technologies</a></li>
-							<li><a href="/" className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400">CompTIA</a></li>
-							<li><a href="/" className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400">IBM</a></li>
-							<li><a href="/" className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400">Info Security</a></li>
-							<li><a href="/" className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400">ITIL</a></li>
+							<li>
+								<a
+									href="/"
+									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+								>
+									Azure
+								</a>
+							</li>
+							<li>
+								<a
+									href="/"
+									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+								>
+									Dynamics CRM
+								</a>
+							</li>
+							<li>
+								<a
+									href="/"
+									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+								>
+									Exchange
+								</a>
+							</li>
+							<li>
+								<a
+									href="/"
+									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+								>
+									SharePoint
+								</a>
+							</li>
+							<li>
+								<a
+									href="/"
+									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+								>
+									Skype for Business
+								</a>
+							</li>
+							<li>
+								<a
+									href="/"
+									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+								>
+									SQL Server
+								</a>
+							</li>
+							<li>
+								<a
+									href="/"
+									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+								>
+									System Center
+								</a>
+							</li>
+							<li>
+								<a
+									href="/"
+									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+								>
+									Visual Studio
+								</a>
+							</li>
+							<li>
+								<a
+									href="/"
+									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+								>
+									Windows
+								</a>
+							</li>
+							<li>
+								<a
+									href="/"
+									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+								>
+									Windows Server
+								</a>
+							</li>
+							<li>
+								<a
+									href="/"
+									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+								>
+									Cisco
+								</a>
+							</li>
+							<li>
+								<a
+									href="/"
+									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+								>
+									Cloud Technologies
+								</a>
+							</li>
+							<li>
+								<a
+									href="/"
+									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+								>
+									CompTIA
+								</a>
+							</li>
+							<li>
+								<a
+									href="/"
+									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+								>
+									IBM
+								</a>
+							</li>
+							<li>
+								<a
+									href="/"
+									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+								>
+									Info Security
+								</a>
+							</li>
+							<li>
+								<a
+									href="/"
+									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+								>
+									ITIL
+								</a>
+							</li>
 						</ul>
 					</div>
 					<div>
-						<p className="font-semibold tracking-wide text-dogwood-rose">Business</p>
+						<p className="font-semibold tracking-wide text-dogwood-rose">
+							Business
+						</p>
 						<ul className="mt-2 space-y-2">
-							<li><a href="/" className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400">Business Analysis</a></li>
-							<li><a href="/" className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400">Business Skills</a></li>
-							<li><a href="/" className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400">Project Management</a></li>
-							<li><a href="/" className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400">Six Sigma</a></li>
+							<li>
+								<a
+									href="/"
+									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+								>
+									Business Analysis
+								</a>
+							</li>
+							<li>
+								<a
+									href="/"
+									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+								>
+									Business Skills
+								</a>
+							</li>
+							<li>
+								<a
+									href="/"
+									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+								>
+									Project Management
+								</a>
+							</li>
+							<li>
+								<a
+									href="/"
+									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+								>
+									Six Sigma
+								</a>
+							</li>
 						</ul>
 					</div>
 					<div>
-						<p className="font-semibold tracking-wide text-dogwood-rose">Get in Touch</p>
+						<p className="font-semibold tracking-wide text-dogwood-rose">
+							Get in Touch
+						</p>
 						<ul className="mt-2 space-y-2">
 							<li className="text-dark-purple">Head Office</li>
-							<li className="text-dark-purple">99 Mostafa Elnahas St, Nasr City, floor 6</li>
+							<li className="text-dark-purple">
+								99 Mostafa Elnahas St, Nasr City, floor 6
+							</li>
 							<li className="text-dark-purple">002 02 22718615</li>
 							<li className="text-dark-purple">002 02 22718620</li>
 							<li className="text-dark-purple">ABBAS ELAQAAD BRANCH</li>
-							<li className="text-dark-purple">8 Mohamed Mostafa Hamam St. Behind Pizza Hut</li> 
+							<li className="text-dark-purple">
+								8 Mohamed Mostafa Hamam St. Behind Pizza Hut
+							</li>
 							<li className="text-dark-purple">002 02 24024822</li>
 							<li className="text-dark-purple">Mohandeseen BRANCH</li>
-							<li className="text-dark-purple">76 Gameat Al Dewal Al Arabeya Floor 4 - Giza Governorate</li>
+							<li className="text-dark-purple">
+								76 Gameat Al Dewal Al Arabeya Floor 4 - Giza Governorate
+							</li>
 						</ul>
 						<p className="mt-4 text-sm text-dogwood-rose">
-							learn more: <br/> 
+							learn more: <br />
 						</p>
-						<p className="mt-2 text-dark-purple">Email Us | About Us | Locations | Contact Us
-						Privacy | Terms</p>
+						<p className="mt-2 text-dark-purple">
+							Email Us | About Us | Locations | Contact Us Privacy | Terms
+						</p>
 					</div>
 				</div>
 			</div>

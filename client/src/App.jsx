@@ -13,10 +13,10 @@ import Landing from './components/Landing/Landing';
 import Navbar from './components/Navbar';
 import PartnersAndAuthorizations from './components/PartnersAndAuthorizations';
 import Register from './components/Register';
+import CertificationVerification from './components/Resources/CertificationVerification';
 import LearningMethods from './components/Resources/LearningMethods';
 import WeHire from './components/Resources/WeHire';
-import Webinars from './components/Webinars';
-
+import Webinars from './components/Resources/Webinars';
 function App() {
 	return (
 		<>
@@ -35,15 +35,18 @@ function App() {
 							element={<PartnersAndAuthorizations />}
 						/>
 						<Route path="/" element={<Landing />} />
-						<Route path="/aboutUs" element={<AboutUs />} />
+						<Route path="/AboutUs" element={<AboutUs />} />
 						<Route path="/gov-projects" element={<GovProjects />} />
 						<Route path="/crop-projects" element={<CropProjects />} />
 						<Route path="/contact-us" element={<ContactUsMain />} />
 						<Route path="/we-hire" element={<WeHire />} />
 						<Route path="/learning-methods" element={<LearningMethods />} />
-						<Route path="/webinars" element={<Webinars />} />
+						<Route path="/Webinars" element={<Webinars />} />
 						<Route path="/register/:id" element={<Register />} />
-
+						<Route
+							path="/Certification-Verification"
+							element={<CertificationVerification />}
+						/>
 						{/* Uncomment or add additional routes as needed */}
 
 						{/* <Route path="/timer" element={<Timer />} /> */}

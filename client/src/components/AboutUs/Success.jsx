@@ -12,6 +12,30 @@ const Success = () => {
 
 	return (
 		<div>
+			<Helmet>
+				<title>Share Your Success Story - New Horizons</title>
+				<meta
+					name="description"
+					content="Share your success story with us! Explore inspiring stories from trainees and clients at New Horizons."
+				/>
+				<meta
+					name="keywords"
+					content="success story, New Horizons, trainees, clients, career growth, inspiring stories"
+				/>
+				<meta
+					property="og:title"
+					content="Share Your Success Story - New Horizons"
+				/>
+				<meta
+					property="og:description"
+					content="Share your success story with us! Explore inspiring stories from trainees and clients at New Horizons."
+				/>
+				<meta property="og:image" content="/images/New Horizons Logo.png" />
+				{/* <meta
+					property="og:url"
+					content="https://yourwebsite.com/success-stories"
+				/> */}
+			</Helmet>
 			{/* Hero Section */}
 			<section className="relative bg-[url(https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/2uQRrnlUBwOoqlNbcQSpYr/a4fbb0dbc1a6b5ba696410ff091039a8/GettyImages-2170485830.jpg?w=1500&h=680&q=60&fit=fill&f=faces&fm=jpg&fl=progressive&auto=format%2Ccompress&dpr=1&w=1000)] bg-cover bg-center bg-no-repeat">
 				<div className="absolute inset-0 bg-gray-900 opacity-70"></div>
@@ -54,8 +78,9 @@ const Success = () => {
 						<div className="story bg-dark-purple shadow-lg rounded-lg p-6">
 							<img
 								src="https://st2.depositphotos.com/4568293/7690/i/950/depositphotos_76903179-stock-photo-young-man-thinking-with-a.jpg"
-								alt="Ahmed Ali"
+								alt="Ahmed Ali face"
 								className="rounded-full mx-auto w-24 h-24 mb-4"
+								loading="lazy"
 							/>
 							<h3 className="text-xl font-bold mb-2 text-center text-dogwood-rose">
 								Ahmed Ali
@@ -79,7 +104,8 @@ const Success = () => {
 						<div className="story bg-dark-purple shadow-lg rounded-lg p-6">
 							<img
 								src="https://images.ctfassets.net/pdf29us7flmy/4rgBKn2wB73I7K1DY7A5Rp/65e67733a9a5e8823dbce8e1a1d8dede/GettyImages-688893745-red.jpg?w=720&q=100&fm=jpg"
-								alt="Sara Youssef"
+								alt="Sara Youssef face"
+								loading="lazy"
 								className="rounded-full mx-auto w-24 h-24 mb-4"
 							/>
 							<h3 className="text-xl font-bold mb-2 text-center text-dogwood-rose">
@@ -104,8 +130,9 @@ const Success = () => {
 						<div className="story bg-dark-purple shadow-lg rounded-lg p-6">
 							<img
 								src="https://static.vecteezy.com/system/resources/previews/047/462/758/non_2x/positive-man-on-clean-background-photo.jpg"
-								alt="Omar El-Sayed"
+								alt="Omar El-Sayed face"
 								className="rounded-full mx-auto w-24 h-24 mb-4"
+								loading="lazy"
 							/>
 							<h3 className="text-xl font-bold mb-2 text-center text-dogwood-rose">
 								Omar El-Sayed
@@ -187,7 +214,7 @@ const Success = () => {
 							</div>
 							<button
 								type="submit"
-								className="w-full bg-dogwood-rose text-white px-4 py-2 rounded-lg hover:bg-raisin-black font-semibold"
+								className="cta-button w-full bg-dogwood-rose text-white px-4 py-2 rounded-lg hover:bg-raisin-black font-semibold"
 							>
 								Submit Your Story
 							</button>

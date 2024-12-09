@@ -1,5 +1,6 @@
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import { AnimatePresence, motion } from 'framer-motion';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -33,7 +34,7 @@ function Example() {
 				justify-center flex-col gap-2`}
 			>
 				<MobileFlyoutLink
-					href="/aboutUs"
+					href="/AboutUs"
 					FlyoutContent={
 						activeFlyout === 'AboutUsContent' ? AboutUsContent : null
 					}
@@ -73,7 +74,7 @@ function Example() {
 			</div>
 			{/* DESKTOP */}
 			<div className="hidden lg:flex space-x-5 justify-center text-[0.9rem]">
-				<FlyoutLink href="/aboutUs" FlyoutContent={AboutUsContent}>
+				<FlyoutLink href="/AboutUs" FlyoutContent={AboutUsContent}>
 					About Us
 					<FontAwesomeIcon icon={faChevronDown} className="ml-1" />
 				</FlyoutLink>
@@ -309,16 +310,10 @@ const ResourceContent = () => {
 					</Link>
 
 					{/* Other Links */}
+
 					<Link
 						className="link-hover"
-						to={''}
-						onMouseEnter={() => setIsLearningActive(false)}
-					>
-						Blog
-					</Link>
-					<Link
-						className="link-hover"
-						to={''}
+						to={'Webinars'}
 						onMouseEnter={() => setIsLearningActive(false)}
 					>
 						Webinars
@@ -332,7 +327,7 @@ const ResourceContent = () => {
 					</Link>
 					<Link
 						className="link-hover"
-						to={''}
+						to={'Certification-Verification'}
 						onMouseEnter={() => setIsLearningActive(false)}
 					>
 						Certification Verification

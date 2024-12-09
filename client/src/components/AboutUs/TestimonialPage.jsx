@@ -1,5 +1,6 @@
 import { Rating } from '@material-tailwind/react';
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 
 const TestimonialPage = () => {
@@ -78,6 +79,31 @@ const TestimonialPage = () => {
 	};
 	return (
 		<div>
+			<Helmet>
+				<title>Client Testimonials - New Horizons</title>
+				<meta
+					name="description"
+					content="Read what our satisfied clients say about New Horizons' services."
+				/>
+				<meta
+					name="keywords"
+					content="New Horizons, client testimonials, success stories, reviews, career growth, training, services, feedback"
+				/>
+				<meta
+					property="og:title"
+					content="Client Testimonials - New Horizons"
+				/>
+				<meta
+					property="og:description"
+					content="Read what our satisfied clients say about New Horizons' services."
+				/>
+				<meta property="og:image" content="path/to/preview-image.jpg" />
+				<meta
+					property="og:url"
+					content="https://yourwebsite.com/testimonials"
+				/>
+			</Helmet>
+
 			<section>
 				<div className="max-w-screen-xl mx-auto px-4 py-28 gap-12 text-gray-600 md:px-8">
 					<div className="space-y-5 max-w-4xl mx-auto text-center">
@@ -185,6 +211,7 @@ const TestimonialPage = () => {
 														className="flex-shrink-0 object-cover rounded-full w-11 h-11"
 														src={testimonial.image}
 														alt={`${testimonial.name} avatar`}
+														loading="lazy"
 													/>
 													<div className="ml-4">
 														<p className="text-base font-bold text-white font-pj">
@@ -257,7 +284,7 @@ const TestimonialPage = () => {
 										/>
 										<button
 											type="submit"
-											className="py-3 my-8 text-lg bg-gradient-to-r from-dogwood-rose to-purple-600 rounded-xl text-white transition-transform duration-300 hover:scale-105"
+											className="cta-button py-3 my-8 text-lg bg-gradient-to-r from-dogwood-rose to-purple-600 rounded-xl text-white transition-transform duration-300 hover:scale-105"
 										>
 											Rate now
 										</button>

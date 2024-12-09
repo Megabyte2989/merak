@@ -1,5 +1,6 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { useCallback, useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 
@@ -57,6 +58,21 @@ const Gallery = () => {
 
 	return (
 		<div>
+			<Helmet>
+				<title>Gallery | New Horizons</title>
+				<meta
+					name="description"
+					content="Explore New Horizons through our Gallery. Discover high-quality images showcasing the latest in technology, AI, web development, and innovation."
+				/>
+				<meta property="og:title" content="Gallery | New Horizons" />
+				<meta
+					property="og:description"
+					content="Explore New Horizons through our Gallery. Discover high-quality images showcasing the latest in technology, AI, web development, and innovation."
+				/>
+				<meta property="og:image" content="/images/New Horizons Logo.png" />
+				{/* <meta property="og:url" content="https://www.newhorizons.com/gallery" /> */}
+			</Helmet>
+
 			<div
 				className="relative h-screen w-full overflow-hidden"
 				onKeyDown={handleKeyDown}
@@ -72,6 +88,7 @@ const Gallery = () => {
 						exit={{ opacity: 0 }}
 						transition={{ duration: 0.3 }}
 						className="relative h-full w-full"
+						style={{ willChange: 'opacity' }}
 					>
 						<img
 							src={`https://${images[currentIndex].url}`}
@@ -86,6 +103,7 @@ const Gallery = () => {
 									animate={{ y: 0, opacity: 1 }}
 									transition={{ delay: 0.2 }}
 									className="text-center text-white"
+									style={{ willChange: 'opacity, transition' }}
 								>
 									<h1 className="mb-4 text-4xl font-bold md:text-6xl">
 										{images[currentIndex].title}
@@ -101,7 +119,7 @@ const Gallery = () => {
 
 				<button
 					onClick={prevSlide}
-					className="absolute left-4 top-1/2 -translate-y-1/2 transform rounded-full bg-white/80 p-2 text-gray-800 transition hover:bg-white focus:outline-none focus:ring-2 focus:ring-white"
+					className="cta-button absolute left-4 top-1/2 -translate-y-1/2 transform rounded-full bg-white/80 p-2 text-gray-800 transition hover:bg-white focus:outline-none focus:ring-2 focus:ring-white"
 					aria-label="Previous slide"
 				>
 					<FiChevronLeft size={24} />
@@ -109,7 +127,7 @@ const Gallery = () => {
 
 				<button
 					onClick={nextSlide}
-					className="absolute right-4 top-1/2 -translate-y-1/2 transform rounded-full bg-white/80 p-2 text-gray-800 transition hover:bg-white focus:outline-none focus:ring-2 focus:ring-white"
+					className="cta-button absolute right-4 top-1/2 -translate-y-1/2 transform rounded-full bg-white/80 p-2 text-gray-800 transition hover:bg-white focus:outline-none focus:ring-2 focus:ring-white"
 					aria-label="Next slide"
 				>
 					<FiChevronRight size={24} />
@@ -120,7 +138,7 @@ const Gallery = () => {
 						<button
 							key={index}
 							onClick={() => goToSlide(index)}
-							className={`h-2 w-2 rounded-full transition-all duration-300 ${
+							className={`cta-button  h-2 w-2 rounded-full transition-all duration-300 ${
 								currentIndex === index ? 'w-8 bg-white' : 'bg-white/50'
 							}`}
 							aria-label={`Go to slide ${index + 1}`}
@@ -130,7 +148,7 @@ const Gallery = () => {
 
 				<button
 					onClick={() => setIsAutoPlaying(!isAutoPlaying)}
-					className="absolute bottom-4 right-4 rounded-full bg-white/80 px-4 py-2 text-sm text-gray-800 transition hover:bg-white focus:outline-none focus:ring-2 focus:ring-white"
+					className="cta-button absolute bottom-4 right-4 rounded-full bg-white/80 px-4 py-2 text-sm text-gray-800 transition hover:bg-white focus:outline-none focus:ring-2 focus:ring-white"
 					aria-label={isAutoPlaying ? 'Pause slideshow' : 'Play slideshow'}
 				>
 					{isAutoPlaying ? 'Pause' : 'Play'}
