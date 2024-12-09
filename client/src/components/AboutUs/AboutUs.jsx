@@ -16,21 +16,21 @@ const AboutUs = () => {
 			description:
 				'Empowering individuals to achieve their full potential through quality education.',
 			image:
-				'https://plus.unsplash.com/premium_photo-1681131450196-57e6df9bc2fd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZW1wb3dlcm1lbnR8ZW58MHx8MHx8fDA%3D',
+				'/images/empowerment.jpg',
 		},
 		{
 			title: 'Innovation',
 			description:
 				'Continuously updating our programs to include the latest industry trends.',
 			image:
-				'https://images.unsplash.com/photo-1480506132288-68f7705954bd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dGVjaCUyMHB1cnBsZXxlbnwwfHwwfHx8MA%3D%3D',
+				'/images/innovation.jpg',
 		},
 		{
 			title: 'Community',
 			description:
 				'Building a supportive community for learners and professionals alike.',
 			image:
-				'https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y291cnNlfGVufDB8fDB8fHww',
+				'/images/community.jpg',
 		},
 	];
 
@@ -111,7 +111,7 @@ const AboutUs = () => {
 					initial={{ scale: 0.9, opacity: 0 }}
 					animate={{ scale: 1, opacity: 1 }}
 					transition={{ duration: 1, delay: 0.4 }}
-					src="about-us.jpg"
+					src="/images/about-us.jpg"
 					style={{ willChange: 'opacity, scale' }}
 					alt="Professional Training and Development with New Horizons"
 					className="hero-image mx-auto mt-6 rounded-lg shadow-xl w-full md:w-1/2"

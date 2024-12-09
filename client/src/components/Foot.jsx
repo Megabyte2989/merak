@@ -12,7 +12,7 @@ export const Foot = () => {
 						className="inline-flex items-center"
 					>
 						<img
-							src="New Horizons Logo.png"
+							src="/images/New Horizons Logo.png"
 							alt="New Hoirzons Logo"
 							className="w-18"
 						/>
