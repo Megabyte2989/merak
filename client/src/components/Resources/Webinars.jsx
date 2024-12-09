@@ -9,21 +9,21 @@ const Webinars = () => {
             title: "Introduction to React",
             description: "Learn the basics of React and build your first application.",
             link: "/register/1",
-            image: "https://t4.ftcdn.net/jpg/02/34/09/25/360_F_234092554_wF3dTfJtJHS8AIkJ8ouIdLiDHgL3iodU.jpg",
+            image: "/images/webinars1.jpg",
         },
         {
             id: 2,
             title: "Advanced JavaScript",
             description: "Deep dive into JavaScript concepts and patterns.",
             link: "/register/2",
-            image: "https://usa.bootcampcdn.com/wp-content/uploads/sites/119/2020/12/tes_gen_blog_code7-1-800x412.jpg",
+            image: "/images/webinars2.jpg",
         },
         {
             id: 3,
             title: "UI/UX Design Principles",
             description: "Explore best practices for designing user-friendly interfaces.",
             link: "/register/3",
-            image: "https://lazyprogrammer.me/wp-content/uploads/2024/03/programmer_cmd_line.jpg",
+            image: "/images/webinars3.jpg",
         },
         // Add more webinars as needed
     ];
