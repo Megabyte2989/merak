@@ -1,6 +1,6 @@
 import { Rating } from '@material-tailwind/react';
 import React, { useState } from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 
 const TestimonialPage = () => {
@@ -14,12 +14,38 @@ const TestimonialPage = () => {
 
 	const testimonials = [
 		{
+			quote: '“The training at New Horizons was a game-changer. The instructors were patient and supportive, and the curriculum was comprehensive. I’m now much more proficient in my role and feel more confident in my abilities.”',
+			name: 'Ahmed Ali',
+			role: 'Digital Marketing Specialist',
+			image: '/images/man1.jpg',
+		  },
+		  {
+			quote: '“I was impressed by the quality of the training at New Horizons. The hands-on exercises and real-world projects helped solidify my understanding of the concepts. I’m grateful for the opportunity to learn from such experienced instructors.”',
+			name: 'Mohamed Hassan',
+			role: 'Data Analyst',
+			image: '/images/man2.jpg',
+		  },
+		  {
+			quote: '“New Horizons provided me with the skills and knowledge I needed to succeed in my career. The flexible learning options and personalized support made it easy to balance my work and studies. I highly recommend their programs to anyone looking to advance their career.”',
+			name: 'Karim Ibrahim',
+			role: 'Project Manager',
+			image: '/images/man3.jpg',
+		  },
+		{
+			quote:
+				'“I’ve taken multiple courses from New Horizons, and every single one has exceeded my expectations. The content is engaging, and the support team is always there to help when needed. My career has grown thanks to their excellent training programs!.”',
+			name: 'Waad Akram',
+			role: 'UI/UX Designer',
+			image:
+				'/images/woman1.jpg',
+		},
+		{
 			quote:
 				'“An incredible experience! The training at New Horizons was top-notch. The instructors are knowledgeable and the materials are up to date. I learned so much in just a few weeks. Highly recommend!.”',
 			name: 'Sara Ahmed',
 			role: 'Freelance React Developer',
 			image:
-				'https://img.freepik.com/free-photo/friendly-pleasant-cheerful-east-asian-woman-striped-t-shirt-raising-palm-wave-hand-greeting-saying-hi-hello-smiling-with-joyful-expression-as-welcoming-newbies-white-background_176420-36727.jpg',
+				'/images/woman2.jpeg',
 		},
 		{
 			quote:
@@ -27,40 +53,9 @@ const TestimonialPage = () => {
 			name: 'Salma Hany',
 			role: 'Web Developer',
 			image:
-				'https://img.freepik.com/free-photo/lifestyle-beauty-fashion-people-emotions-concept-young-asian-female-office-manager-ceo-with-pleased-expression-standing-white-background-smiling-with-arms-crossed-chest_1258-59329.jpg?semt=ais_hybrid',
+				'/images/woman3.jpeg',
 		},
-		{
-			quote:
-				'“I’ve taken multiple courses from New Horizons, and every single one has exceeded my expectations. The content is engaging, and the support team is always there to help when needed. My career has grown thanks to their excellent training programs!.”',
-			name: 'Waad Akram',
-			role: 'UI/UX Designer',
-			image:
-				'https://thumbs.wbm.im/pw/small/b6dc1f20e82f11ab0cf61a9958441a16.jpg',
-		},
-		{
-			quote:
-				'“An incredible experience! The training at New Horizons was top-notch. The instructors are knowledgeable and the materials are up to date. I learned so much in just a few weeks. Highly recommend!.”',
-			name: 'Sara Ahmed',
-			role: 'Freelance React Developer',
-			image:
-				'https://img.freepik.com/free-photo/friendly-pleasant-cheerful-east-asian-woman-striped-t-shirt-raising-palm-wave-hand-greeting-saying-hi-hello-smiling-with-joyful-expression-as-welcoming-newbies-white-background_176420-36727.jpg',
-		},
-		{
-			quote:
-				'“New Horizons truly helped me level up my skills. The interactive approach to learning made complex topics much easier to understand. I can now confidently apply what I’ve learned to real-world projects!”',
-			name: 'Salma Hany',
-			role: 'Web Developer',
-			image:
-				'https://img.freepik.com/free-photo/lifestyle-beauty-fashion-people-emotions-concept-young-asian-female-office-manager-ceo-with-pleased-expression-standing-white-background-smiling-with-arms-crossed-chest_1258-59329.jpg?semt=ais_hybrid',
-		},
-		{
-			quote:
-				'“I’ve taken multiple courses from New Horizons, and every single one has exceeded my expectations. The content is engaging, and the support team is always there to help when needed. My career has grown thanks to their excellent training programs!.”',
-			name: 'Waad Akram',
-			role: 'UI/UX Designer',
-			image:
-				'https://thumbs.wbm.im/pw/small/b6dc1f20e82f11ab0cf61a9958441a16.jpg',
-		},
+		
 	];
 	const handleSubmit = e => {
 		e.preventDefault();
