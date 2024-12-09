@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
 
 const Success = () => {
 	// TODO: Remove the share story Form
@@ -85,7 +86,7 @@ const Success = () => {
 							<h3 className="text-xl font-bold mb-2 text-center text-dogwood-rose">
 								Ahmed Ali
 							</h3>
-							<p className="text-sm text-white mb-4 text-center">
+							<p className="text-sm text-white mb-4 text -center">
 								Full Stack Developer
 							</p>
 							<p className="text-white text-center">
@@ -176,6 +177,7 @@ const Success = () => {
 									className="block text-sm font-medium text-dogwood-rose mb-2"
 								>
 									Your Name
+							 ```javascript
 								</label>
 								<input
 									type="text"
@@ -208,7 +210,7 @@ const Success = () => {
 								<textarea
 									id="story"
 									rows="4"
-									className="w-full  rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-dogwood-rose"
+									className="w-full rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-dogwood-rose"
 									required
 								></textarea>
 							</div>
