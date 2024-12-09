@@ -60,7 +60,7 @@ function GovProjects() {
 							{/* <!-- Image --> */}
 							<img
 								loading="lazy"
-								src="depi.jpg"
+								src="./images/depi.jpg"
 								alt="DEPI internship image"
 								className="w-full object-cover transition-transform duration-300 group-hover:scale-110"
 							/>
@@ -74,7 +74,7 @@ function GovProjects() {
 							{/* <!-- Image --> */}
 							<img
 								loading="lazy"
-								src="deci.jpg"
+								src="./images/deci.jpg"
 								alt="DECI internship image"
 								className="w-full object-cover transition-transform duration-300 group-hover:scale-110"
 							/>
@@ -88,7 +88,7 @@ function GovProjects() {
 							{/* <!-- Image --> */}
 							<img
 								loading="lazy"
-								src="debi.jpg"
+								src="./images/debi.jpg"
 								alt="DEBI Internship image"
 								className="w-full object-cover transition-transform duration-300 group-hover:scale-110"
 							/>

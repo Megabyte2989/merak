@@ -54,7 +54,7 @@ function CropProjects() {
 							{/* <!-- Image --> */}
 							<img
 								loading="lazy"
-								src="depi.jpg"
+								src="./images/depi.jpg"
 								alt="DEPI Internship logo"
 								className="w-full object-cover transition-transform duration-300 group-hover:scale-110"
 							/>
@@ -68,7 +68,7 @@ function CropProjects() {
 							{/* <!-- Image --> */}
 							<img
 								loading="lazy"
-								src="deci.jpg"
+								src="./images/deci.jpg"
 								alt="DECI Internship logo"
 								className="w-full object-cover transition-transform duration-300 group-hover:scale-110"
 							/>
@@ -82,7 +82,7 @@ function CropProjects() {
 							{/* <!-- Image --> */}
 							<img
 								loading="lazy"
-								src="debi.jpg"
+								src="./images/debi.jpg"
 								alt="DEBI Internship logo"
 								className="w-full object-cover transition-transform duration-300 group-hover:scale-110"
 							/>
