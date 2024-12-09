@@ -96,8 +96,8 @@ const Success = () => {
 								effectively in a team. I built a portfolio project with my
 								classmates—a car rental system—that showcased both my frontend
 								and backend capabilities. During my interviews, recruiters were
-								impressed with the project’s complexity and my problem-solving
-								approach. Now, I’m working on large-scale applications, and
+								impressed with the project's complexity and my problem-solving
+								approach. Now, I'm working on large-scale applications, and
 								every day feels like an opportunity to grow!"
 							</p>
 						</div>
@@ -177,7 +177,6 @@ const Success = () => {
 									className="block text-sm font-medium text-dogwood-rose mb-2"
 								>
 									Your Name
-							 ```javascript
 								</label>
 								<input
 									type="text"
