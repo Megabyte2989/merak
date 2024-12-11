@@ -90,7 +90,7 @@ const PartnersAndAuthorizations = () => {
                     <p className="text-gray-600 mb-4">
                       {partner.description}
                     </p>
-                    <a href={partner.link} className="text-dogwood-rose font-medium hover:text-russian-violet">learn more</a>
+                    <a aria-label='learn more' href={partner.link} className="text-dogwood-rose font-medium hover:text-russian-violet">learn more</a>
                   </div>
                 </div>
               ))}

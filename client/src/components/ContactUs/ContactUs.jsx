@@ -67,6 +67,7 @@ function ContactUs() {
 								className="text-ghost-white mr-1"
 							/>
 							<a
+							aria-label='Call Us'
 								href="tel:+1-800-500-3135"
 								className="hover:text-lavender text-xl"
 							>
@@ -81,6 +82,7 @@ function ContactUs() {
 								className="text-ghost-white mr-1"
 							/>
 							<a
+							aria-label='Email Us'
 								href="mailto:info@newhorizons.com"
 								className="hover:text-lavender text-xl"
 							>

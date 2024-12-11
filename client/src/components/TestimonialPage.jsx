@@ -62,10 +62,10 @@ const TestimonialPage = () => {
               Our clients have experienced remarkable transformations and growth through our dedicated services and support.
             </p>
             <div className="items-center justify-center gap-x-3 space-y-3 sm:flex sm:space-y-0">
-              <a href="#your-opinion-section" className="block py-2 px-4 text-white font-medium bg-indigo-600 duration-150 hover:bg-indigo-500 active:bg-indigo-700 rounded-lg shadow-lg hover:shadow-none">
+              <a aria-label='Share Your Thoughts' href="#your-opinion-section" className="block py-2 px-4 text-white font-medium bg-indigo-600 duration-150 hover:bg-indigo-500 active:bg-indigo-700 rounded-lg shadow-lg hover:shadow-none">
               Share Your Thoughts!
               </a>
-              <a href="" className="block py-2 px-4 text-gray-700 hover:text-gray-500 font-medium duration-150 active:bg-gray-100 border rounded-lg">
+              <a aria-label='Join us today' href="" className="block py-2 px-4 text-gray-700 hover:text-gray-500 font-medium duration-150 active:bg-gray-100 border rounded-lg">
                 Join us today
               </a>
             </div>
@@ -87,6 +87,7 @@ const TestimonialPage = () => {
 
             <div className="mt-8 text-center md:mt-16 md:order-3">
               <a
+                aria-label="Check all reviews"
                 href="javascript:void(0)"
                 title="Check all reviews"
                 className="pb-2 text-base font-bold leading-7 text-dogwood-rose transition-all duration-200 border-b-2 border-dogwood-rose hover:border-raisin-black font-pj focus:outline-none focus:ring-1 focus:ring-dogwood-rose focus:ring-offset-2 hover:text-raisin-black"
