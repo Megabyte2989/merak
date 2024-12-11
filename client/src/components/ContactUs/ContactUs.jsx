@@ -170,7 +170,7 @@ function ContactUs() {
 				<div className="ml-10 mt-6 sm:mt-0 mb-10">
 					<img
 						className="w-full h-auto max-w-2xl hidden lg:block lg:max-w-[28rem]"
-						src="/Contactus.png"
+						src="./images/Contactus.png"
 						alt="contactusImage"
 					/>
 				</div>
