@@ -12,7 +12,7 @@ export const Foot = () => {
 						className="inline-flex items-center"
 					>
 						<img
-							src="/images/New_Horizons_Logo.png"
+							src="/images/New_Horizons_Logo.webp"
 							alt="New Hoirzons Logo"
 							className="w-18"
 						/>

@@ -8,18 +8,18 @@ const Gallery = () => {
 	// Mock data simulating what could come from a database
 	const carouselImages = [
 		{
-			url: '/images/gallery1.jpeg',
+			url: '/images/gallery1.webp',
 			title: 'Innovation in Technology',
 			description: 'Discover groundbreaking advancements shaping our future',
 		},
 		{
-			url: '/images/gallery2.jpeg',
+			url: '/images/gallery2.webp',
 			title: 'AI Revolution',
 			description:
 				'Dive into the world of artificial intelligence and machine learning',
 		},
 		{
-			url: '/images/gallery3.jpeg',
+			url: '/images/gallery3.webp',
 			title: 'Building the Web',
 			description: 'Explore the infrastructure powering the digital age',
 		},
@@ -27,32 +27,32 @@ const Gallery = () => {
 
 	const galleryImages = [
 		{
-			url: './images/vr.jpg',
+			url: './images/vr.webp',
 			alt: 'Photo by Minh Pham',
 			label: 'VR',
 		},
 		{
-			url: './images/tablet.jpg',
+			url: './images/tablet.webp',
 			alt: 'Photo by Magicle',
 			label: 'Tech',
 		},
 		{
-			url: './images/laptop.jpg',
+			url: './images/laptop.webp',
 			alt: 'Photo by Martin Sanchez',
 			label: 'Dev',
 		},
 		{
-			url: './images/tech.jpg',
+			url: './images/tech.webp',
 			alt: 'Photo by Lorenzo Herrera',
 			label: 'Retro',
 		},
 		{
-			url: './images/vr.jpg',
+			url: './images/vr.webp',
 			alt: 'Photo by Minh Pham',
 			label: 'VR',
 		},
 		{
-			url: './images/laptop.jpg',
+			url: './images/laptop.webp',
 			alt: 'Photo by Martin Sanchez',
 			label: 'Dev',
 		}

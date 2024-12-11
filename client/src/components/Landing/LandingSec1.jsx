@@ -4,7 +4,7 @@ function LandingSec1() {
 	return (
 		<div
 			id="LandingSec1"
-			className="px-5 py-5 sm:p-14 bg-none lg:bg-[url('/images/new_horizons_hero.png')] bg-dark-purple
+			className="px-5 py-5 sm:p-14 bg-none lg:bg-[url('/images/new_horizons_hero.webp')] bg-dark-purple
 		 text-white bg-conain  bg-no-repeat bg-[80%_100%]  grid grid-cols-1 lg:grid-cols-6"
 		>
 			{/* Main Content Section */}

@@ -9,21 +9,21 @@ const Webinars = () => {
             title: "Introduction to React",
             description: "Learn the basics of React and build your first application.",
             link: "/register/1",
-            image: "/images/webinars1.jpg",
+            image: "/images/webinars1.webp",
         },
         {
             id: 2,
             title: "Advanced JavaScript",
             description: "Deep dive into JavaScript concepts and patterns.",
             link: "/register/2",
-            image: "/images/webinars2.jpg",
+            image: "/images/webinars2.webp",
         },
         {
             id: 3,
             title: "UI/UX Design Principles",
             description: "Explore best practices for designing user-friendly interfaces.",
             link: "/register/3",
-            image: "/images/webinars3.jpg",
+            image: "/images/webinars3.webp",
         },
         // Add more webinars as needed
     ];

@@ -6,19 +6,19 @@ const stories = [
   {
     name: "Ahmed Ali",
     role: "Full Stack Developer",
-    image: "/images/man1.jpg",
+    image: "/images/man1.webp",
     story: "After completing the MERN stack course, I got my first job as a Full Stack Developer at a leading tech firm! The course didn't just teach me the technical skills but also how to work effectively in a team. I built a portfolio project with my classmates—a car rental system—that showcased both my frontend and backend capabilities. During my interviews, recruiters were impressed with the project's complexity and my problem-solving approach. Now, I'm working on large-scale applications, and every day feels like an opportunity to grow!"
   },
   {
     name: "Sara Youssef",
     role: "Frontend Engineer",
-    image: "/images/woman1.jpg",
+    image: "/images/woman1.webp",
     story: "Thanks to New Horizons' guidance, I became a Frontend Engineer and now work on projects for international clients. I was hesitant at first, but the instructors encouraged me to take on challenging assignments like building a dynamic e-commerce site from scratch. The mock interviews and feedback sessions really boosted my confidence. Now, I specialize in creating visually stunning and user-friendly interfaces for global brands, and it feels amazing to see my work impact so many users worldwide. New Horizons was a turning point in my career journey!"
   },
   {
     name: "Omar El-Sayed",
     role: "Backend Developer",
-    image: "/images/man3.jpg",
+    image: "/images/man3.webp",
 	story:"The practical training gave me the confidence to excel as a Backend Developer at a multinational corporation. During the MERN stack course, I learned to design scalable APIs and secure authentication systems. One of my favorite projects was creating a booking platform for events, which taught me a lot about database optimization. Now, I’m part of a team that handles high-traffic applications, and my work directly impacts thousands of users. I owe my career leap to New Horizons—they gave me the skills and confidence to chase my dreams!"
   }
 ];
@@ -45,11 +45,11 @@ const Success = () => {
         />
         <meta property="og:title" content="Share Your Success Story - New Horizons" />
         <meta property="og:description" content="Share your success story with us! Explore inspiring stories from trainees and clients at New Horizons." />
-        <meta property="og:image" content="/images/New Horizons Logo.png" />
+        <meta property="og:image" content="/images/New Horizons Logo.webp" />
       </Helmet>
 
       {/* Hero Section */}
-      <section className="relative bg-[url('/images/Handshake.png')] bg-cover bg-center bg-no-repeat">
+      <section className="relative bg-[url('/images/Handshake.webp')] bg-cover bg-center bg-no-repeat">
         <div className="absolute inset-0 bg-gray-900 opacity-70"></div>
         <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
           <div className="max-w-xl text-left">

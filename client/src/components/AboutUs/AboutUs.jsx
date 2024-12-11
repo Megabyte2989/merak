@@ -16,21 +16,21 @@ const AboutUs = () => {
 			description:
 				'Empowering individuals to achieve their full potential through quality education.',
 			image:
-				'/images/empowerment.jpg',
+				'/images/empowerment.webp',
 		},
 		{
 			title: 'Innovation',
 			description:
 				'Continuously updating our programs to include the latest industry trends.',
 			image:
-				'/images/innovation.jpg',
+				'/images/innovation.webp',
 		},
 		{
 			title: 'Community',
 			description:
 				'Building a supportive community for learners and professionals alike.',
 			image:
-				'/images/community.jpg',
+				'/images/community.webp',
 		},
 	];
 
@@ -79,7 +79,7 @@ const AboutUs = () => {
 					property="og:description"
 					content="Discover New Horizons with our professional training courses. Learn more about our mission, vision, and frequently asked questions to enhance your career."
 				/>
-				<meta property="og:image" content="/images/New Horizons Logo.png" />
+				<meta property="og:image" content="/images/New Horizons Logo.webp" />
 				{/* <meta property="og:url" content="" /> */}
 			</Helmet>
 
@@ -111,7 +111,7 @@ const AboutUs = () => {
 					initial={{ scale: 0.9, opacity: 0 }}
 					animate={{ scale: 1, opacity: 1 }}
 					transition={{ duration: 1, delay: 0.4 }}
-					src="/images/about-us.jpg"
+					src="/images/about-us.webp"
 					style={{ willChange: 'opacity, scale' }}
 					alt="Professional Training and Development with New Horizons"
 					className="hero-image mx-auto mt-6 rounded-lg shadow-xl w-full md:w-1/2"

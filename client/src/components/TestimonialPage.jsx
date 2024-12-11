@@ -13,7 +13,7 @@ const TestimonialPage = () => {
       name: "Sara Ahmed",
       role: "Freelance React Developer",
       image:
-        "https://img.freepik.com/free-photo/friendly-pleasant-cheerful-east-asian-woman-striped-t-shirt-raising-palm-wave-hand-greeting-saying-hi-hello-smiling-with-joyful-expression-as-welcoming-newbies-white-background_176420-36727.jpg",
+        "https://img.freepik.com/free-photo/friendly-pleasant-cheerful-east-asian-woman-striped-t-shirt-raising-palm-wave-hand-greeting-saying-hi-hello-smiling-with-joyful-expression-as-welcoming-newbies-white-background_176420-36727.webp",
     },
     {
       quote:
@@ -21,7 +21,7 @@ const TestimonialPage = () => {
       name: "Salma Hany",
       role: "Web Developer",
       image:
-        "https://img.freepik.com/free-photo/lifestyle-beauty-fashion-people-emotions-concept-young-asian-female-office-manager-ceo-with-pleased-expression-standing-white-background-smiling-with-arms-crossed-chest_1258-59329.jpg?semt=ais_hybrid",
+        "https://img.freepik.com/free-photo/lifestyle-beauty-fashion-people-emotions-concept-young-asian-female-office-manager-ceo-with-pleased-expression-standing-white-background-smiling-with-arms-crossed-chest_1258-59329.webp?semt=ais_hybrid",
     },
     {
       quote:
@@ -29,7 +29,7 @@ const TestimonialPage = () => {
       name: "Waad Akram",
       role: "UI/UX Designer",
       image:
-        "https://thumbs.wbm.im/pw/small/b6dc1f20e82f11ab0cf61a9958441a16.jpg",
+        "https://thumbs.wbm.im/pw/small/b6dc1f20e82f11ab0cf61a9958441a16.webp",
     },
   ];
   const handleSubmit = (e) => {

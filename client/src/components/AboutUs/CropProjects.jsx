@@ -15,7 +15,7 @@ function CropProjects() {
 					property="og:description"
 					content="Explore New Horizons through our CROP projects. Discover our initiatives in empowering national development, collaboration, and public service."
 				/>
-				<meta property="og:image" content="/images/New Horizons Logo.png" />
+				<meta property="og:image" content="/images/New Horizons Logo.webp" />
 				{/* <meta
 					property="og:url"
 					content="https://www.newhorizons.com/crop-projects"
@@ -23,7 +23,7 @@ function CropProjects() {
 			</Helmet>
 
 			{/* Hero Section */}
-			<div className="relative pt-32 pb-32 md:h-screen bg-fixed bg-[url('/public/aboutUs.jpg')] bg-cover bg-center w-full -z-10">
+			<div className="relative pt-32 pb-32 md:h-screen bg-fixed bg-[url('/public/aboutUs.webp')] bg-cover bg-center w-full -z-10">
 				<div class="absolute inset-0 bg-russian-violet opacity-70"></div>
 				<div className="container h-full mx-auto relative">
 					<div className="leading-none text-center text-white flex flex-col justify-center items-center h-full ">
@@ -54,7 +54,7 @@ function CropProjects() {
 							{/* <!-- Image --> */}
 							<img
 								loading="lazy"
-								src="./images/depi.jpg"
+								src="./images/depi.webp"
 								alt="DEPI Internship logo"
 								className="w-full object-cover transition-transform duration-300 group-hover:scale-110"
 							/>
@@ -68,7 +68,7 @@ function CropProjects() {
 							{/* <!-- Image --> */}
 							<img
 								loading="lazy"
-								src="./images/deci.jpg"
+								src="./images/deci.webp"
 								alt="DECI Internship logo"
 								className="w-full object-cover transition-transform duration-300 group-hover:scale-110"
 							/>
@@ -82,7 +82,7 @@ function CropProjects() {
 							{/* <!-- Image --> */}
 							<img
 								loading="lazy"
-								src="./images/debi.jpg"
+								src="./images/debi.webp"
 								alt="DEBI Internship logo"
 								className="w-full object-cover transition-transform duration-300 group-hover:scale-110"
 							/>

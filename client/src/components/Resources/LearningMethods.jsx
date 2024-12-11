@@ -15,7 +15,7 @@ const LearningMethods = () => {
 			],
 			button: 'Find Training',
 			image:
-				'/images/lm1.jpg',
+				'/images/lm1.webp',
 		},
 		{
 			title: 'Private Group Training',
@@ -29,7 +29,7 @@ const LearningMethods = () => {
 			],
 			button: 'Contact Us to Learn More',
 			image:
-				'/images/lm2.jpg',
+				'/images/lm2.webp',
 		},
 		{
 			title: 'Custom Training Solutions',
@@ -42,7 +42,7 @@ const LearningMethods = () => {
 			],
 			button: 'Learn More and Start Customizing',
 			image:
-				'/images/lm3.jpg',
+				'/images/lm3.webp',
 		},
 		{
 			title: 'Educate 360 Pro',
@@ -56,7 +56,7 @@ const LearningMethods = () => {
 			],
 			button: 'Learn More About Educate 360 Pro',
 			image:
-				'/images/lm4.jpg',
+				'/images/lm4.webp',
 		},
 	];
 
@@ -110,7 +110,7 @@ const LearningMethods = () => {
 				className="mt-16 p-8 rounded-xl shadow-lg bg-cover bg-center"
 				style={{
 					backgroundImage:
-						"url('/images/cobg.jpg')",
+						"url('/images/cobg.webp')",
 				}}
 			>
 				<div className="bg-white p-8 rounded-lg shadow-lg">

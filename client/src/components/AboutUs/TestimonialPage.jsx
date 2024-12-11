@@ -17,19 +17,19 @@ const TestimonialPage = () => {
 			quote: '“The training at New Horizons was a game-changer. The instructors were patient and supportive, and the curriculum was comprehensive. I’m now much more proficient in my role and feel more confident in my abilities.”',
 			name: 'Ahmed Ali',
 			role: 'Digital Marketing Specialist',
-			image: '/images/man1.jpg',
+			image: '/images/man1.webp',
 		  },
 		  {
 			quote: '“I was impressed by the quality of the training at New Horizons. The hands-on exercises and real-world projects helped solidify my understanding of the concepts. I’m grateful for the opportunity to learn from such experienced instructors.”',
 			name: 'Mohamed Hassan',
 			role: 'Data Analyst',
-			image: '/images/man2.jpeg',
+			image: '/images/man2.webp',
 		  },
 		  {
 			quote: '“New Horizons provided me with the skills and knowledge I needed to succeed in my career. The flexible learning options and personalized support made it easy to balance my work and studies. I highly recommend their programs to anyone looking to advance their career.”',
 			name: 'Karim Ibrahim',
 			role: 'Project Manager',
-			image: '/images/man3.jpg',
+			image: '/images/man3.webp',
 		  },
 		{
 			quote:
@@ -37,7 +37,7 @@ const TestimonialPage = () => {
 			name: 'Waad Akram',
 			role: 'UI/UX Designer',
 			image:
-				'/images/woman1.jpg',
+				'/images/woman1.webp',
 		},
 		{
 			quote:
@@ -45,7 +45,7 @@ const TestimonialPage = () => {
 			name: 'Sara Ahmed',
 			role: 'Freelance React Developer',
 			image:
-				'/images/woman2.jpeg',
+				'/images/woman2.webp',
 		},
 		{
 			quote:
@@ -53,7 +53,7 @@ const TestimonialPage = () => {
 			name: 'Salma Hany',
 			role: 'Web Developer',
 			image:
-				'/images/woman3.jpeg',
+				'/images/woman3.webp',
 		},
 		
 	];
@@ -92,7 +92,7 @@ const TestimonialPage = () => {
 					property="og:description"
 					content="Read what our satisfied clients say about New Horizons' services."
 				/>
-				<meta property="og:image" content="path/to/preview-image.jpg" />
+				<meta property="og:image" content="path/to/preview-image.webp" />
 				<meta
 					property="og:url"
 					content="https://yourwebsite.com/testimonials"
