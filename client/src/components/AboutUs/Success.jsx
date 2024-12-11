@@ -12,7 +12,7 @@ const stories = [
   {
     name: "Sara Youssef",
     role: "Frontend Engineer",
-    image: "/images/man2.jpeg",
+    image: "/images/woman1.jpg",
     story: "Thanks to New Horizons' guidance, I became a Frontend Engineer and now work on projects for international clients. I was hesitant at first, but the instructors encouraged me to take on challenging assignments like building a dynamic e-commerce site from scratch. The mock interviews and feedback sessions really boosted my confidence. Now, I specialize in creating visually stunning and user-friendly interfaces for global brands, and it feels amazing to see my work impact so many users worldwide. New Horizons was a turning point in my career journey!"
   },
   {

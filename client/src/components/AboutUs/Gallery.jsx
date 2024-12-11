@@ -27,32 +27,32 @@ const Gallery = () => {
 
 	const galleryImages = [
 		{
-			url: './images/vr.avif',
+			url: './images/vr.jpg',
 			alt: 'Photo by Minh Pham',
 			label: 'VR',
 		},
 		{
-			url: './images/tablet.avif',
+			url: './images/tablet.jpg',
 			alt: 'Photo by Magicle',
 			label: 'Tech',
 		},
 		{
-			url: './images/laptop.avif',
+			url: './images/laptop.jpg',
 			alt: 'Photo by Martin Sanchez',
 			label: 'Dev',
 		},
 		{
-			url: './images/tech.avif',
+			url: './images/tech.jpg',
 			alt: 'Photo by Lorenzo Herrera',
 			label: 'Retro',
 		},
 		{
-			url: './images/vr.avif',
+			url: './images/vr.jpg',
 			alt: 'Photo by Minh Pham',
 			label: 'VR',
 		},
 		{
-			url: './images/laptop.avif',
+			url: './images/laptop.jpg',
 			alt: 'Photo by Martin Sanchez',
 			label: 'Dev',
 		}
@@ -103,11 +103,12 @@ const Gallery = () => {
 
 			{/* Carousel Section */}
 			<div
-				className="relative h-screen w-full overflow-hidden"
+				className="relative h-screen w-full overflow-hidden bg-black"
 				onKeyDown={handleKeyDown}
 				tabIndex={0}
 				role="region"
 				aria-label="Image slider"
+				
 			>
 				<AnimatePresence mode="wait">
 					<motion.div

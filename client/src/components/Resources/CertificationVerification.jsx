@@ -36,7 +36,7 @@ const CertificationVerification = () => {
     <div
       className="min-h-screen bg-cover bg-center flex flex-col items-center justify-center px-4"
       style={{
-        backgroundImage: "url('/images/certificationbg.avif')", // Replace with your image path
+        backgroundImage: "url('/images/certificationbg.jpg')", // Replace with your image path
       }}
     >
       {/* Marketing Section */}

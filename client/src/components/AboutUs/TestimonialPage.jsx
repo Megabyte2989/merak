@@ -23,7 +23,7 @@ const TestimonialPage = () => {
 			quote: '“I was impressed by the quality of the training at New Horizons. The hands-on exercises and real-world projects helped solidify my understanding of the concepts. I’m grateful for the opportunity to learn from such experienced instructors.”',
 			name: 'Mohamed Hassan',
 			role: 'Data Analyst',
-			image: '/images/man2.jpg',
+			image: '/images/man2.jpeg',
 		  },
 		  {
 			quote: '“New Horizons provided me with the skills and knowledge I needed to succeed in my career. The flexible learning options and personalized support made it easy to balance my work and studies. I highly recommend their programs to anyone looking to advance their career.”',
