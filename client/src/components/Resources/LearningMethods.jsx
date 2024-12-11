@@ -15,7 +15,7 @@ const LearningMethods = () => {
 			],
 			button: 'Find Training',
 			image:
-				'https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+				'/images/lm1.webp',
 		},
 		{
 			title: 'Private Group Training',
@@ -29,7 +29,7 @@ const LearningMethods = () => {
 			],
 			button: 'Contact Us to Learn More',
 			image:
-				'https://images.unsplash.com/photo-1622674777904-386b3ef30c4a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZGV2ZWxvcGVyfGVufDB8fDB8fHww',
+				'/images/lm2.webp',
 		},
 		{
 			title: 'Custom Training Solutions',
@@ -42,7 +42,7 @@ const LearningMethods = () => {
 			],
 			button: 'Learn More and Start Customizing',
 			image:
-				'https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+				'/images/lm3.webp',
 		},
 		{
 			title: 'Educate 360 Pro',
@@ -56,7 +56,7 @@ const LearningMethods = () => {
 			],
 			button: 'Learn More About Educate 360 Pro',
 			image:
-				'https://www.acacia.edu/wp-content/uploads/2023/06/acacia-blog-image-1024x578.jpg',
+				'/images/lm4.webp',
 		},
 	];
 
@@ -110,7 +110,7 @@ const LearningMethods = () => {
 				className="mt-16 p-8 rounded-xl shadow-lg bg-cover bg-center"
 				style={{
 					backgroundImage:
-						"url('https://images.unsplash.com/photo-1535136104956-115a2cd67fc4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHRlY2h8ZW58MHx8MHx8fDA%3D')",
+						"url('/images/cobg.webp')",
 				}}
 			>
 				<div className="bg-white p-8 rounded-lg shadow-lg">

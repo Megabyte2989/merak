@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import './App.css';
 import AboutUs from './components/AboutUs/AboutUs';
 import CropProjects from './components/AboutUs/CropProjects';
@@ -20,6 +21,7 @@ import Webinars from './components/Resources/Webinars';
 function App() {
 	return (
 		<>
+		 <HelmetProvider>
 			<BrowserRouter>
 				<Navbar />
 
@@ -54,6 +56,7 @@ function App() {
 				</div>
 				<Foot />
 			</BrowserRouter>
+			</HelmetProvider>
 		</>
 	);
 }

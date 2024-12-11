@@ -13,7 +13,7 @@ const TestimonialPage = () => {
       name: "Sara Ahmed",
       role: "Freelance React Developer",
       image:
-        "https://img.freepik.com/free-photo/friendly-pleasant-cheerful-east-asian-woman-striped-t-shirt-raising-palm-wave-hand-greeting-saying-hi-hello-smiling-with-joyful-expression-as-welcoming-newbies-white-background_176420-36727.jpg",
+        "https://img.freepik.com/free-photo/friendly-pleasant-cheerful-east-asian-woman-striped-t-shirt-raising-palm-wave-hand-greeting-saying-hi-hello-smiling-with-joyful-expression-as-welcoming-newbies-white-background_176420-36727.webp",
     },
     {
       quote:
@@ -21,7 +21,7 @@ const TestimonialPage = () => {
       name: "Salma Hany",
       role: "Web Developer",
       image:
-        "https://img.freepik.com/free-photo/lifestyle-beauty-fashion-people-emotions-concept-young-asian-female-office-manager-ceo-with-pleased-expression-standing-white-background-smiling-with-arms-crossed-chest_1258-59329.jpg?semt=ais_hybrid",
+        "https://img.freepik.com/free-photo/lifestyle-beauty-fashion-people-emotions-concept-young-asian-female-office-manager-ceo-with-pleased-expression-standing-white-background-smiling-with-arms-crossed-chest_1258-59329.webp?semt=ais_hybrid",
     },
     {
       quote:
@@ -29,7 +29,7 @@ const TestimonialPage = () => {
       name: "Waad Akram",
       role: "UI/UX Designer",
       image:
-        "https://thumbs.wbm.im/pw/small/b6dc1f20e82f11ab0cf61a9958441a16.jpg",
+        "https://thumbs.wbm.im/pw/small/b6dc1f20e82f11ab0cf61a9958441a16.webp",
     },
   ];
   const handleSubmit = (e) => {
@@ -62,10 +62,10 @@ const TestimonialPage = () => {
               Our clients have experienced remarkable transformations and growth through our dedicated services and support.
             </p>
             <div className="items-center justify-center gap-x-3 space-y-3 sm:flex sm:space-y-0">
-              <a href="#your-opinion-section" className="block py-2 px-4 text-white font-medium bg-indigo-600 duration-150 hover:bg-indigo-500 active:bg-indigo-700 rounded-lg shadow-lg hover:shadow-none">
+              <a aria-label='Share Your Thoughts' href="#your-opinion-section" className="block py-2 px-4 text-white font-medium bg-indigo-600 duration-150 hover:bg-indigo-500 active:bg-indigo-700 rounded-lg shadow-lg hover:shadow-none">
               Share Your Thoughts!
               </a>
-              <a href="" className="block py-2 px-4 text-gray-700 hover:text-gray-500 font-medium duration-150 active:bg-gray-100 border rounded-lg">
+              <a aria-label='Join us today' href="" className="block py-2 px-4 text-gray-700 hover:text-gray-500 font-medium duration-150 active:bg-gray-100 border rounded-lg">
                 Join us today
               </a>
             </div>
@@ -87,6 +87,7 @@ const TestimonialPage = () => {
 
             <div className="mt-8 text-center md:mt-16 md:order-3">
               <a
+                aria-label="Check all reviews"
                 href="javascript:void(0)"
                 title="Check all reviews"
                 className="pb-2 text-base font-bold leading-7 text-dogwood-rose transition-all duration-200 border-b-2 border-dogwood-rose hover:border-raisin-black font-pj focus:outline-none focus:ring-1 focus:ring-dogwood-rose focus:ring-offset-2 hover:text-raisin-black"

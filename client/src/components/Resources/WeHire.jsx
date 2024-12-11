@@ -89,7 +89,7 @@ function WeHire() {
 			<div className="bg-white ">
 				<div
 					className="flex items-center justify-between py-10 px-5 sm:px-10 lg:px-20 bg-dark-purple
-			 text-white md:bg-[url('/images/Wehire.png')] bg-contain bg-no-repeat bg-[85%] h-64"
+			 text-white md:bg-[url('/images/Wehire.webp')] bg-contain bg-no-repeat bg-[85%] h-64"
 				>
 					<div className="w-full sm:w-1/2">
 						<h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-dogwood-rose">

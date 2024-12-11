@@ -67,6 +67,7 @@ function ContactUs() {
 								className="text-ghost-white mr-1"
 							/>
 							<a
+							aria-label='Call Us'
 								href="tel:+1-800-500-3135"
 								className="hover:text-lavender text-xl"
 							>
@@ -81,6 +82,7 @@ function ContactUs() {
 								className="text-ghost-white mr-1"
 							/>
 							<a
+							aria-label='Email Us'
 								href="mailto:info@newhorizons.com"
 								className="hover:text-lavender text-xl"
 							>
@@ -170,7 +172,7 @@ function ContactUs() {
 				<div className="ml-10 mt-6 sm:mt-0 mb-10">
 					<img
 						className="w-full h-auto max-w-2xl hidden lg:block lg:max-w-[28rem]"
-						src="/Contactus.png"
+						src="./images/Contactus.webp"
 						alt="contactusImage"
 					/>
 				</div>

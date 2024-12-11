@@ -12,7 +12,7 @@ export const Foot = () => {
 						className="inline-flex items-center"
 					>
 						<img
-							src="New Horizons Logo.png"
+							src="/images/New_Horizons_Logo.webp"
 							alt="New Hoirzons Logo"
 							className="w-18"
 						/>
@@ -33,6 +33,7 @@ export const Foot = () => {
 						<ul className="mt-2 space-y-2">
 							<li>
 								<a
+								    aria-label="Office 365"
 									href="/"
 									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
@@ -41,6 +42,7 @@ export const Foot = () => {
 							</li>
 							<li>
 								<a
+								    aria-label="Access"
 									href="/"
 									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
@@ -49,6 +51,7 @@ export const Foot = () => {
 							</li>
 							<li>
 								<a
+								    aria-label="Excel"
 									href="/"
 									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
@@ -57,6 +60,7 @@ export const Foot = () => {
 							</li>
 							<li>
 								<a
+								    aria-label="One Note"
 									href="/"
 									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
@@ -66,6 +70,7 @@ export const Foot = () => {
 							<li>
 								<a
 									href="/"
+									aria-label="Outlook"
 									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									Outlook
@@ -74,6 +79,7 @@ export const Foot = () => {
 							<li>
 								<a
 									href="/"
+									aria-label="PowerPoint"
 									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									PowerPoint
@@ -82,6 +88,7 @@ export const Foot = () => {
 							<li>
 								<a
 									href="/"
+									aria-label="Project"
 									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									Project
@@ -90,6 +97,7 @@ export const Foot = () => {
 							<li>
 								<a
 									href="/"
+									aria-label="Publisher"
 									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									Publisher
@@ -98,6 +106,7 @@ export const Foot = () => {
 							<li>
 								<a
 									href="/"
+									aria-label="Visio"
 									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									Visio
@@ -105,6 +114,7 @@ export const Foot = () => {
 							</li>
 							<li>
 								<a
+								 aria-label='Word'
 									href="/"
 									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
@@ -120,6 +130,7 @@ export const Foot = () => {
 						<ul className="mt-2 space-y-2">
 							<li>
 								<a
+									aria-label="Azure"
 									href="/"
 									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
@@ -129,6 +140,7 @@ export const Foot = () => {
 							<li>
 								<a
 									href="/"
+									aria-label="Crm"
 									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									Dynamics CRM
@@ -137,6 +149,7 @@ export const Foot = () => {
 							<li>
 								<a
 									href="/"
+									aria-label="Exchange"
 									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									Exchange
@@ -145,6 +158,7 @@ export const Foot = () => {
 							<li>
 								<a
 									href="/"
+									aria-label="sharepoint"
 									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									SharePoint
@@ -152,6 +166,7 @@ export const Foot = () => {
 							</li>
 							<li>
 								<a
+								    aria-label="Skype for Business"
 									href="/"
 									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
@@ -160,6 +175,7 @@ export const Foot = () => {
 							</li>
 							<li>
 								<a
+								    aria-label="SQL Server"
 									href="/"
 									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
@@ -169,6 +185,7 @@ export const Foot = () => {
 							<li>
 								<a
 									href="/"
+									aria-label="System Center"
 									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									System Center
@@ -177,6 +194,7 @@ export const Foot = () => {
 							<li>
 								<a
 									href="/"
+									aria-label="Visual Studio"
 									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									Visual Studio
@@ -185,6 +203,7 @@ export const Foot = () => {
 							<li>
 								<a
 									href="/"
+									aria-label="Windows"
 									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									Windows
@@ -193,6 +212,7 @@ export const Foot = () => {
 							<li>
 								<a
 									href="/"
+									aria-label="Windows Server"
 									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									Windows Server
@@ -201,6 +221,7 @@ export const Foot = () => {
 							<li>
 								<a
 									href="/"
+									aria-label="Cisco"
 									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									Cisco
@@ -209,6 +230,7 @@ export const Foot = () => {
 							<li>
 								<a
 									href="/"
+									aria-label="Cloud Technologies"
 									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									Cloud Technologies
@@ -217,6 +239,7 @@ export const Foot = () => {
 							<li>
 								<a
 									href="/"
+									aria-label="CompTIA"
 									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									CompTIA
@@ -225,6 +248,7 @@ export const Foot = () => {
 							<li>
 								<a
 									href="/"
+									aria-label="IBM"
 									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									IBM
@@ -233,6 +257,7 @@ export const Foot = () => {
 							<li>
 								<a
 									href="/"
+									aria-label="Info Security"
 									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									Info Security
@@ -241,6 +266,7 @@ export const Foot = () => {
 							<li>
 								<a
 									href="/"
+									aria-label="ITIL"
 									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									ITIL
@@ -256,6 +282,7 @@ export const Foot = () => {
 							<li>
 								<a
 									href="/"
+									 aria-label="Business Analysis"
 									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									Business Analysis
@@ -264,6 +291,7 @@ export const Foot = () => {
 							<li>
 								<a
 									href="/"
+									aria-label="Business Skills"
 									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									Business Skills
@@ -272,6 +300,7 @@ export const Foot = () => {
 							<li>
 								<a
 									href="/"
+									aria-label="Project Management"
 									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									Project Management
@@ -280,6 +309,7 @@ export const Foot = () => {
 							<li>
 								<a
 									href="/"
+									aria-label="Six Sigma"
 									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									Six Sigma
@@ -324,6 +354,7 @@ export const Foot = () => {
 				<div className="flex items-center mt-4 space-x-4 sm:mt-0">
 					<a
 						href="/"
+						aria-label="Facebook"
 						className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
 					>
 						<svg viewBox="0 0 24 24" fill="currentColor" className="h-5">
@@ -332,6 +363,7 @@ export const Foot = () => {
 					</a>
 					<a
 						href="/"
+						aria-label="Twitter"
 						className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
 					>
 						<svg viewBox="0 0 30 30" fill="currentColor" className="h-6">
@@ -341,6 +373,7 @@ export const Foot = () => {
 					</a>
 					<a
 						href="/"
+						aria-label="LinkedIn"
 						className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
 					>
 						<svg viewBox="0 0 24 24" fill="currentColor" className="h-5">

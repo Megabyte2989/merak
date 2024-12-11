@@ -8,7 +8,7 @@ const Register = () => {
         1: {
             title: "Introduction to React",
             description: "Learn the basics of React and build your first application.",
-            imageUrl: "https://t4.ftcdn.net/jpg/02/34/09/25/360_F_234092554_wF3dTfJtJHS8AIkJ8ouIdLiDHgL3iodU.jpg",
+            imageUrl: "https://t4.ftcdn.net/webp/02/34/09/25/360_F_234092554_wF3dTfJtJHS8AIkJ8ouIdLiDHgL3iodU.webp",
             topics: [
                 "React Components",
                 "State and Props",
@@ -20,7 +20,7 @@ const Register = () => {
         2: {
             title: "Advanced JavaScript",
             description: "Deep dive into JavaScript concepts and patterns.",
-            imageUrl: "https://usa.bootcampcdn.com/wp-content/uploads/sites/119/2020/12/tes_gen_blog_code7-1-800x412.jpg",
+            imageUrl: "https://usa.bootcampcdn.com/wp-content/uploads/sites/119/2020/12/tes_gen_blog_code7-1-800x412.webp",
             topics: [
                 "Closures",
                 "Promises",
@@ -32,7 +32,7 @@ const Register = () => {
         3: {
             title: "UI/UX Design Principles",
             description: "Explore best practices for designing user-friendly interfaces.",
-            imageUrl: "https://lazyprogrammer.me/wp-content/uploads/2024/03/programmer_cmd_line.jpg",
+            imageUrl: "https://lazyprogrammer.me/wp-content/uploads/2024/03/programmer_cmd_line.webp",
             topics: [
                 "User  Research",
                 "Wireframing",

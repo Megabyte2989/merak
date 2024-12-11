@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const PartnersAndAuthorizations = () => {
   return (
     <div className="bg-gradient-to-b from-dark-purple to-[#000000] text-white min-h-screen py-10">
       <div className="max-w-7xl mx-auto px-6">
-        {/* Hero Section */}
+       {/* Hero Section */}
         <section className="bg-[#ffffffb4] text-gray-800 py-28 rounded-lg shadow-lg mb-16">
           <div className="max-w-screen-xl mx-auto px-4 gap-12 md:px-8">
             <div className="space-y-5 max-w-4xl mx-auto text-center">
@@ -22,58 +23,57 @@ const PartnersAndAuthorizations = () => {
                 and certification companies and <br /> organizations.
               </p>
               <div className="items-center justify-center gap-x-3 space-y-3 sm:flex sm:space-y-0">
-                <a href="#contact-page" className="block py-2 px-4 text-white font-medium bg-dogwood-rose duration-150 hover:bg-purple-900 rounded-lg shadow-lg hover:shadow-none">
+                <Link to="/contact-us" className="block py-2 px-4 text-white font-medium bg-dogwood-rose duration-150 hover:bg-purple-900 rounded-lg shadow-lg hover:shadow-none">
                   contact us now
-                </a>
-                <a href="#courses-section" className="block py-2 px-4 text-purple-900 hover:text-gray-800 hover:bg-gray-200 font-medium duration-150 active:bg-gray-100 border rounded-lg">
+                </Link>
+                <Link to="#courses-section" className="block py-2 px-4 text-purple-900 hover:text-gray-800 hover:bg-gray-200 font-medium duration-150 active:bg-gray-100 border rounded-lg">
                   Explore courses
-                </a>
+                </Link>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="py-12 ">
+        <section className="py-12">
           <div className="container mx-auto px-4">
             <h2 className="text-center text-3xl font-bold mb-8">Our Trusted Partners</h2>
             <p className="text-center text-lg text-[#ffffff] mb-12">
               Collaborating with industry leaders to provide world-class training and certifications.
             </p>
             <div className="grid md:grid-cols-3 gap-10">
-              {/* Card component with hover effect */}
               {[
                 {
-                  img: "microsoftlogo.jpg",
+                  img: "./images/microsoftlogo.webp",
                   title: "Microsoft Learning Partner",
                   description: "Every Microsoft course at New Horizons Cairo follows Microsoft Office Curriculum (MOC), and is taught by Microsoft Certified instructors to ensure the best possible training in Microsoft products.",
                   link: "https://www.microsoft.com/"
                 },
                 {
-                  img: "ciscologo.jpg",
+                  img: "./images/ciscologo.webp",
                   title: "Cisco Learning Partner",
                   description: "Cisco learning partners are the only authorized sources for commercial Cisco training. This ensures instructors at New Horizons Cairo are distinctively qualified to provide Cisco authorized training.",
                   link: "https://www.cisco.com/"
                 },
                 {
-                  img: "comptia.jpg",
+                  img: "./images/comptia.webp",
                   title: "CompTIA Authorized Partner",
                   description: "As a member of the CompTIA Authorized Partner program, New Horizons Cairo delivers CompTIA-approved curriculum designed for industry-recognized CompTIA certifications.",
                   link: "https://www.comptia.org/"
                 },
                 {
-                  img: "vmware.jpg",
+                  img: "./images/vmware.webp",
                   title: "VMware Authorized Training Partner",
                   description: "New Horizons Cairo is a VMware training partner, preparing students to manage server and desktop virtualization while achieving VMware certifications.",
                   link: "https://www.vmware.com/"
                 },
                 {
-                  img: "ibm.jpg",
+                  img: "./images/ibm.webp",
                   title: "IBM Training Partner",
                   description: "New Horizons Cairo provides IBM authorized training on the design, installation, maintenance, and troubleshooting of IBM software and systems.",
                   link: "https://www.ibm.com/"
                 },
                 {
-                  img: "citrix.jpg",
+                  img: "./images/citrix.webp",
                   title: "Citrix Learning Partner",
                   description: "New Horizons Cairo is a Citrix Authorized Learning Center. Our training equips you with real-world skills to enhance productivity with Citrix mobile technology solutions.",
                   link: "https://www.citrix.com/"
@@ -90,7 +90,7 @@ const PartnersAndAuthorizations = () => {
                     <p className="text-gray-600 mb-4">
                       {partner.description}
                     </p>
-                    <a href={partner.link} className="text-dogwood-rose font-medium hover:text-russian-violet">learn more</a>
+                    <a aria-label='learn more' href={partner.link} className="text-dogwood-rose font-medium hover:text-russian-violet">learn more</a>
                   </div>
                 </div>
               ))}

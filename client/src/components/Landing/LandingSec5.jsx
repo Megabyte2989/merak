@@ -34,31 +34,31 @@ function LandingSec5() {
 				}}
 			>
 				<div className="w-[80%]">
-					<img src="/images/Cisco.png" alt="Cisco" />
+					<img src="/images/Cisco.webp" alt="Cisco" />
 				</div>
 				<div className="w-[100%]">
-					<img src="/images/EcCouncil.png" alt="EC Council" />
+					<img src="/images/EcCouncil.webp" alt="EC Council" />
 				</div>
 				<div className="w-[100%]">
-					<img src="/images/CompiaTIA.png" alt="CompTIA" />
+					<img src="/images/CompiaTIA.webp" alt="CompTIA" />
 				</div>
 				<div className="w-[110%]">
-					<img src="/images/PMI.png" alt="PMI" />
+					<img src="/images/PMI.webp" alt="PMI" />
 				</div>
 				<div className="w-[110%]">
-					<img src="/images/RedHat.png" alt="Red Hat" />
+					<img src="/images/RedHat.webp" alt="Red Hat" />
 				</div>
 				<div className="w-[130%]">
-					<img src="/images/Cloud.png" alt="Cloud" />
+					<img src="/images/Cloud.webp" alt="Cloud" />
 				</div>
 				<div>
-					<img src="/images/ITIL.png" alt="ITIL" />
+					<img src="/images/ITIL.webp" alt="ITIL" />
 				</div>
 				<div className="w-[90%]">
-					<img src="/images/1411.png" alt="1411" />
+					<img src="/images/1411.webp" alt="1411" />
 				</div>
 				<div className="w-[80%]">
-					<img src="/images/Awss.png" alt="AWS" />
+					<img src="/images/Awss.webp" alt="AWS" />
 				</div>
 			</div>
 		</div>
