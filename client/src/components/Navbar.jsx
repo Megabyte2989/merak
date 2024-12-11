@@ -46,7 +46,7 @@ function Navbar() {
 								width: `${photoWidth}rem`,
 								transition: 'width 0.2s ease',
 							}}
-							src="/images/New Horizons Logo.png"
+							src="/images/New_Horizons_Logo.webp"
 							alt=""
 						/>
 					</Link>

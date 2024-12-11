@@ -18,18 +18,18 @@ function LandingSec4() {
 				</p>
 
 				<Certification
-					ImageSrc={'/images/Comp.png'}
+					ImageSrc={'/images/Comp.webp'}
 					Fpragraph={'CompTIA Certifications'}
 					Spragraph={`CompTIA has five IT certification categories that test different
             knowledge standards—from entry-level to expert.`}
 				/>
 				<Certification
-					ImageSrc={'/images/azure.png'}
+					ImageSrc={'/images/azure.webp'}
 					Fpragraph={'Microsoft Certifications'}
 					Spragraph={`Microsoft has designed their certification tracks to meet the specific needs and skill sets of job roles typically associated with their robust product line of IT solutions.`}
 				/>
 				<Certification
-					ImageSrc={'/images/AWS.png'}
+					ImageSrc={'/images/AWS.webp'}
 					Fpragraph={'AWS Certifications'}
 					Spragraph={`As a Select Training Partner with AWS, United Training offers AWS learning solutions and certification training for every member of your cloud team.`}
 				/>

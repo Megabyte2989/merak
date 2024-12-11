@@ -67,6 +67,7 @@ function ContactPlaces() {
 										className="text-dogwood-rose"
 									/>
 									<a
+									aria-label='Call Branch'
 										href={`tel:${branch.phone}`}
 										className="hover:text-dogwood-rose"
 									>
