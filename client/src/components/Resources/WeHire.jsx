@@ -135,7 +135,7 @@ const JobList = ({ jobs }) => {
 					key={job.id}
 					className={`border rounded-lg p-8 mb-4 shadow-lg  transition-all duration-[300ms] ease-in-out 
     ${activeJob === job.id ? 'max-w-[40rem] max-h-[40rem]' : 'max-w-auto max-h-[18rem]'} min-h-[18rem]
-	 flex flex-col justify-between bg-ghost-white`}
+	 flex flex-col justify-between bg-slate-300`}
 				>
 					<h2 className="text-2xl font-semibold">{job.title}</h2>
 					<p className="text-gray-600">Location: {job.location}</p>
