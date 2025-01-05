@@ -78,7 +78,7 @@ function Example() {
 					About Us
 					<FontAwesomeIcon icon={faChevronDown} className="ml-1" />
 				</FlyoutLink>
-				<FlyoutLink href="#" FlyoutContent={CoursesContent}>
+				<FlyoutLink href="/find-training" FlyoutContent={CoursesContent}>
 					Find Training
 					<FontAwesomeIcon icon={faChevronDown} className="ml-1" />
 				</FlyoutLink>
@@ -239,7 +239,7 @@ const CoursesContent = () => {
 					{/* Other Links */}
 					<Link
 						className="link-hover"
-						to={''}
+						to={'/promotions'}
 						onMouseEnter={() => setIsCertificationsActive(false)}
 					>
 						Promotions

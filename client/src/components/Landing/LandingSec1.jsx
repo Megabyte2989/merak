@@ -9,7 +9,7 @@ function LandingSec1() {
 		>
 			{/* Main Content Section */}
 			<div className="col-span-1 lg:col-span-6 flex flex-col justify-center items-start gap-6 lg:w-[50%] px-2">
-				<h1 className="text-4xl lg:text-7xl font-bold font-sans mb-8 text-dogwood-rose drop-shadow-xl ">
+				<h1 className="text-4xl lg:text-7xl font-bold font-sans mb-8 text-dogwood-rose ">
 					Unlock Your Team's
 					<Typewriter text={'Potential'} />
 				</h1>

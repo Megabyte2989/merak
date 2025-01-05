@@ -25,3 +25,30 @@
 .visible-grid {
 	@apply opacity-100;
 }
+
+@layer components {
+	.buttonMain {
+		font-family: 'Poppins', sans-serif;
+		/* Ensure fallback */
+		border-radius: 2rem;
+		padding: 1rem 1.5rem;
+		/* Combine padding shorthand */
+		color: white;
+		cursor: pointer;
+		transition:
+			background-color 0.3s ease,
+			transform 0.2s ease;
+		/* Add smooth effects */
+	}
+
+	.buttonMain:hover {
+
+		transform: scale(1.05);
+		/* Slight zoom on hover */
+	}
+
+	.buttonMain:active {
+		transform: scale(0.98);
+		/* Slight compression on click */
+	}
+}
