@@ -1,28 +1,6 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
-
-const dummyCourses = [
-  {
-    id: "101",
-    name: "React for Beginners",
-    details: "This course will introduce you to React, the most popular JavaScript library for building UIs.",
-  },
-  {
-    id: "102",
-    name: "Advanced React",
-    details: "Take your React skills to the next level with hooks, context API, and more.",
-  },
-  {
-    id: "201",
-    name: "Intro to Data Science",
-    details: "Get started with data analysis using Python and Pandas.",
-  },
-  {
-    id: "301",
-    name: "UI/UX Design Fundamentals",
-    details: "Learn the basics of creating user-centered designs.",
-  },
-];
+import { dummyCourses } from "./CoursesPage"; // Import dummyCourses
 
 const CourseDetailsPage = () => {
   const { courseId } = useParams();
@@ -37,9 +15,29 @@ const CourseDetailsPage = () => {
   return (
     <div className="container mx-auto p-6">
       <h1 className="text-3xl font-bold text-blue-600 mb-4">{course.name}</h1>
-      <p className="text-gray-700 mb-6">{course.details}</p>
+      <p className="text-gray-700 mb-6">{course.overview}</p>
+      <ul className="list-disc pl-6 mb-6">
+        <li><strong>Duration:</strong> {course.duration}</li>
+        <li><strong>Price:</strong> {course.price}</li>
+        <li><strong>Delivery Method:</strong> {course.deliveryMethod}</li>
+      </ul>
+      <h2 className="text-2xl font-semibold mb-2">Objectives</h2>
+      <ul className="list-disc pl-6 mb-6">
+        {course.objectives.map((obj, index) => (
+          <li key={index}>{obj}</li>
+        ))}
+      </ul>
+      <h2 className="text-2xl font-semibold mb-2">Why Attend?</h2>
+      <p className="mb-6">{course.whyAttend}</p>
+      <h2 className="text-2xl font-semibold mb-2">Agenda</h2>
+      
+      <ul className="list-disc pl-6 mb-6">
+        {course.agenda.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
       <button
-        className="bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700 transition-colors"
+        className="bg-blue-800 text-white py-2 px-4 rounded hover:bg-green-700 transition-colors"
         onClick={() => navigate(`/register/${course.id}`)}
       >
         Register Now
