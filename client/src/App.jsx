@@ -24,7 +24,9 @@ import CategoriesPage from './components/CategoriesPage';
 import CoursesPage from './components/CoursesPage';
 import Webinars from './components/Resources/Webinars';
 import Testcat from './components/TestingComponents/Testcat';
-import { TrainingProvider } from './contexts/TrainingContext';
+import { TrainingProvider } from './contexts/trainingContext';
+import CourseDetailsPage from './components/CourseDetailsPage';
+import RegistrationFormPage from './components/RegistrationFormPage';
 function App() {
 	return (
 		<>
@@ -56,13 +58,15 @@ function App() {
 										element={<LearningMethods />}
 									/>
 									<Route path="/Webinars" element={<Webinars />} />
-									<Route path="/register/:id" element={<Register />} />
+									<Route path="/register/:id" element={<RegistrationFormPage />} />
 									<Route
 										path="/Certification-Verification"
 										element={<CertificationVerification />}
 									/>
 									<Route path="/find-training" element={<CategoriesPage />} />
  									<Route path="/courses/:categoryId" element={<CoursesPage />} />
+									<Route path="/course/:courseId" element={<CourseDetailsPage />} />
+									<Route path="/register-course/:courseId" element={<RegistrationFormPage />} />
 									<Route path="/promotions" element={<Promotions />} />
 									{/* Uncomment or add additional routes as needed */}
 
