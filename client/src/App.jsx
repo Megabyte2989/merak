@@ -20,6 +20,8 @@ import Register from './components/Register';
 import CertificationVerification from './components/Resources/CertificationVerification';
 import LearningMethods from './components/Resources/LearningMethods';
 import WeHire from './components/Resources/WeHire';
+import CategoriesPage from './components/CategoriesPage';
+import CoursesPage from './components/CoursesPage';
 import Webinars from './components/Resources/Webinars';
 import Testcat from './components/TestingComponents/Testcat';
 import { TrainingProvider } from './contexts/TrainingContext';
@@ -59,8 +61,8 @@ function App() {
 										path="/Certification-Verification"
 										element={<CertificationVerification />}
 									/>
-									<Route path="/find-training" element={<Testcat />} />
-
+									<Route path="/find-training" element={<CategoriesPage />} />
+ 									<Route path="/courses/:categoryId" element={<CoursesPage />} />
 									<Route path="/promotions" element={<Promotions />} />
 									{/* Uncomment or add additional routes as needed */}
 

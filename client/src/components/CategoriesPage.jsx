@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchCategories } from "./store/categoriesSlice";
+import { fetchCategories } from "../Redux/Slices/categoriesSlice";
 import { useNavigate } from "react-router-dom";
 
 const CategoriesPage = () => {

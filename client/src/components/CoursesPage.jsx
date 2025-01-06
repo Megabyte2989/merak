@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchCourses } from "./store/coursesSlice";
+import { fetchCourses } from "../Redux/Slices/coursesSlice";
 import { useParams } from "react-router-dom";
 
 const CoursesPage = () => {

@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchCategories } from '../Redux/Slices/categroiesSlice';
+import { fetchCategories } from '../Redux/Slices/categoriesSlice';
 import { fetchCourses } from '../Redux/Slices/coursesSlice'; // Assuming you have this slice
 import { fetchSectors } from '../Redux/Slices/sectorsSlice';
 
