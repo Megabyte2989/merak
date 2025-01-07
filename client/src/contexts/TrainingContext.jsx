@@ -16,14 +16,14 @@ export const TrainingProvider = ({ children }) => {
 	// Fetch data from the Redux store
 	const categories = useSelector(state => state.categories.categoriesData);
 	const sectors = useSelector(state => state.sectors.sectorsData);
-	// const courses = useSelector(state => state.courses.coursesData); // Assuming you have this slice
+	const courses = useSelector(state => state.courses.coursesData); // Assuming you have this slice
 
 	// Fetch data on component mount
 	useEffect(() => {
 		try {
 			dispatch(fetchCategories());
 			dispatch(fetchSectors());
-			dispatch(fetchCourses()); // Uncomment if you have this action
+			dispatch(fetchCourses());
 		} catch (error) {
 			console.error('Error fetching data:', error.message);
 		}
@@ -33,7 +33,7 @@ export const TrainingProvider = ({ children }) => {
 	const contextValue = {
 		categories,
 		sectors,
-		// courses,
+		courses,
 	};
 
 	return (

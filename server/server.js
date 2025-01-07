@@ -5,6 +5,7 @@ const dotenv = require('dotenv')
 const categoriesRoutes = require('./Routes/categoriesRoutes')
 const sectorRoutes= require('./Routes/sectorsRoutes')
 const sequelize = require('./Database/db')
+const coursesRoutes = require('./Routes/coursesRoutes')
 
 app.use(cors())
 app.use(express.json()); 
@@ -25,6 +26,7 @@ sequelize
 
 app.use('/api',categoriesRoutes)
 app.use('/api',sectorRoutes)
+app.use('/api',coursesRoutes)
 
 
 // app.get('/api/test', (req, res) => {

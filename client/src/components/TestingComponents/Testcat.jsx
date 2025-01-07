@@ -2,7 +2,7 @@ import React from 'react';
 import { useTrainingContext } from '../../contexts/trainingContext';
 
 function Testcat() {
-	const { categories, sectors } = useTrainingContext();
+	const { categories, sectors, courses } = useTrainingContext();
 	return (
 		<>
 			{/* <div className="categories">
@@ -18,11 +18,18 @@ function Testcat() {
 					</div>
 				))}
 			</div> */}
-			<div className="sectors">
+			{/* <div className="sectors">
 				{sectors.map(sector => (
 					<div key={sector.id} className="category-item">
 						<p>{sector.id}</p>
 						<p>{sector.Category.id}</p>
+					</div>
+				))}
+			</div> */}
+			<div className="courses">
+				{courses.map(course => (
+					<div key={course.id} className="category-item">
+						<p>{course.sector.name}</p>
 					</div>
 				))}
 			</div>
