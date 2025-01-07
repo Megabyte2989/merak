@@ -67,7 +67,7 @@ function App() {
 									<Route path="/find-training" element={<CategoriesPage />} />
 									<Route path="/categories/:categoryId/sectors" element={<SectorsPage />} />
 									<Route path="/sectors/:sectorId/courses" element={<CoursesPage />} />
-									<Route path="/course/:courseId" element={<CourseDetailsPage />} />
+									<Route path="/courses/:courseId" element={<CourseDetailsPage />} />
 									<Route path="/register-course/:courseId" element={<RegistrationFormPage />} />
 									<Route path="/promotions" element={<Promotions />} />
 									{/* Uncomment or add additional routes as needed */}
