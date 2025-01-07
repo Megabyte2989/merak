@@ -27,6 +27,7 @@ import Testcat from './components/TestingComponents/Testcat';
 import { TrainingProvider } from './contexts/trainingContext';
 import CourseDetailsPage from './components/CourseDetailsPage';
 import RegistrationFormPage from './components/RegistrationFormPage';
+import SectorsPage from './components/SectorsPage';
 function App() {
 	return (
 		<>
@@ -64,7 +65,8 @@ function App() {
 										element={<CertificationVerification />}
 									/>
 									<Route path="/find-training" element={<CategoriesPage />} />
- 									<Route path="/courses/:categoryId" element={<CoursesPage />} />
+									<Route path="/categories/:categoryId/sectors" element={<SectorsPage />} />
+									<Route path="/sectors/:sectorId/courses" element={<CoursesPage />} />
 									<Route path="/course/:courseId" element={<CourseDetailsPage />} />
 									<Route path="/register-course/:courseId" element={<RegistrationFormPage />} />
 									<Route path="/promotions" element={<Promotions />} />

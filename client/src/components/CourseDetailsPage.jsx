@@ -1,12 +1,14 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { dummyCourses } from "./CoursesPage"; // Import dummyCourses
+import { dummyCategories } from "./data";
 
 const CourseDetailsPage = () => {
   const { courseId } = useParams();
   const navigate = useNavigate();
 
-  const course = dummyCourses.find((c) => c.id === courseId);
+  const course = dummyCategories
+    .flatMap((category) => category.sectors.flatMap((sector) => sector.courses))
+    .find((c) => c.id === courseId);
 
   if (!course) {
     return <p className="text-red-500">Course not found!</p>;
@@ -30,7 +32,6 @@ const CourseDetailsPage = () => {
       <h2 className="text-2xl font-semibold mb-2">Why Attend?</h2>
       <p className="mb-6">{course.whyAttend}</p>
       <h2 className="text-2xl font-semibold mb-2">Agenda</h2>
-      
       <ul className="list-disc pl-6 mb-6">
         {course.agenda.map((item, index) => (
           <li key={index}>{item}</li>
