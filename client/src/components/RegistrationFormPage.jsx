@@ -2,48 +2,64 @@ import React from "react";
 
 const RegistrationFormPage = () => {
   return (
-    <div className="container mx-auto p-6">
-      <h1 className="text-3xl font-bold text-blue-600 mb-4 text-center">Register for the Course</h1>
-      <form className="max-w-lg mx-auto border border-gray-300 p-6 rounded-lg">
-        <label className="block mb-4">
-          <span className="text-gray-700">First Name</span>
-          <input
-            type="text"
-            className="mt-1 block w-full border-gray-300 rounded-lg shadow-sm focus:ring-0 focus:border-none focus:outline-none"
-            placeholder="Enter your first name"
-          />
-        </label>
-        <label className="block mb-4">
-          <span className="text-gray-700">Last Name</span>
-          <input
-            type="text"
-            className="mt-1 block w-full border-gray-300 rounded-lg shadow-sm focus:ring-0 focus:border-none focus:outline-none"
-            placeholder="Enter your last name"
-          />
-        </label>
-        <label className="block mb-4">
-          <span className="text-gray-700">Phone Number</span>
-          <input
-            type="tel"
-            className="mt-1 block w-full border-gray-300 rounded-lg shadow-sm focus:ring-0 focus:border-none focus:outline-none"
-            placeholder="Enter your phone number"
-          />
-        </label>
-        <label className="block mb-4">
-          <span className="text-gray-700">Email Address</span>
-          <input
-            type="email"
-            className="mt-1 block w-full border-gray-300 rounded-lg shadow-sm focus:ring-0 focus:border-none focus:outline-none"
-            placeholder="Enter your email"
-          />
-        </label>
-        <button
-          type="submit"
-          className="w-full bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors"
-        >
-          Register
-        </button>
-      </form>
+    <div className="min-h-screen bg-gradient-to-b from-white to-gray-100 flex items-center justify-center">
+      <div className="container mx-auto px-6">
+        {/* Heading Section */}
+        <h1 className="text-4xl font-bold text-center text-blue-800 mb-8">
+          Register for the Course
+        </h1>
+
+        {/* Form Section */}
+        <form className="max-w-lg mx-auto bg-white shadow-lg rounded-lg p-8 border border-gray-200">
+          {/* First Name */}
+          <label className="block mb-6">
+            <span className="text-gray-700 font-medium">First Name</span>
+            <input
+              type="text"
+              className="mt-2 block w-full border border-gray-300 rounded-lg py-2 px-4 shadow-sm focus:ring-blue-500 focus:border-blue-500"
+              placeholder="Enter your first name"
+            />
+          </label>
+
+          {/* Last Name */}
+          <label className="block mb-6">
+            <span className="text-gray-700 font-medium">Last Name</span>
+            <input
+              type="text"
+              className="mt-2 block w-full border border-gray-300 rounded-lg py-2 px-4 shadow-sm focus:ring-blue-500 focus:border-blue-500"
+              placeholder="Enter your last name"
+            />
+          </label>
+
+          {/* Phone Number */}
+          <label className="block mb-6">
+            <span className="text-gray-700 font-medium">Phone Number</span>
+            <input
+              type="tel"
+              className="mt-2 block w-full border border-gray-300 rounded-lg py-2 px-4 shadow-sm focus:ring-blue-500 focus:border-blue-500"
+              placeholder="Enter your phone number"
+            />
+          </label>
+
+          {/* Email Address */}
+          <label className="block mb-6">
+            <span className="text-gray-700 font-medium">Email Address</span>
+            <input
+              type="email"
+              className="mt-2 block w-full border border-gray-300 rounded-lg py-2 px-4 shadow-sm focus:ring-blue-500 focus:border-blue-500"
+              placeholder="Enter your email"
+            />
+          </label>
+
+          {/* Submit Button */}
+          <button
+            type="submit"
+            className="w-full bg-blue-700 text-white py-3 px-4 rounded-lg font-medium hover:bg-green-600 transition-all"
+          >
+            Register Now
+          </button>
+        </form>
+      </div>
     </div>
   );
 };

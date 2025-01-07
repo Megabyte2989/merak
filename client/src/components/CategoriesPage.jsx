@@ -1,3 +1,4 @@
+// CategoriesPage.jsx
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { dummyCategories } from "./data";
@@ -7,23 +8,51 @@ const CategoriesPage = () => {
 
   return (
     <div className="container mx-auto p-6">
+      {/* Hero Section */}
+      <div className="bg-gradient-to-r from-blue-500 to-orange-500 text-white p-10 rounded-lg mb-10">
+        <h1 className="text-4xl font-bold mb-4">Explore Your Learning Opportunities</h1>
+        <p className="text-lg">Find the perfect course to elevate your skills and advance your career.</p>
+        <p className="text-lg">Contact us to learn more about our courses and how we can help you achieve your goals.</p>
+        <button 
+          className="mt-4 bg-white text-blue-500 font-semibold py-2 px-6 rounded-full hover:bg-gray-200 transition-colors"
+          onClick={() => navigate("/contact-us")}
+        >
+          contact us
+        </button>
+      </div>
+
+      {/* Course Categories Section */}
       <h1 className="text-3xl font-bold text-blue-600 mb-6">Course Categories</h1>
-      {dummyCategories.map((category) => (
-        <div key={category.id} className="mb-8">
-          <h2 className="text-2xl font-semibold text-blue-600 mb-4">{category.name}</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {category.sectors.map((sector) => (
-              <div
-                key={sector.id}
-                className="border border-gray-300 p-4 rounded-lg hover:shadow-lg transition-shadow cursor-pointer"
-                onClick={() => navigate(`/sectors/${sector.id}/courses`)}
-              >
-                <h3 className="text-xl font-semibold text-gray-800">{sector.name}</h3>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {dummyCategories.map((category) => (
+          <div key={category.id} className="bg-white shadow-md rounded-lg p-6 hover:shadow-xl transition-shadow">
+            <div className="flex items-start mb-4">
+              <img
+                src={category.image}
+                alt={category.name}
+                className="w-24 h-24 rounded-lg mr-4"
+              />
+              <div>
+                <h2 className="text-2xl font-semibold text-blue-600 mb-2">{category.name}</h2>
+                <div className="grid grid-cols-1 gap-2">
+                  {category.sectors.map((sector) => (
+                    <div
+                      key={sector.id}
+                      className="border border-gray-200 p-2 rounded-lg hover:bg-blue-100 cursor-pointer"
+                      onClick={() => navigate(`/sectors/${sector.id}/courses`)}
+                    >
+                      <h3 className="text-lg font-medium text-gray-800">{sector.name}</h3>
+                    </div>
+                  ))}
+                </div>
               </div>
-            ))}
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
+
+      {/* Testimonials Section */}
+      
     </div>
   );
 };
