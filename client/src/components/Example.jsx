@@ -45,7 +45,7 @@ function Example() {
 					<FontAwesomeIcon icon={faChevronDown} className="ml-1" />
 				</MobileFlyoutLink>
 				<MobileFlyoutLink
-					href="#"
+					href="/"
 					FlyoutContent={
 						activeFlyout === 'CoursesContent' ? CoursesContent : null
 					}
