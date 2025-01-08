@@ -28,6 +28,8 @@ import { TrainingProvider } from './contexts/trainingContext';
 import CourseDetailsPage from './components/CourseDetailsPage';
 import RegistrationFormPage from './components/RegistrationFormPage';
 import SectorsPage from './components/SectorsPage';
+import NotFoundPage from './components/NotFoundPage'; // Import the NotFoundPage component
+
 function App() {
 	return (
 		<>
@@ -70,6 +72,8 @@ function App() {
 									<Route path="/courses/:courseId" element={<CourseDetailsPage />} />
 									<Route path="/register-course/:courseId" element={<RegistrationFormPage />} />
 									<Route path="/promotions" element={<Promotions />} />
+									<Route path="*" element={<NotFoundPage />} /> {/* Add this line */}
+
 									{/* Uncomment or add additional routes as needed */}
 
 									{/* <Route path="/timer" element={<Timer />} /> */}
