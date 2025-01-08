@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit'
-import categoriesReducer from './Slices/categroiesSlice'
+import categoriesReducer from './Slices/categoriesSlice'
 import coursesReducer from './Slices/coursesSlice'
 import sectorsReducer from './Slices/sectorsSlice'
 
