@@ -18,6 +18,8 @@ const Category = require('./categories');
         type: DataTypes.INTEGER,
         allowNull: false,
     },
+},{
+    timestamps:false
 })
 
 Sector.belongsTo(Category,{

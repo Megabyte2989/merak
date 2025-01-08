@@ -29,7 +29,8 @@ function Testcat() {
 			<div className="courses">
 				{courses.map(course => (
 					<div key={course.id} className="category-item">
-						<p>{course.sector.name}</p>
+						{/* <p>{course.name}</p> */}
+						<p>{course.name}</p>
 					</div>
 				))}
 			</div>
