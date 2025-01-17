@@ -4,16 +4,16 @@
 
 /* Common hover styles for links */
 .link-hover {
-	@apply rounded-lg duration-150;
+	@apply rounded-lg duration-150 p-2 w-[90%];
 }
 
 .link-hover:hover {
-	@apply bg-dogwood-rose px-2 py-1;
+	@apply bg-dogwood-rose translate-x-2;
 }
 
 /* Common styles for active links */
 .link-active {
-	@apply bg-dogwood-rose px-2 py-1;
+	@apply bg-dogwood-rose  translate-x-2 translate-y-1;
 }
 
 /* Hidden state for the grid */
@@ -42,7 +42,6 @@
 	}
 
 	.buttonMain:hover {
-
 		transform: scale(1.05);
 		/* Slight zoom on hover */
 	}

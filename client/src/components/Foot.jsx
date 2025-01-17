@@ -18,7 +18,7 @@ export const Foot = () => {
 						/>
 					</a>
 					<div className="mt-4 lg:max-w-sm">
-						<p className="text-sm text-gray-800">
+						<p className="text-sm text-white">
 							New Horizons Cairo is an authorized training partner for many
 							industry recognized software and certification companies and
 							organizations.
@@ -33,36 +33,36 @@ export const Foot = () => {
 						<ul className="mt-2 space-y-2">
 							<li>
 								<a
-								    aria-label="Office 365"
+									aria-label="Office 365"
 									href="/"
-									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+									className="text-cool-gray transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									Office 365
 								</a>
 							</li>
 							<li>
 								<a
-								    aria-label="Access"
+									aria-label="Access"
 									href="/"
-									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+									className="text-cool-gray transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									Access
 								</a>
 							</li>
 							<li>
 								<a
-								    aria-label="Excel"
+									aria-label="Excel"
 									href="/"
-									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+									className="text-cool-gray transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									Excel
 								</a>
 							</li>
 							<li>
 								<a
-								    aria-label="One Note"
+									aria-label="One Note"
 									href="/"
-									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+									className="text-cool-gray transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									One Note
 								</a>
@@ -71,7 +71,7 @@ export const Foot = () => {
 								<a
 									href="/"
 									aria-label="Outlook"
-									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+									className="text-cool-gray transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									Outlook
 								</a>
@@ -80,7 +80,7 @@ export const Foot = () => {
 								<a
 									href="/"
 									aria-label="PowerPoint"
-									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+									className="text-cool-gray transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									PowerPoint
 								</a>
@@ -89,7 +89,7 @@ export const Foot = () => {
 								<a
 									href="/"
 									aria-label="Project"
-									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+									className="text-cool-gray transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									Project
 								</a>
@@ -98,7 +98,7 @@ export const Foot = () => {
 								<a
 									href="/"
 									aria-label="Publisher"
-									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+									className="text-cool-gray transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									Publisher
 								</a>
@@ -107,16 +107,16 @@ export const Foot = () => {
 								<a
 									href="/"
 									aria-label="Visio"
-									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+									className="text-cool-gray transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									Visio
 								</a>
 							</li>
 							<li>
 								<a
-								 aria-label='Word'
+									aria-label="Word"
 									href="/"
-									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+									className="text-cool-gray transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									Word
 								</a>
@@ -132,7 +132,7 @@ export const Foot = () => {
 								<a
 									aria-label="Azure"
 									href="/"
-									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+									className="text-cool-gray transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									Azure
 								</a>
@@ -141,7 +141,7 @@ export const Foot = () => {
 								<a
 									href="/"
 									aria-label="Crm"
-									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+									className="text-cool-gray transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									Dynamics CRM
 								</a>
@@ -150,7 +150,7 @@ export const Foot = () => {
 								<a
 									href="/"
 									aria-label="Exchange"
-									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+									className="text-cool-gray transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									Exchange
 								</a>
@@ -159,25 +159,25 @@ export const Foot = () => {
 								<a
 									href="/"
 									aria-label="sharepoint"
-									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+									className="text-cool-gray transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									SharePoint
 								</a>
 							</li>
 							<li>
 								<a
-								    aria-label="Skype for Business"
+									aria-label="Skype for Business"
 									href="/"
-									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+									className="text-cool-gray transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									Skype for Business
 								</a>
 							</li>
 							<li>
 								<a
-								    aria-label="SQL Server"
+									aria-label="SQL Server"
 									href="/"
-									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+									className="text-cool-gray transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									SQL Server
 								</a>
@@ -186,7 +186,7 @@ export const Foot = () => {
 								<a
 									href="/"
 									aria-label="System Center"
-									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+									className="text-cool-gray transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									System Center
 								</a>
@@ -195,7 +195,7 @@ export const Foot = () => {
 								<a
 									href="/"
 									aria-label="Visual Studio"
-									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+									className="text-cool-gray transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									Visual Studio
 								</a>
@@ -204,7 +204,7 @@ export const Foot = () => {
 								<a
 									href="/"
 									aria-label="Windows"
-									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+									className="text-cool-gray transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									Windows
 								</a>
@@ -213,7 +213,7 @@ export const Foot = () => {
 								<a
 									href="/"
 									aria-label="Windows Server"
-									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+									className="text-cool-gray transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									Windows Server
 								</a>
@@ -222,7 +222,7 @@ export const Foot = () => {
 								<a
 									href="/"
 									aria-label="Cisco"
-									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+									className="text-cool-gray transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									Cisco
 								</a>
@@ -231,7 +231,7 @@ export const Foot = () => {
 								<a
 									href="/"
 									aria-label="Cloud Technologies"
-									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+									className="text-cool-gray transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									Cloud Technologies
 								</a>
@@ -240,7 +240,7 @@ export const Foot = () => {
 								<a
 									href="/"
 									aria-label="CompTIA"
-									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+									className="text-cool-gray transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									CompTIA
 								</a>
@@ -249,7 +249,7 @@ export const Foot = () => {
 								<a
 									href="/"
 									aria-label="IBM"
-									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+									className="text-cool-gray transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									IBM
 								</a>
@@ -258,7 +258,7 @@ export const Foot = () => {
 								<a
 									href="/"
 									aria-label="Info Security"
-									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+									className="text-cool-gray transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									Info Security
 								</a>
@@ -267,7 +267,7 @@ export const Foot = () => {
 								<a
 									href="/"
 									aria-label="ITIL"
-									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+									className="text-cool-gray transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									ITIL
 								</a>
@@ -282,8 +282,8 @@ export const Foot = () => {
 							<li>
 								<a
 									href="/"
-									 aria-label="Business Analysis"
-									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+									aria-label="Business Analysis"
+									className="text-cool-gray transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									Business Analysis
 								</a>
@@ -292,7 +292,7 @@ export const Foot = () => {
 								<a
 									href="/"
 									aria-label="Business Skills"
-									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+									className="text-cool-gray transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									Business Skills
 								</a>
@@ -301,7 +301,7 @@ export const Foot = () => {
 								<a
 									href="/"
 									aria-label="Project Management"
-									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+									className="text-cool-gray transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									Project Management
 								</a>
@@ -310,7 +310,7 @@ export const Foot = () => {
 								<a
 									href="/"
 									aria-label="Six Sigma"
-									className="text-dark-purple transition-colors duration-300 hover:text-deep-purple-accent-400"
+									className="text-cool-gray transition-colors duration-300 hover:text-deep-purple-accent-400"
 								>
 									Six Sigma
 								</a>
@@ -322,33 +322,33 @@ export const Foot = () => {
 							Get in Touch
 						</p>
 						<ul className="mt-2 space-y-2">
-							<li className="text-dark-purple">Head Office</li>
-							<li className="text-dark-purple">
+							<li className="text-cool-gray">Head Office</li>
+							<li className="text-cool-gray">
 								99 Mostafa Elnahas St, Nasr City, floor 6
 							</li>
-							<li className="text-dark-purple">002 02 22718615</li>
-							<li className="text-dark-purple">002 02 22718620</li>
-							<li className="text-dark-purple">ABBAS ELAQAAD BRANCH</li>
-							<li className="text-dark-purple">
+							<li className="text-cool-gray">002 02 22718615</li>
+							<li className="text-cool-gray">002 02 22718620</li>
+							<li className="text-cool-gray">ABBAS ELAQAAD BRANCH</li>
+							<li className="text-cool-gray">
 								8 Mohamed Mostafa Hamam St. Behind Pizza Hut
 							</li>
-							<li className="text-dark-purple">002 02 24024822</li>
-							<li className="text-dark-purple">Mohandeseen BRANCH</li>
-							<li className="text-dark-purple">
+							<li className="text-cool-gray">002 02 24024822</li>
+							<li className="text-cool-gray">Mohandeseen BRANCH</li>
+							<li className="text-cool-gray">
 								76 Gameat Al Dewal Al Arabeya Floor 4 - Giza Governorate
 							</li>
 						</ul>
 						<p className="mt-4 text-sm text-dogwood-rose">
 							learn more: <br />
 						</p>
-						<p className="mt-2 text-dark-purple">
+						<p className="mt-2 text-cool-gray">
 							Email Us | About Us | Locations | Contact Us Privacy | Terms
 						</p>
 					</div>
 				</div>
 			</div>
 			<div className="flex flex-col justify-between pt-5 pb-10 border-t sm:flex-row">
-				<p className="text-sm text-dark-purple">
+				<p className="text-sm text-cool-gray">
 					© Copyright 2025 New Horizons. All rights reserved.
 				</p>
 				<div className="flex items-center mt-4 space-x-4 sm:mt-0">

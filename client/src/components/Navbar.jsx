@@ -21,7 +21,7 @@ function Navbar() {
 				setNavColor('#1a1332'); // Change color when scrolling down
 			} else {
 				setNavColor('white'); // Reset color to white when at the top
-				setFontcolor('black');
+				setFontcolor('Black');
 			}
 		};
 
@@ -44,7 +44,7 @@ function Navbar() {
 						<img
 							style={{
 								width: `${photoWidth}rem`,
-								transition: 'width 0.2s ease',
+								transition: 'width 0.1s',
 							}}
 							src="/images/New_Horizons_Logo.webp"
 							alt=""
@@ -55,7 +55,7 @@ function Navbar() {
 					className={`items-center justify-center flex`}
 					style={{
 						fontSize: `${fontNav}rem`,
-						transition: 'font-size 0.2s ease',
+						transition: 'font-size 0.1s',
 						color: `${fontColor}`,
 					}}
 				>

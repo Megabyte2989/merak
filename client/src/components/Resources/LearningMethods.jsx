@@ -14,8 +14,7 @@ const LearningMethods = () => {
 				'Collaborate in virtual rooms for team activities.',
 			],
 			button: 'Find Training',
-			image:
-				'/images/lm1.webp',
+			image: '/images/lm1.webp',
 		},
 		{
 			title: 'Private Group Training',
@@ -28,8 +27,7 @@ const LearningMethods = () => {
 				'Flexible scheduling to ensure productivity.',
 			],
 			button: 'Contact Us to Learn More',
-			image:
-				'/images/lm2.webp',
+			image: '/images/lm2.webp',
 		},
 		{
 			title: 'Custom Training Solutions',
@@ -41,8 +39,7 @@ const LearningMethods = () => {
 				'Augment your team with Instructional Designers, LMS Experts, and more.',
 			],
 			button: 'Learn More and Start Customizing',
-			image:
-				'/images/lm3.webp',
+			image: '/images/lm3.webp',
 		},
 		{
 			title: 'Educate 360 Pro',
@@ -55,15 +52,14 @@ const LearningMethods = () => {
 				'Track progress and take notes.',
 			],
 			button: 'Learn More About Educate 360 Pro',
-			image:
-				'/images/lm4.webp',
+			image: '/images/lm4.webp',
 		},
 	];
 
 	return (
-		<div className="bg-ghost-white min-h-screen p-8">
+		<div className="bg-gradient-to-b from-dark-purple to-[#000000] min-h-screen p-8">
 			{/* Hero Section */}
-			<div className="relative bg-dark-purple text-white py-16 rounded-lg shadow-lg text-center mb-12">
+			<div className="relative bg-[#af024f] text-white py-16 rounded-lg shadow-lg text-center mb-12">
 				<h1 className="text-4xl font-bold mb-4">
 					Learning and Delivery Methods
 				</h1>
@@ -109,8 +105,7 @@ const LearningMethods = () => {
 			<div
 				className="mt-16 p-8 rounded-xl shadow-lg bg-cover bg-center"
 				style={{
-					backgroundImage:
-						"url('/images/cobg.webp')",
+					backgroundImage: "url('/images/cobg.webp')",
 				}}
 			>
 				<div className="bg-white p-8 rounded-lg shadow-lg">

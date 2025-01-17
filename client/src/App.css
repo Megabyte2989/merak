@@ -7,6 +7,7 @@
 
 body {
 	font-family: 'Roboto', 'Open Sans', 'Poppins', sans-serif;
+	background: linear-gradient(to bottom, #6a0dad, #1a1332);
 }
 
 h1,

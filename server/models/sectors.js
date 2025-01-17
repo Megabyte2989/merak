@@ -26,5 +26,9 @@ Sector.belongsTo(Category,{
     foreignKey:'category_id',
     onDelete:'cascade'
 })
+Category.hasMany(Sector, {
+    foreignKey: 'category_id', // Matches the `category_id` field in the Sector model
+    as: 'sectors', // Alias for accessing related sectors
+});
 
 module.exports = Sector

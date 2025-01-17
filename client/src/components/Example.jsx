@@ -1,9 +1,13 @@
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import {
+	faArrowAltCircleRight,
+	faChevronDown,
+} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { AnimatePresence, motion } from 'framer-motion';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useTrainingContext } from '../contexts/trainingContext';
 
 function Example() {
 	const [activeFlyout, setActiveFlyout] = useState(null);
@@ -24,14 +28,14 @@ function Example() {
 					setActiveFlyout(null);
 				}}
 			>
-				<div className="w-6 h-0.5 bg-white mb-1"></div>
-				<div className="w-6 h-0.5 bg-white mb-1"></div>
-				<div className="w-6 h-0.5 bg-white"></div>
+				<div className="w-6 h-0.5 bg-blue-400 mb-1"></div>
+				<div className="w-6 h-0.5 bg-blue-400 mb-1"></div>
+				<div className="w-6 h-0.5 bg-blue-400"></div>
 			</div>
 			{/* MOBILE */}
 			<div
 				className={`lg:hidden absolute top-20 left-0 right-0 bg-dogwood-rose shadow-lg ${menuOpen ? 'block' : 'hidden'} p-5 flex items-center
-				justify-center flex-col gap-2`}
+				justify-center flex-col gap-2 overflow-auto`}
 			>
 				<MobileFlyoutLink
 					href="/AboutUs"
@@ -70,7 +74,7 @@ function Example() {
 					Authorization & Partner
 				</MobileFlyoutLink>
 				<MobileFlyoutLink href="/contact-us">Contact Us</MobileFlyoutLink>
-				<MobileFlyoutLink href="#">Log in</MobileFlyoutLink>
+				{/* <MobileFlyoutLink href="#">Log in</MobileFlyoutLink> */}
 			</div>
 			{/* DESKTOP */}
 			<div className="hidden lg:flex space-x-5 justify-center text-[0.9rem]">
@@ -90,7 +94,7 @@ function Example() {
 					Authorization & Partner
 				</FlyoutLink>
 				<FlyoutLink href="/contact-us">Contact Us</FlyoutLink>
-				<FlyoutLink href="#">Log in</FlyoutLink>
+				{/* <FlyoutLink href="#">Log in</FlyoutLink> */}
 			</div>
 		</>
 	);
@@ -220,12 +224,13 @@ const AboutUsContent = () => {
 };
 
 const CoursesContent = () => {
+	const { categories, sectors } = useTrainingContext();
 	const [isCertificationsActive, setIsCertificationsActive] = useState(true);
 
 	return (
-		<div className="w-[100vw] lg:w-auto grid grid-cols-12 gap-14  bg-raisin-black text-white p-8">
+		<div className="lg:w-[70vw] w-[100vw] grid grid-cols-12  bg-raisin-black text-white p-8">
 			{/* Left Column */}
-			<div className="col-span-4 border-r border-gray-300 p-1">
+			<div className="col-span-4 md:col-span-2 border-r border-gray-300 p-1">
 				<ul className="flex flex-col space-y-2">
 					{/* Certifications */}
 					<Link
@@ -256,37 +261,31 @@ const CoursesContent = () => {
 
 			{/* Right Column - Courses Grid */}
 			<div
-				className={`col-span-8 grid grid-cols-3 gap-4 text-xs ${
+				className={`col-span-8 grid grid-cols-2 xl:grid-cols-3 lg:grid-cols-3 md:gap-4 text-xs ${
 					isCertificationsActive ? 'visible-grid' : 'hidden-grid'
 				}`}
 			>
-				<Link className="link-hover" to={''}>
-					- Microsoft Office
-				</Link>
-				<Link className="link-hover" to={''}>
-					- Microsoft Technical
-				</Link>
-				<Link className="link-hover" to={''}>
-					- Technical Courses
-				</Link>
-				<Link className="link-hover" to={''}>
-					- Adobe Courses
-				</Link>
-				<Link className="link-hover" to={''}>
-					- Amazon Web Service
-				</Link>
-				<Link className="link-hover" to={''}>
-					- Business Courses
-				</Link>
-				<Link className="link-hover" to={''}>
-					- English Courses
-				</Link>
-				<Link className="link-hover" to={''}>
-					- AI Tracks
-				</Link>
-				<Link className="link-hover" to={''}>
-					- MCT
-				</Link>
+				{categories.map(category => {
+					// Find the first sector for this category
+					const firstSector = sectors.find(
+						sector => sector.category_id === category.id
+					);
+
+					return (
+						<Link
+							key={category.id}
+							className="link-hover font-sans text-[1.03rem]"
+							to={`/sectors/${firstSector?.id}`}
+						>
+							<FontAwesomeIcon
+								icon={faArrowAltCircleRight}
+								color="#0b4a9b"
+								size="1x"
+							/>{' '}
+							{category.name}
+						</Link>
+					);
+				})}
 			</div>
 		</div>
 	);
@@ -298,7 +297,7 @@ const ResourceContent = () => {
 	return (
 		<div className="w-[100vw] lg:w-auto grid grid-cols-8 gap-14  bg-raisin-black text-white p-8">
 			{/* Left Column */}
-			<div className="col-span-4 border-r border-gray-300 p-1">
+			<div className="col-span-4 border-r border-gray-300 p-1 w-40">
 				<ul className="flex flex-col space-y-2">
 					{/* Certifications */}
 					<Link
@@ -341,16 +340,16 @@ const ResourceContent = () => {
 					isLearningActive ? 'visible-grid' : 'hidden-grid'
 				}`}
 			>
-				<Link className="link-hover" to={''}>
+				<Link className="link-hover" to={'learning-methods'}>
 					- Instructor led training
 				</Link>
-				<Link className="link-hover" to={''}>
+				<Link className="link-hover" to={'learning-methods'}>
 					- On site training
 				</Link>
-				<Link className="link-hover" to={''}>
+				<Link className="link-hover" to={'learning-methods'}>
 					- Online any time
 				</Link>
-				<Link className="link-hover" to={''}>
+				<Link className="link-hover" to={'learning-methods'}>
 					- Online live
 				</Link>
 			</div>

@@ -18,19 +18,17 @@ function Testcat() {
 					</div>
 				))}
 			</div> */}
-			{/* <div className="sectors">
-				{sectors.map(sector => (
-					<div key={sector.id} className="category-item">
-						<p>{sector.id}</p>
-						<p>{sector.Category.id}</p>
-					</div>
-				))}
-			</div> */}
-			<div className="courses">
-				{courses.map(course => (
-					<div key={course.id} className="category-item">
-						{/* <p>{course.name}</p> */}
-						<p>{course.name}</p>
+			<div className="sectors">
+				{categories.map(category => (
+					<div key={category.id} className="category-container">
+						<h3>{category.name}</h3>
+						{sectors
+							.filter(sector => sector.category_id === category.id)
+							.map(data => (
+								<div key={data.id} className="category-item">
+									<p>{data.name}</p>
+								</div>
+							))}
 					</div>
 				))}
 			</div>

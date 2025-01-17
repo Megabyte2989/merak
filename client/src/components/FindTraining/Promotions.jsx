@@ -1,6 +1,10 @@
-import { faMarsAndVenus } from '@fortawesome/free-solid-svg-icons';
+import {
+	faChevronDown,
+	faChevronUp,
+	faClipboardQuestion,
+} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
+import React, { useState } from 'react';
 
 function Promotions() {
 	const faqs = [
@@ -34,25 +38,15 @@ function Promotions() {
 			description:
 				'Unlock exclusive discounts on our AWS Certification prep bundles.',
 		},
-		{
-			id: 4,
-			title: '50% Off AWS Courses',
-			description:
-				'Feel delighted with more than 50% off with this voucher for all courses related to AWS.',
-		},
-		{
-			id: 5,
-			title: 'Free AWS Starter Guide',
-			description:
-				'Get a free AWS Starter Guide when you sign up for any course this month.',
-		},
-		{
-			id: 6,
-			title: 'AWS Certification Bundle',
-			description:
-				'Unlock exclusive discounts on our AWS Certification prep bundles.',
-		},
 	];
+
+	// State to track which FAQ is open
+	const [openFaqIndex, setOpenFaqIndex] = useState(null);
+
+	// Toggle FAQ answer visibility
+	const toggleAnswer = index => {
+		setOpenFaqIndex(openFaqIndex === index ? null : index);
+	};
 
 	return (
 		<div className="relative text-white min-h-[60vh] w-full">
@@ -61,7 +55,7 @@ function Promotions() {
 				<img
 					src="/images/promotions.webp"
 					alt="Promotions background"
-					className="md:w-full md:h-full lg:h-auto lg:absolute -top-[10%]  xl:-top-[20%] lg:object-cover brightness-50"
+					className="md:w-full md:h-full lg:h-auto lg:absolute -top-[10%] xl:-top-[20%] lg:object-cover brightness-50"
 				/>
 				<div className="absolute inset-0 bg-gradient-to-t from-raisin-black via-transparent to-transparent"></div>
 
@@ -75,6 +69,7 @@ function Promotions() {
 					</p>
 				</div>
 			</div>
+
 			{/* Promotions Section */}
 			<section className="relative p-5 sm:p-14 bg-raisin-black bg-opacity-90">
 				<h2 className="text-3xl sm:text-4xl font-bold mb-8 text-dogwood-rose drop-shadow-lg text-center">
@@ -84,7 +79,7 @@ function Promotions() {
 					{promotions.map(pro => (
 						<li
 							key={pro.id}
-							className="flex flex-col items-start p-6  bg-gray-800 bg-opacity-70 rounded-lg "
+							className="flex flex-col items-start p-6 bg-[#15407db3] bg-opacity-70 rounded-lg "
 						>
 							<article className="mb-4 text-left">
 								<h3 className="text-2xl font-bold text-dogwood-rose mb-2">
@@ -103,18 +98,41 @@ function Promotions() {
 						</li>
 					))}
 				</ul>
-				<ul className="divide-y divide-gray-700 mt-16 bg-ivory p-5 rounded-md ">
+
+				{/* FAQ Section */}
+				<ul className="divide-y divide-gray-700 mt-16 p-5 rounded-md bg-[#01303f]">
 					{faqs.map((faq, index) => (
-						<li key={index} className="py-4">
-							<div className="flex items-baseline">
-								<FontAwesomeIcon icon={faMarsAndVenus} color="black" />
-								<h3 className="text-xl font-semibold text-dogwood-rose">
-									{faq.question}
-								</h3>
+						<li
+							key={index}
+							className="py-4 px-6 border-b border-gray-700 last:border-b-0"
+						>
+							{/* FAQ Question */}
+							<div
+								className="flex items-center justify-between cursor-pointer"
+								onClick={() => toggleAnswer(index)}
+							>
+								<div className="flex items-baseline space-x-3">
+									<FontAwesomeIcon
+										icon={faClipboardQuestion}
+										size="1x"
+										color="red"
+									/>
+									<h3 className="text-xl font-semibold text-white">
+										{faq.question}
+									</h3>
+								</div>
+								{/* Toggle Chevron */}
+								<FontAwesomeIcon
+									icon={openFaqIndex === index ? faChevronUp : faChevronDown}
+									color="black"
+									className="transition-transform transform duration-300"
+								/>
 							</div>
-							<p className="text-cool-gray mt-2 hidden hover:block">
-								{faq.answer}
-							</p>
+
+							{/* FAQ Answer */}
+							{openFaqIndex === index && (
+								<p className="ml-5 text-white text-xl">{faq.answer}</p>
+							)}
 						</li>
 					))}
 				</ul>

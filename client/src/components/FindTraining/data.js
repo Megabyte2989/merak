@@ -2,7 +2,7 @@ export const dummyCategories = [
   {
     id: "1",
     name: "Adobe",
-    image: "/dist/images/adobe.png",
+    image: "/categoriesImages/Adobe",
     sectors: [
       {
         id: "1-1",

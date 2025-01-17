@@ -14,48 +14,47 @@ const TestimonialPage = () => {
 
 	const testimonials = [
 		{
-			quote: '“The training at New Horizons was a game-changer. The instructors were patient and supportive, and the curriculum was comprehensive. I’m now much more proficient in my role and feel more confident in my abilities.”',
+			quote:
+				'“The training at New Horizons was a game-changer. The instructors were patient and supportive, and the curriculum was comprehensive. I’m now much more proficient in my role and feel more confident in my abilities.”',
 			name: 'Ahmed Ali',
 			role: 'Digital Marketing Specialist',
 			image: '/images/man1.webp',
-		  },
-		  {
-			quote: '“I was impressed by the quality of the training at New Horizons. The hands-on exercises and real-world projects helped solidify my understanding of the concepts. I’m grateful for the opportunity to learn from such experienced instructors.”',
+		},
+		{
+			quote:
+				'“I was impressed by the quality of the training at New Horizons. The hands-on exercises and real-world projects helped solidify my understanding of the concepts. I’m grateful for the opportunity to learn from such experienced instructors.”',
 			name: 'Mohamed Hassan',
 			role: 'Data Analyst',
 			image: '/images/man2.webp',
-		  },
-		  {
-			quote: '“New Horizons provided me with the skills and knowledge I needed to succeed in my career. The flexible learning options and personalized support made it easy to balance my work and studies. I highly recommend their programs to anyone looking to advance their career.”',
+		},
+		{
+			quote:
+				'“New Horizons provided me with the skills and knowledge I needed to succeed in my career. The flexible learning options and personalized support made it easy to balance my work and studies. I highly recommend their programs to anyone looking to advance their career.”',
 			name: 'Karim Ibrahim',
 			role: 'Project Manager',
 			image: '/images/man3.webp',
-		  },
+		},
 		{
 			quote:
 				'“I’ve taken multiple courses from New Horizons, and every single one has exceeded my expectations. The content is engaging, and the support team is always there to help when needed. My career has grown thanks to their excellent training programs!.”',
 			name: 'Waad Akram',
 			role: 'UI/UX Designer',
-			image:
-				'/images/woman1.webp',
+			image: '/images/woman1.webp',
 		},
 		{
 			quote:
 				'“An incredible experience! The training at New Horizons was top-notch. The instructors are knowledgeable and the materials are up to date. I learned so much in just a few weeks. Highly recommend!.”',
 			name: 'Sara Ahmed',
 			role: 'Freelance React Developer',
-			image:
-				'/images/woman2.webp',
+			image: '/images/woman2.webp',
 		},
 		{
 			quote:
 				'“New Horizons truly helped me level up my skills. The interactive approach to learning made complex topics much easier to understand. I can now confidently apply what I’ve learned to real-world projects!”',
 			name: 'Salma Hany',
 			role: 'Web Developer',
-			image:
-				'/images/woman3.webp',
+			image: '/images/woman3.webp',
 		},
-		
 	];
 	const handleSubmit = e => {
 		e.preventDefault();
@@ -99,8 +98,8 @@ const TestimonialPage = () => {
 				/>
 			</Helmet>
 
-			<section>
-				<div className="max-w-screen-xl mx-auto px-4 py-28 gap-12 text-gray-600 md:px-8">
+			<section className="bg-white">
+				<div className="max-w-screen-xl mx-auto px-4 py-28 gap-12 text-gray-600 md:px-8 ">
 					<div className="space-y-5 max-w-4xl mx-auto text-center">
 						<h1 className="text-sm text-indigo-600 font-medium md:text-base">
 							Hear from our satisfied clients
@@ -117,7 +116,7 @@ const TestimonialPage = () => {
 						</p>
 						<div className="items-center justify-center gap-x-3 space-y-3 sm:flex sm:space-y-0">
 							<a
-							aria-label='Share Your Success Story'
+								aria-label="Share Your Success Story"
 								href="#your-opinion-section"
 								className="block py-2 px-4 text-white font-medium bg-indigo-600 duration-150 hover:bg-indigo-500 active:bg-indigo-700 rounded-lg shadow-lg hover:shadow-none"
 							>

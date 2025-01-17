@@ -86,10 +86,10 @@ function WeHire() {
 	];
 	return (
 		<>
-			<div className="bg-white ">
+			<div className="">
 				<div
-					className="flex items-center justify-between py-10 px-5 sm:px-10 lg:px-20 bg-dark-purple
-			 text-white md:bg-[url('/images/Wehire.webp')] bg-contain bg-no-repeat bg-[85%] h-64"
+					className="flex items-center justify-between py-10 px-5 sm:px-10 lg:px-20 bg-[#25175e]
+			 text-white md:bg-[url('/images/Wehire.webp')] bg-contain bg-no-repeat bg-[85%] pt-10 h-64"
 				>
 					<div className="w-full sm:w-1/2">
 						<h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-dogwood-rose">
@@ -127,8 +127,8 @@ const JobList = ({ jobs }) => {
 
 	return (
 		<div
-			className="p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-between 
-		lg:grid-cols-4 xl:grid-cols-6  gap-10"
+			className="pt-10 pb-40 px-6  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-between 
+		lg:grid-cols-4 xl:grid-cols-6  gap-10 bg-[#1a1331]  "
 		>
 			{jobs.map(job => (
 				<div
@@ -185,7 +185,7 @@ const ApplicationModal = ({ job, onClose }) => {
 				if (e.target === e.currentTarget) onClose();
 			}}
 		>
-			<div className="bg-white rounded-lg p-6 w-full max-w-lg">
+			<div className=" rounded-lg p-6 w-full max-w-lg">
 				<button
 					onClick={onClose}
 					className="text-gray-500 float-right text-2xl"

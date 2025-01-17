@@ -11,24 +11,21 @@ import GovProjects from './components/AboutUs/GovProjects';
 import Success from './components/AboutUs/Success';
 import TestimonialPage from './components/AboutUs/TestimonialPage';
 import ContactUsMain from './components/ContactUs/ContactUsMain';
+import CategoriesPage from './components/FindTraining/CategoriesPage';
+import CourseDetailsPage from './components/FindTraining/CourseDetailsPage';
+import NotFoundPage from './components/FindTraining/NotFoundPage'; // Import the NotFoundPage component
 import Promotions from './components/FindTraining/Promotions';
+import RegistrationFormPage from './components/FindTraining/RegistrationFormPage';
+import SectorsPage from './components/FindTraining/SectorsPage';
 import Foot from './components/Foot';
 import Landing from './components/Landing/Landing';
 import Navbar from './components/Navbar';
 import PartnersAndAuthorizations from './components/PartnersAndAuthorizations';
-import Register from './components/Register';
 import CertificationVerification from './components/Resources/CertificationVerification';
 import LearningMethods from './components/Resources/LearningMethods';
 import WeHire from './components/Resources/WeHire';
-import CategoriesPage from './components/CategoriesPage';
-import CoursesPage from './components/CoursesPage';
 import Webinars from './components/Resources/Webinars';
-import Testcat from './components/TestingComponents/Testcat';
 import { TrainingProvider } from './contexts/trainingContext';
-import CourseDetailsPage from './components/CourseDetailsPage';
-import RegistrationFormPage from './components/RegistrationFormPage';
-import SectorsPage from './components/SectorsPage';
-import NotFoundPage from './components/NotFoundPage'; // Import the NotFoundPage component
 
 function App() {
 	return (
@@ -42,7 +39,6 @@ function App() {
 							<div className="flex flex-col min-h-screen mx-auto ">
 								<Routes>
 									{/* Define individual routes here */}
-
 									<Route path="/testimonials" element={<TestimonialPage />} />
 									<Route path="/gallery" element={<Gallery />} />
 									<Route path="/success" element={<Success />} />
@@ -61,21 +57,29 @@ function App() {
 										element={<LearningMethods />}
 									/>
 									<Route path="/Webinars" element={<Webinars />} />
-									<Route path="/register/:id" element={<RegistrationFormPage />} />
+									<Route
+										path="/register/:id"
+										element={<RegistrationFormPage />}
+									/>
 									<Route
 										path="/Certification-Verification"
 										element={<CertificationVerification />}
 									/>
 									<Route path="/find-training" element={<CategoriesPage />} />
-									<Route path="/categories/:categoryId/sectors" element={<SectorsPage />} />
-									<Route path="/sectors/:sectorId/courses" element={<CoursesPage />} />
-									<Route path="/courses/:courseId" element={<CourseDetailsPage />} />
-									<Route path="/register-course/:courseId" element={<RegistrationFormPage />} />
+									<Route path="/sectors/:sectorId" element={<SectorsPage />} />
+									{/* <Route path="/categories/" element={<CoursesPage />} /> */}
+									<Route
+										path="/courses/:courseId"
+										element={<CourseDetailsPage />}
+									/>
+									<Route
+										path="/register-course/:courseId"
+										element={<RegistrationFormPage />}
+									/>
 									<Route path="/promotions" element={<Promotions />} />
-									<Route path="*" element={<NotFoundPage />} /> {/* Add this line */}
-
+									<Route path="*" element={<NotFoundPage />} />{' '}
+									{/* Add this line */}
 									{/* Uncomment or add additional routes as needed */}
-
 									{/* <Route path="/timer" element={<Timer />} /> */}
 								</Routes>
 							</div>
