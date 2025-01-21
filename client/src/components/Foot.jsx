@@ -40,7 +40,7 @@ export const Foot = () => {
 
         {/* Training Programs */}
         <div>
-          <h3 className="text-lg font-bold text-white mb-4">Training Programs</h3>
+          <h3 className="text-lg font-bold text-gray-400 mb-4">Training Programs</h3>
           <ul className="grid grid-cols-2 gap-2 text-sm text-ghost-white">
             {categories.map((category, index) => (
               <li key={index} className="hover:text-dogwood-rose transition duration-300">
@@ -52,25 +52,32 @@ export const Foot = () => {
 
         {/* Contact Section */}
         <div>
-          <h3 className="text-lg font-bold text-white mb-4">Contact Us</h3>
-          <address className="not-italic text-sm text-ghost-white space-y-2">
-            <p>99 Mostafa Elnahas St, Nasr City, Floor 6</p>
-            <p>Phone: 002 02 22718615 / 22718620</p>
-            <p>Email: info@newhorizons.com</p>
-            <p className="font-semibold mt-4">Branches:</p>
-            <ul className="list-disc ml-5">
-              <li>Abbas El-Aqaad</li>
-              <li>Mohandeseen</li>
-            </ul>
-          </address>
+          <h3 className="text-lg font-bold text-gray-400 mb-4">Get in Touch</h3>
+          <div className="not-italic text-sm text-ghost-white space-y-4">
+            <div>
+              <h4 className="font-semibold text-dogwood-rose">Head Office</h4>
+              <p>99 Mostafa Elnahas St, Nasr City, Floor 6</p>
+              <p>Phone: 002 02 22718615</p>
+              <p>Phone: 002 02 22718620</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-dogwood-rose">Abbas El-Aqaad Branch</h4>
+              <p>8 Mohamed Mostafa Hamam St. Behind Pizza Hut</p>
+              <p>Phone: 002 02 24024822</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-dogwood-rose">Mohandeseen Branch</h4>
+              <p>76 Gameat Al Dewal Al Arabeya, Floor 4 - Giza Governorate</p>
+            </div>
+          </div>
         </div>
 
         {/* Social Media */}
         <div>
-          <h3 className="text-lg font-bold text-white mb-4">Follow Us</h3>
+          <h3 className="text-lg font-bold text-gray-400 mb-4">Follow Us</h3>
           <div className="flex space-x-4">
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/newhorizonscairo/"
               aria-label="Facebook"
               className="text-ghost-white hover:text-dogwood-rose transition duration-300"
             >
@@ -83,7 +90,7 @@ export const Foot = () => {
               </svg>
             </a>
             <a
-              href="https://twitter.com"
+              href="https://x.com/newhorizonseg"
               aria-label="Twitter"
               className="text-ghost-white hover:text-dogwood-rose transition duration-300"
             >
@@ -96,7 +103,7 @@ export const Foot = () => {
               </svg>
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/company/1735894/"
               aria-label="LinkedIn"
               className="text-ghost-white hover:text-dogwood-rose transition duration-300"
             >
@@ -105,7 +112,20 @@ export const Foot = () => {
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
-                <path d="M22.23 0H1.77C.8 0 0 .8 0 1.77v20.46C0 23.2.8 24 1.77 24h20.46c.97 0 1.77-.8 1.77-1.77V1.77C24 .8 23.2 0 22.23 0zM7.06 20.45H3.56V9h3.5v11.45zM5.31 7.63c-1.14 0-2.07-.93-2.07-2.07 0-1.14.93-2.07 2.07-2.07 1.14 0 2.07.93 2.07 2.07s-.93 2.07-2.07 2.07zm15.14 12.82h-3.5V14.6c0-1.39-.03-3.18-1.94-3.18-1.94 0-2.24 1.51-2.24 3.07v6h-3.5V9h3.36v1.56h.05c.47-.9 1.62-1.84 3.33-1.84 3.56 0 4.22 2.34 4.22 5.39v6.34z" />
+                <path d="M22.23 0H1.77C.8 0 0 .8 0 1.77v20 .46C0 23.2.8 24 1.77 24h20.46c.97 0 1.77-.8 1.77-1.77V1.77C24 .8 23.2 0 22.23 0zM7.06 20.45H3.56V9h3.5v11.45zM5.31 7.63c-1.14 0-2.07-.93-2.07-2.07 0-1.14.93-2.07 2.07-2.07 1.14 0 2.07.93 2.07 2.07s-.93 2.07-2.07 2.07zm15.14 12.82h-3.5V14.6c0-1.39-.03-3.18-1.94-3.18-1.94 0-2.24 1.51-2.24 3.07v6h-3.5V9h3.36v1.56h.05c.47-.9 1.62-1.84 3.33-1.84 3.56 0 4.22 2.34 4.22 5.39v6.34z" />
+              </svg>
+            </a>
+            <a
+              href="https://www.youtube.com/@CairoNewHorizons"
+              aria-label="YouTube"
+              className="text-ghost-white hover:text-dogwood-rose transition duration-300"
+            >
+              <svg
+                className="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M23.498 6.186a2.97 2.97 0 00-2.088-2.11C19.648 3.615 12 3.615 12 3.615s-7.648 0-9.41.46a2.969 2.969 0 00-2.088 2.111c-.458 1.765-.458 5.446-.458 5.446s0 3.682.458 5.446a2.97 2.97 0 002.088 2.11c1.762.46 9.41.46 9.41.46s7.648 0 9.41-.46a2.97 2.97 0 002.088-2.11c.458-1.764.458-5.446.458-5.446s0-3.681-.458-5.446zM9.546 15.568V8.432L15.818 12 9.546 15.568z" />
               </svg>
             </a>
           </div>
