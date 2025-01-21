@@ -42,7 +42,7 @@ const CategoriesPage = () => {
                       <div
                         key={sector.id}
                         className="border border-gray-200 p-2 rounded-lg hover:bg-violet-200 cursor-pointer"
-                        onClick={() => navigate(`/sectors/${sector.id}/courses`)}
+                        onClick={() => navigate(`/sectors/${sector.id}`)}
                       >
                         <h3 className="text-lg font-medium text-gray-800">{sector.name}</h3>
                       </div>
