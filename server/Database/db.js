@@ -6,7 +6,7 @@ dotenv.config()
 const dbConfig  = {
     host: 'localhost',
     username: 'root',
-    password: "Asdqwe123564@",
+    password: "Mayar2004$$$",
     database: 'newhorizons',
     dialect:'mysql'
 }
