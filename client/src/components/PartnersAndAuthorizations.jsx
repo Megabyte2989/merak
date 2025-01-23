@@ -6,15 +6,15 @@ const PartnersAndAuthorizations = () => {
 		<div className="bg-gradient-to-b from-dark-purple to-[#000000] text-white min-h-screen py-10 ">
 			<div className="max-w-7xl mx-auto px-6">
 				{/* Hero Section */}
-				<section className="bg-[#1d143d] text-gray-800 py-28 rounded-lg shadow-lg mb-16">
+				<section className="bg-[#fdfdfd70] text-gray-800 py-28 rounded-lg shadow-lg mb-16">
 					<div className="max-w-screen-xl mx-auto px-4 gap-12 md:px-8">
 						<div className="space-y-5 max-w-4xl mx-auto text-center">
-							<h1 className="text-sm text-dogwood-rose font-medium md:text-base">
+							<h1 className="text-sm text-dark-purple font-medium md:text-base">
 								Collaborating with top vendors to provide world-class training
 							</h1>
 							<h2 className="text-4xl text-[#fbfcff] font-extrabold mx-auto md:text-5xl">
 								New Horizons Cairo{' '}
-								<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f12505] to-[#94086a]">
+								<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#250f38] to-[#94086a]">
 									Partners & Authorizations
 								</span>
 							</h2>

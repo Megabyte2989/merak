@@ -57,7 +57,7 @@ const LearningMethods = () => {
 	];
 
 	return (
-		<div className="bg-gradient-to-b from-dark-purple to-[#000000] min-h-screen p-8">
+		<div className="bg-[#f7f3fc] min-h-screen p-8">
 			{/* Hero Section */}
 			<div className="relative bg-[#af024f] text-white py-16 rounded-lg shadow-lg text-center mb-12">
 				<h1 className="text-4xl font-bold mb-4">
