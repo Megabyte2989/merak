@@ -5,7 +5,7 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { AnimatePresence, motion } from 'framer-motion';
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTrainingContext } from '../contexts/trainingContext';
 
@@ -89,7 +89,12 @@ function Example() {
 					About Us
 					<FontAwesomeIcon icon={faChevronDown} className="ml-1" />
 				</FlyoutLink>
-				<FlyoutLink href="/find-training" FlyoutContent={isMobile ? null : CoursesContent}> {/* Prevent rendering on mobile */}
+				<FlyoutLink
+					href="/find-training"
+					FlyoutContent={isMobile ? null : CoursesContent}
+				>
+					{' '}
+					{/* Prevent rendering on mobile */}
 					Find Training
 					<FontAwesomeIcon icon={faChevronDown} className="ml-1" />
 				</FlyoutLink>
@@ -188,7 +193,7 @@ const MobileFlyoutLink = ({
 const AboutUsContent = () => {
 	return (
 		<div className="w-[100vw] lg:w-64 bg-raisin-black text-white p-6 shadow-xl ">
-			<ul className="flex flex-col justify-center items-center">
+			<ul className="flex flex-col space-y-2 justify-center items-center">
 				<Link
 					className="rounded-lg hover:bg-dogwood-rose hover:px-10 hover:py-2 duration-150"
 					to={'Testimonials'}
@@ -262,8 +267,11 @@ const CoursesContent = () => {
 			</div>
 
 			{/* Right Column - Courses Grid */}
-			{!isMobile && ( // Only render categories if not mobile
-				<div className={`col-span-8 grid grid-cols-3 xl:grid-cols-5 lg:grid-cols-5 md:gap-3 text-xs`}>
+			{!isMobile && isCertificationsActive && (
+				// Only render categories if not mobile
+				<div
+					className={` $ col-span-10 grid grid-cols-3 grid-rows-5 lg:grid-cols-5 xl:grid-cols-7 md:gap-3 text-xs justify-center items-center`}
+				>
 					{categories.map(category => {
 						// Find the first sector for this category
 						const firstSector = sectors.find(
@@ -273,14 +281,16 @@ const CoursesContent = () => {
 						return (
 							<Link
 								key={category.id}
-								className="link-hover font-sans text-[1.03rem]"
+								className="link-hover font-sans text-[0.9rem]  flex"
 								to={`/sectors/${firstSector?.id}`}
 							>
 								<FontAwesomeIcon
 									icon={faArrowAltCircleRight}
-									color="#430f61"
+									color="white"
 									size="0.5x"
-								/>{' '}
+									className="mr-1"
+								/>
+								{'  '}
 								{category.name}
 							</Link>
 						);
@@ -295,14 +305,14 @@ const ResourceContent = () => {
 	const [isLearningActive, setIsLearningActive] = useState(true);
 
 	return (
-		<div className="w-[100vw] lg:w-64 bg-raisin-black text-white p-6 shadow-xl">
+		<div className="w-[100vw] lg:w-60 bg-raisin-black text-white p-6 shadow-xl">
 			{/* Left Column */}
-			<div className="col-span-4  p-1 w-40">
-				<ul className="flex flex-col space-y-2">
+			<div className="col-span-4  p-1 w-30">
+				<ul className="flex flex-col space-y-2 text-center">
 					{/* Certifications */}
 					<Link
 						onMouseEnter={() => setIsLearningActive(true)}
-						className={`link-hover ${isLearningActive ? 'link-active' : ''} duration-75`}
+						className={`link-hover`}
 						to={'learning-methods'}
 					>
 						Learning Methods
