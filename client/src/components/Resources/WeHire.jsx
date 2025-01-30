@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import ContactUsMain from '../ContactUs/ContactUsMain';
 
 function WeHire() {
-	//TODO ADD IF THERE IS NO JOBS //TODO
-
 	const jobs = [
 		{
 			id: 1,
@@ -11,7 +9,7 @@ function WeHire() {
 			location: 'Remote',
 			type: 'Full-Time',
 			description:
-				'We’re seeking a skilled Frontend Developer to build amazing UI.',
+				'We’re seeking a skilled Frontend Developer to build amazing UI. You will be responsible for creating a seamless user experience.',
 		},
 		{
 			id: 2,
@@ -84,12 +82,12 @@ function WeHire() {
 				'Conduct research in artificial intelligence and machine learning.',
 		},
 	];
+
 	return (
 		<>
-			<div className="">
+			<div className="bg-white">
 				<div
-					className="flex items-center justify-between py-10 px-5 sm:px-10 lg:px-20 bg-[#25175e]
-			 text-white md:bg-[url('/images/Wehire.webp')] bg-contain bg-no-repeat bg-[85%] pt-10 h-64"
+					className="flex items-center justify-between py-10 px-5 sm:px-10 lg:px-20 bg-[#25175e] text-white md:bg-[url('/images/Wehire.webp')] bg-contain bg-no-repeat bg-[85%] pt-10 h-64"
 				>
 					<div className="w-full sm:w-1/2">
 						<h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-dogwood-rose">
@@ -126,45 +124,69 @@ const JobList = ({ jobs }) => {
 	};
 
 	return (
-		<div
-			className="pt-10 pb-40 px-6  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-between 
-		lg:grid-cols-4 xl:grid-cols-6  gap-10 bg-[#1a1331]  "
-		>
-			{jobs.map(job => (
-				<div
-					key={job.id}
-					className={`border rounded-lg p-8 mb-4 shadow-lg  transition-all duration-[300ms] ease-in-out 
-    ${activeJob === job.id ? 'max-w-[40rem] max-h-[40rem]' : 'max-w-auto max-h-[18rem]'} min-h-[18rem]
-	 flex flex-col justify-between bg-slate-300`}
-				>
-					<h2 className="text-2xl font-semibold">{job.title}</h2>
-					<p className="text-gray-600">Location: {job.location}</p>
-					<p className="text-gray-600">Type: {job.type}</p>
-
-					<button
-						className="text-black mt-2 py-2 px-4 border-2 border-dogwood-rose rounded-lg transition duration-300 
-						ease-in-out transform hover:bg-dogwood-rose hover:text-white hover:scale-105 focus:outline-none
-						w-fit"
-						onClick={() => {
-							selectActiveJob(job.id);
-						}}
-					>
-						{activeJob === job.id ? 'Show Less' : 'Show More'}
-					</button>
-
-					{activeJob === job.id && (
-						<div className="mt-4 text-gray-700">
-							<p>{job.description}</p>
-							<button
-								onClick={() => openModal(job)} // Opens modal to apply for the job
-								className="mt-4 py-2 px-4 bg-indigo-600 text-white rounded-lg"
-							>
-								Apply
-							</button>
-						</div>
-					)}
+		<div className="pt-10 pb-40 px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-between lg:grid-cols-4 xl:grid-cols-6 gap-10 bg-white">
+			{jobs.length === 0 ? (
+				<div className="col-span-full text-center text-gray-600">
+					<p>No job openings found at this time.</p>
 				</div>
-			))}
+			) : (
+				jobs.map(job => (
+					<div
+  key={job.id}
+  className={`border rounded-lg p-6 shadow-lg transition-all duration-300 ease-in-out bg-white
+    flex flex-col justify-between 
+    max-w-[18rem] overflow-hidden hover:shadow-xl`}
+>
+  {/* Job Title */}
+  <h2 className="text-lg md:text-xl font-semibold text-gray-800">
+    {job.title.length > 30 ? (
+      <span>
+        {activeJob === job.id ? job.title : job.title.slice(0, 30) + '...'}
+      </span>
+    ) : (
+      job.title
+    )}
+  </h2>
+
+  {/* Job Location & Type */}
+  <p className="text-sm text-gray-600">Location: {job.location}</p>
+  <p className="text-sm text-gray-600">Type: {job.type}</p>
+
+  {/* Job Description */}
+  <div className="mt-2 text-gray-700 text-sm">
+    {activeJob === job.id ? (
+      <p>{job.description}</p>
+    ) : (
+      <p>
+        {job.description.length > 100
+          ? job.description.slice(0, 100) + '...'
+          : job.description}
+      </p>
+    )}
+  </div>
+
+  {/* Show More/Less Button */}
+  <button
+    className="text-dogwood-rose mt-2 py-1 px-3 border-2 border-dogwood-rose rounded-lg transition
+    hover:bg-dogwood-rose hover:text-white hover:scale-105 focus:outline-none"
+    onClick={() => selectActiveJob(activeJob === job.id ? null : job.id)}
+  >
+    {activeJob === job.id ? 'Show Less' : 'Show More'}
+  </button>
+
+  {/* Apply Button */}
+  {activeJob === job.id && (
+    <button
+      onClick={() => openModal(job)}
+      className="mt-2 py-2 px-4 bg-indigo-600 text-white rounded-lg text-sm"
+    >
+      Apply
+    </button>
+  )}
+</div>
+
+				))
+			)}
 			{modalData && <ApplicationModal job={modalData} onClose={closeModal} />}
 		</div>
 	);
@@ -185,14 +207,14 @@ const ApplicationModal = ({ job, onClose }) => {
 				if (e.target === e.currentTarget) onClose();
 			}}
 		>
-			<div className=" rounded-lg p-6 w-full max-w-lg">
+			<div className="rounded-lg p-6 w-full max-w-lg bg-white">
 				<button
 					onClick={onClose}
 					className="text-gray-500 float-right text-2xl"
 				>
 					&times;
 				</button>
-				<h2 className="text-2xl font-bold mb-4">Apply for {job.title}</h2>
+				<h2 className="text-2xl font-bold mb-4 text-gray-800">Apply for {job.title}</h2>
 				<form onSubmit={handleSubmit} className="space-y-4">
 					<div>
 						<label className="block text-gray-700">Name</label>

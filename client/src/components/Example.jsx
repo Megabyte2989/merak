@@ -5,24 +5,33 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { AnimatePresence, motion } from 'framer-motion';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useTrainingContext } from '../contexts/trainingContext';
 
 function Example() {
 	const [activeFlyout, setActiveFlyout] = useState(null);
+	const [menuOpen, setMenuOpen] = useState(false);
+	const [isMobile, setIsMobile] = useState(window.innerWidth < 768); // Assuming 768px as mobile breakpoint
+
+	// Update isMobile state on window resize
+	useEffect(() => {
+		const handleResize = () => {
+			setIsMobile(window.innerWidth < 768);
+		};
+
+		window.addEventListener('resize', handleResize);
+		return () => window.removeEventListener('resize', handleResize);
+	}, []);
 
 	const handleToggleMobileDrop = flyoutName => {
 		setActiveFlyout(prev => (prev === flyoutName ? null : flyoutName)); // Toggle specific flyout
 	};
 
-	const [menuOpen, setMenuOpen] = useState(false);
-
 	return (
 		<>
-			{' '}
 			<div
-				className="lg:hidden cursor-pointer  "
+				className="lg:hidden cursor-pointer"
 				onClick={() => {
 					setMenuOpen(!menuOpen);
 					setActiveFlyout(null);
@@ -34,8 +43,7 @@ function Example() {
 			</div>
 			{/* MOBILE */}
 			<div
-				className={`lg:hidden absolute top-20 left-0 right-0 bg-dogwood-rose shadow-lg ${menuOpen ? 'block' : 'hidden'} p-5 flex items-center
-				justify-center flex-col gap-2 overflow-auto`}
+				className={`lg:hidden absolute top-20 left-0 right-0 bg-gray-300 shadow-lg ${menuOpen ? 'block' : 'hidden'} p-5 flex items-center justify-center flex-col gap-2 overflow-auto`}
 			>
 				<MobileFlyoutLink
 					href="/AboutUs"
@@ -74,7 +82,6 @@ function Example() {
 					Authorization & Partner
 				</MobileFlyoutLink>
 				<MobileFlyoutLink href="/contact-us">Contact Us</MobileFlyoutLink>
-				{/* <MobileFlyoutLink href="#">Log in</MobileFlyoutLink> */}
 			</div>
 			{/* DESKTOP */}
 			<div className="hidden lg:flex space-x-5 justify-center text-[0.9rem]">
@@ -82,7 +89,7 @@ function Example() {
 					About Us
 					<FontAwesomeIcon icon={faChevronDown} className="ml-1" />
 				</FlyoutLink>
-				<FlyoutLink href="/find-training" FlyoutContent={CoursesContent}>
+				<FlyoutLink href="/find-training" FlyoutContent={isMobile ? null : CoursesContent}> {/* Prevent rendering on mobile */}
 					Find Training
 					<FontAwesomeIcon icon={faChevronDown} className="ml-1" />
 				</FlyoutLink>
@@ -94,7 +101,6 @@ function Example() {
 					Authorization & Partner
 				</FlyoutLink>
 				<FlyoutLink href="/contact-us">Contact Us</FlyoutLink>
-				{/* <FlyoutLink href="#">Log in</FlyoutLink> */}
 			</div>
 		</>
 	);
@@ -112,13 +118,8 @@ const FlyoutLink = ({ children, href, FlyoutContent }) => {
 			<Link
 				to={href}
 				className={`relative duration-100 p-2 rounded-md font-medium font-sans
-				${!FlyoutContent ? 'hover:bg-dogwood-rose' : ''}
-				 ${!FlyoutContent ? 'hover:text-white' : ''} `}
-				// style={{
-				// 	color: 'black',
-				// 	// color: FlyoutContent ? 'darkcyan' : 'black',
-
-				// }}
+				${!FlyoutContent ? 'hover:bg-dogwood-rose' : ''} 
+				${!FlyoutContent ? 'hover:text-white' : ''} `}
 			>
 				{children}
 				<span
@@ -226,9 +227,10 @@ const AboutUsContent = () => {
 const CoursesContent = () => {
 	const { categories, sectors } = useTrainingContext();
 	const [isCertificationsActive, setIsCertificationsActive] = useState(true);
+	const isMobile = window.innerWidth < 768; // Assuming 768px as mobile breakpoint
 
 	return (
-		<div className="lg:w-[70vw] w-[100vw] grid grid-cols-12  bg-raisin-black text-white p-8">
+		<div className="lg:w-[70vw] w-[100vw] grid grid-cols-12 bg-raisin-black text-white p-8">
 			{/* Left Column */}
 			<div className="col-span-4 md:col-span-2 border-r border-gray-300 p-1">
 				<ul className="flex flex-col space-y-2">
@@ -260,33 +262,31 @@ const CoursesContent = () => {
 			</div>
 
 			{/* Right Column - Courses Grid */}
-			<div
-				className={`col-span-8 grid grid-cols-2 xl:grid-cols-3 lg:grid-cols-3 md:gap-4 text-xs ${
-					isCertificationsActive ? 'visible-grid' : 'hidden-grid'
-				}`}
-			>
-				{categories.map(category => {
-					// Find the first sector for this category
-					const firstSector = sectors.find(
-						sector => sector.category_id === category.id
-					);
+			{!isMobile && ( // Only render categories if not mobile
+				<div className={`col-span-8 grid grid-cols-3 xl:grid-cols-5 lg:grid-cols-5 md:gap-3 text-xs`}>
+					{categories.map(category => {
+						// Find the first sector for this category
+						const firstSector = sectors.find(
+							sector => sector.category_id === category.id
+						);
 
-					return (
-						<Link
-							key={category.id}
-							className="link-hover font-sans text-[1.03rem]"
-							to={`/sectors/${firstSector?.id}`}
-						>
-							<FontAwesomeIcon
-								icon={faArrowAltCircleRight}
-								color="#0b4a9b"
-								size="1x"
-							/>{' '}
-							{category.name}
-						</Link>
-					);
-				})}
-			</div>
+						return (
+							<Link
+								key={category.id}
+								className="link-hover font-sans text-[1.03rem]"
+								to={`/sectors/${firstSector?.id}`}
+							>
+								<FontAwesomeIcon
+									icon={faArrowAltCircleRight}
+									color="#430f61"
+									size="0.5x"
+								/>{' '}
+								{category.name}
+							</Link>
+						);
+					})}
+				</div>
+			)}
 		</div>
 	);
 };
@@ -295,9 +295,9 @@ const ResourceContent = () => {
 	const [isLearningActive, setIsLearningActive] = useState(true);
 
 	return (
-		<div className="w-[100vw] lg:w-auto grid grid-cols-8 gap-14  bg-raisin-black text-white p-8">
+		<div className="w-[100vw] lg:w-64 bg-raisin-black text-white p-6 shadow-xl">
 			{/* Left Column */}
-			<div className="col-span-4 border-r border-gray-300 p-1 w-40">
+			<div className="col-span-4  p-1 w-40">
 				<ul className="flex flex-col space-y-2">
 					{/* Certifications */}
 					<Link
@@ -309,7 +309,6 @@ const ResourceContent = () => {
 					</Link>
 
 					{/* Other Links */}
-
 					<Link
 						className="link-hover"
 						to={'Webinars'}
@@ -335,25 +334,8 @@ const ResourceContent = () => {
 			</div>
 
 			{/* Right Column - Courses Grid */}
-			<div
-				className={`col-span-4 grid grid-cols-1 h-fit text-[0.9rem] ${
-					isLearningActive ? 'visible-grid' : 'hidden-grid'
-				}`}
-			>
-				<Link className="link-hover" to={'learning-methods'}>
-					- Instructor led training
-				</Link>
-				<Link className="link-hover" to={'learning-methods'}>
-					- On site training
-				</Link>
-				<Link className="link-hover" to={'learning-methods'}>
-					- Online any time
-				</Link>
-				<Link className="link-hover" to={'learning-methods'}>
-					- Online live
-				</Link>
-			</div>
 		</div>
 	);
 };
+
 export default Example;
