@@ -15,22 +15,19 @@ const AboutUs = () => {
 			title: 'Empowerment',
 			description:
 				'Empowering individuals to achieve their full potential through quality education.',
-			image:
-				'/images/empowerment.webp',
+			image: '/images/empowerment.webp',
 		},
 		{
 			title: 'Innovation',
 			description:
 				'Continuously updating our programs to include the latest industry trends.',
-			image:
-				'/images/innovation.webp',
+			image: '/images/innovation.webp',
 		},
 		{
 			title: 'Community',
 			description:
 				'Building a supportive community for learners and professionals alike.',
-			image:
-				'/images/community.webp',
+			image: '/images/community.webp',
 		},
 	];
 

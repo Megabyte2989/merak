@@ -1,9 +1,6 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
-import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
-
-function LandingSec4() {
+function LandingSec4({}) {
 	return (
 		<>
 			<div className="px-5 py-5 sm:p-14 text-white text-center bg-lavender">
@@ -69,12 +66,7 @@ function Certification({ ImageSrc, Fpragraph, Spragraph }) {
 				</p>
 			</div>
 			<div className="cursor-pointer">
-				<FontAwesomeIcon
-					icon={faArrowRightLong}
-					shake
-					color="orange"
-					size="2x"
-				/>
+				<span className="text-black">▶</span>
 			</div>
 		</div>
 	);

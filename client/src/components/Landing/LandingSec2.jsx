@@ -1,19 +1,7 @@
-import {
-	faChartLine,
-	faCloud,
-	faCode,
-	faCogs,
-	faDatabase,
-	faNetworkWired,
-	faProjectDiagram,
-	faRobot,
-	faShieldAlt,
-	faUserTie,
-} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
-function LandingSec2() {
+function LandingSec2({ icons }) {
 	return (
 		<div className="Container sm:p-14 p-5 grid grid-cols-12 bg-lavender text-black text-center md:text-left   md:gap-0 lg:gap-10">
 			<div className="col-span-12 md:col-span-5 lg:col-span-5 p-4 sm:p-6">
@@ -37,7 +25,7 @@ function LandingSec2() {
 					<ul className="space-y-4 md:space-y-6 text-base font-medium">
 						<li className="flex items-center">
 							<FontAwesomeIcon
-								icon={faProjectDiagram}
+								icon={icons.project}
 								className="icon-alignment"
 								style={{ color: 'var(--dogwood-rose)' }}
 								size="2xl"
@@ -46,7 +34,7 @@ function LandingSec2() {
 						</li>
 						<li className="flex items-center">
 							<FontAwesomeIcon
-								icon={faShieldAlt}
+								icon={icons.shield}
 								className="icon-alignment fa-shake"
 								style={{ color: 'var(--dogwood-rose)' }}
 								size="2xl"
@@ -55,7 +43,7 @@ function LandingSec2() {
 						</li>
 						<li className="flex items-center">
 							<FontAwesomeIcon
-								icon={faUserTie}
+								icon={icons.tie}
 								className="icon-alignment"
 								style={{ color: 'var(--dogwood-rose)' }}
 								size="2xl"
@@ -64,7 +52,7 @@ function LandingSec2() {
 						</li>
 						<li className="flex items-center">
 							<FontAwesomeIcon
-								icon={faNetworkWired}
+								icon={icons.network}
 								className="icon-alignment"
 								style={{ color: 'var(--dogwood-rose)' }}
 								size="xl"
@@ -73,7 +61,7 @@ function LandingSec2() {
 						</li>
 						<li className="flex items-center">
 							<FontAwesomeIcon
-								icon={faCode}
+								icon={icons.code}
 								className="icon-alignment"
 								style={{ color: 'var(--dogwood-rose)' }}
 								size="xl"
@@ -87,7 +75,7 @@ function LandingSec2() {
 					<ul className="space-y-4 md:space-y-6 text-base font-medium">
 						<li className="flex items-center m-y-6  mt-6">
 							<FontAwesomeIcon
-								icon={faDatabase}
+								icon={icons.database}
 								className="icon-alignment "
 								style={{ color: 'var(--dogwood-rose)' }}
 								size="2xl"
@@ -96,7 +84,7 @@ function LandingSec2() {
 						</li>
 						<li className="flex items-center">
 							<FontAwesomeIcon
-								icon={faCloud}
+								icon={icons.cloud}
 								className="icon-alignment"
 								style={{ color: 'var(--dogwood-rose)' }}
 								size="xl"
@@ -105,7 +93,7 @@ function LandingSec2() {
 						</li>
 						<li className="flex items-center">
 							<FontAwesomeIcon
-								icon={faChartLine}
+								icon={icons.chartline}
 								className="icon-alignment"
 								style={{ color: 'var(--dogwood-rose)' }}
 								size="xl"
@@ -114,7 +102,7 @@ function LandingSec2() {
 						</li>
 						<li className="flex items-center">
 							<FontAwesomeIcon
-								icon={faCogs}
+								icon={icons.cogs}
 								className="icon-alignment"
 								style={{ color: 'var(--dogwood-rose)' }}
 								size="xl"
@@ -123,7 +111,7 @@ function LandingSec2() {
 						</li>
 						<li className="flex items-center">
 							<FontAwesomeIcon
-								icon={faRobot}
+								icon={icons.robot}
 								className="icon-alignment"
 								style={{ color: 'var(--dogwood-rose)' }}
 								size="xl"

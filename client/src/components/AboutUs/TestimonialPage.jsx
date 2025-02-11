@@ -1,4 +1,3 @@
-import { Rating } from '@material-tailwind/react';
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
@@ -247,11 +246,12 @@ const TestimonialPage = () => {
 												How was your experience?
 											</span>
 											<div>
-												<Rating
+												{/* TODO :Replace this with something else for Performance */}
+												{/* <Rating
 													unratedColor="black"
 													ratedColor="white"
 													className="flex flex-row gap-3 "
-												/>
+												/> */}
 											</div>
 										</div>
 										<textarea

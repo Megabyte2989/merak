@@ -1,9 +1,5 @@
-import {
-	faArrowLeft,
-	faArrowRight,
-	faQuoteLeft,
-} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import React, { useState } from 'react';
 
 const testimonials = [
@@ -21,7 +17,7 @@ const testimonials = [
 	},
 ];
 
-function LandingSec7() {
+function LandingSec7({ icons }) {
 	const [currentIndex, setcurrentIndex] = useState(0);
 	const [isFading, setIsFading] = useState(false);
 
@@ -51,7 +47,7 @@ function LandingSec7() {
 			</h1>
 			<div className="flex items-center flex-col sm:flex-row sm:justify-center">
 				<FontAwesomeIcon
-					icon={faQuoteLeft}
+					icon={icons.quote}
 					size="5x"
 					className="lg:mb-32 mr-auto sm:mr-4 sm:mb-60 sm:text-[6rem] lg:text-[10rem]"
 				/>
@@ -75,14 +71,14 @@ function LandingSec7() {
 			>
 				<div onClick={handlePrevious}>
 					<FontAwesomeIcon
-						icon={faArrowLeft}
+						icon={icons.left}
 						size="2x"
 						className="cursor-pointer hover:text-white"
 					/>
 				</div>
 				<div onClick={handleNext}>
 					<FontAwesomeIcon
-						icon={faArrowRight}
+						icon={icons.right}
 						size="2x"
 						className="cursor-pointer hover:text-white"
 					/>

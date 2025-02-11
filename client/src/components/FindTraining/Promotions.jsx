@@ -1,12 +1,10 @@
-import {
-	faChevronDown,
-	faChevronUp,
-	faClipboardQuestion,
-} from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 
 function Promotions() {
+	const chevronDown = '▼';
+	const chevronUp = '▲';
+	const clipboardQuestion = '❓';
+
 	const faqs = [
 		{
 			question: 'How long is the promotion valid?',
@@ -112,24 +110,15 @@ function Promotions() {
 								onClick={() => toggleAnswer(index)}
 							>
 								<div className="flex items-baseline space-x-3">
-									<FontAwesomeIcon
-										icon={faClipboardQuestion}
-										size="1x"
-										color="red"
-									/>
+									<span>❓</span>
 									<h3 className="text-xl font-semibold text-white">
 										{faq.question}
 									</h3>
 								</div>
 								{/* Toggle Chevron */}
-								<FontAwesomeIcon
-									icon={openFaqIndex === index ? faChevronUp : faChevronDown}
-									color="black"
-									className="transition-transform transform duration-300"
-								/>
+								{openFaqIndex === index ? <span>▲</span> : <span>▼</span>}
 							</div>
 
-							{/* FAQ Answer */}
 							{openFaqIndex === index && (
 								<p className="ml-5 text-white text-xl">{faq.answer}</p>
 							)}

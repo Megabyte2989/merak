@@ -1,5 +1,4 @@
 import React from 'react';
-import Typewriter from '../utils/Typewriter';
 function LandingSec1() {
 	return (
 		<div
@@ -11,7 +10,8 @@ function LandingSec1() {
 			<div className="col-span-1 lg:col-span-6 flex flex-col justify-center items-start gap-6 lg:w-[50%] px-2">
 				<h1 className="text-4xl lg:text-7xl font-bold font-sans mb-8 text-dogwood-rose ">
 					Unlock Your Team's
-					<Typewriter text={'Potential'} />
+					<div>Potential</div>
+					{/* <Typewriter text={'Potential'} /> */}
 				</h1>
 
 				<p className="text-sm lg:text-base  mb-5">

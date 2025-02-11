@@ -1,8 +1,7 @@
-import {
-	faArrowAltCircleRight,
-	faCartShopping,
-	faChevronDown,
-} from '@fortawesome/free-solid-svg-icons';
+import { faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons/faArrowAltCircleRight';
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons/faCartShopping';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons/faChevronDown';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { AnimatePresence, motion } from 'framer-motion';
