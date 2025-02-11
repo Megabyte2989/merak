@@ -1,5 +1,6 @@
 import {
 	faArrowAltCircleRight,
+	faCartShopping,
 	faChevronDown,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -43,7 +44,8 @@ function Example() {
 			</div>
 			{/* MOBILE */}
 			<div
-				className={`lg:hidden absolute top-20 left-0 right-0 bg-gray-300 shadow-lg ${menuOpen ? 'block' : 'hidden'} p-5 flex items-center justify-center flex-col gap-2 overflow-auto`}
+				className={`lg:hidden absolute  left-0 right-0 bg-gray-300 shadow-lg ${menuOpen ? 'block' : 'hidden'} 
+				p-5 flex items-center justify-center flex-col gap-2 overflow-auto z-5 top-[4rem]`}
 			>
 				<MobileFlyoutLink
 					href="/AboutUs"
@@ -82,6 +84,11 @@ function Example() {
 					Authorization & Partner
 				</MobileFlyoutLink>
 				<MobileFlyoutLink href="/contact-us">Contact Us</MobileFlyoutLink>
+
+				<MobileFlyoutLink href="/cart">
+					{' '}
+					<FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon>
+				</MobileFlyoutLink>
 			</div>
 			{/* DESKTOP */}
 			<div className="hidden lg:flex space-x-5 justify-center text-[0.9rem]">
@@ -93,7 +100,7 @@ function Example() {
 					href="/find-training"
 					FlyoutContent={isMobile ? null : CoursesContent}
 				>
-					{' '}
+					{''}
 					{/* Prevent rendering on mobile */}
 					Find Training
 					<FontAwesomeIcon icon={faChevronDown} className="ml-1" />
@@ -106,6 +113,9 @@ function Example() {
 					Authorization & Partner
 				</FlyoutLink>
 				<FlyoutLink href="/contact-us">Contact Us</FlyoutLink>
+				<FlyoutLink href="/cart">
+					<FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon>
+				</FlyoutLink>
 			</div>
 		</>
 	);
@@ -243,7 +253,7 @@ const CoursesContent = () => {
 					<Link
 						onMouseEnter={() => setIsCertificationsActive(true)}
 						className={`link-hover ${isCertificationsActive ? 'link-active' : ''} duration-75`}
-						to={''}
+						to={'/find-training'}
 					>
 						Certifications
 					</Link>
@@ -287,7 +297,7 @@ const CoursesContent = () => {
 								<FontAwesomeIcon
 									icon={faArrowAltCircleRight}
 									color="white"
-									size="0.5x"
+									size="1x"
 									className="mr-1"
 								/>
 								{'  '}
@@ -305,14 +315,14 @@ const ResourceContent = () => {
 	const [isLearningActive, setIsLearningActive] = useState(true);
 
 	return (
-		<div className="w-[100vw] lg:w-60 bg-raisin-black text-white p-6 shadow-xl">
+		<div className="w-[100vw] lg:w-64 bg-raisin-black text-white p-6 shadow-xl ">
 			{/* Left Column */}
 			<div className="col-span-4  p-1 w-30">
-				<ul className="flex flex-col space-y-2 text-center">
+				<ul className="flex flex-col space-y-2 justify-center items-center">
 					{/* Certifications */}
 					<Link
 						onMouseEnter={() => setIsLearningActive(true)}
-						className={`link-hover`}
+						className="rounded-lg hover:bg-dogwood-rose hover:px-5 hover:py-2 duration-150"
 						to={'learning-methods'}
 					>
 						Learning Methods
@@ -320,21 +330,21 @@ const ResourceContent = () => {
 
 					{/* Other Links */}
 					<Link
-						className="link-hover"
+						className="rounded-lg hover:bg-dogwood-rose hover:px-5 hover:py-2 duration-150"
 						to={'Webinars'}
 						onMouseEnter={() => setIsLearningActive(false)}
 					>
 						Webinars
 					</Link>
 					<Link
-						className="link-hover"
+						className="rounded-lg hover:bg-dogwood-rose hover:px-5 hover:py-2 duration-150"
 						to={'we-hire'}
 						onMouseEnter={() => setIsLearningActive(false)}
 					>
 						We hire
 					</Link>
 					<Link
-						className="link-hover"
+						className="rounded-lg hover:bg-dogwood-rose hover:px-5 hover:py-2 duration-150"
 						to={'Certification-Verification'}
 						onMouseEnter={() => setIsLearningActive(false)}
 					>

@@ -29,7 +29,7 @@ function GovProjects() {
 			</Helmet>
 
 			{/* Hero Section */}
-			<div className="relative pt-32 pb-32 md:h-screen bg-fixed bg-[url('/public/govProjects.webp')] bg-cover bg-center w-full -z-10">
+			<div className="relative pt-32 pb-32 md:h-screen bg-fixed bg-[url('/govProjects.webp')] bg-cover bg-center w-full -z-10">
 				<div class="absolute inset-0 bg-russian-violet opacity-70"></div>
 				<div className="container h-full mx-auto relative">
 					<div className="leading-none text-center text-white flex flex-col justify-center items-center h-full ">

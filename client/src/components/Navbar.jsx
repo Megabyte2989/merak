@@ -39,7 +39,7 @@ function Navbar() {
 					color: `${fontColor}`,
 				}}
 			>
-				<div>
+				<div className="z-10">
 					<Link to={'/'}>
 						<img
 							style={{
@@ -52,7 +52,7 @@ function Navbar() {
 					</Link>
 				</div>
 				<div
-					className={`items-center justify-center flex`}
+					className={`items-center justify-center flex z-10`}
 					style={{
 						fontSize: `${fontNav}rem`,
 						transition: 'font-size 0.1s',

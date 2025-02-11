@@ -1,8 +1,13 @@
 import React from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useTrainingContext } from '../../contexts/trainingContext';
+import AddToCart from '../CartParts/AddToCart';
 
 const CourseDetailsPage = () => {
+	const addItemToCart = () => {
+		localStorage.setItem('cart');
+	};
+
 	const { courseId } = useParams();
 	const navigate = useNavigate();
 	const { courses } = useTrainingContext();
@@ -63,13 +68,19 @@ const CourseDetailsPage = () => {
 				<Section title="Why Attend?" content={Currentcourse.whyAttend} />
 
 				{/* Register Button */}
-				<div className="text-center  mt-12 mb-12">
-					<button
-						className="bg-blue-700 text-white py-5 px-14 rounded-full text-3xl  font-semibold shadow-lg hover:bg-green-600 hover:scale-105 transition-transform"
-						onClick={() => navigate(`/register/${Currentcourse.id}`)}
-					>
-						Register Now
-					</button>
+				<div className="text-center flex  mt-12 mb-12 gap-3">
+					<div>
+						<button
+							className="bg-blue-700 text-white px-6 py-3 rounded-full text-2xl  font-semibold shadow-lg hover:bg-green-600 transition-transform"
+							onClick={() => navigate(`/register/${Currentcourse.id}`)}
+						>
+							Register Now
+						</button>
+					</div>
+
+					<div>
+						<AddToCart course={Currentcourse} />
+					</div>
 				</div>
 			</main>
 		</div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import Typewriter from '../Typewriter';
+import Typewriter from '../utils/Typewriter';
 function LandingSec1() {
 	return (
 		<div

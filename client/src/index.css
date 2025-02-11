@@ -13,7 +13,7 @@
 
 /* Common styles for active links */
 .link-active {
-	@apply bg-dogwood-rose  translate-x-2 translate-y-1;
+	@apply bg-dogwood-rose translate-x-2 translate-y-1;
 }
 
 /* Hidden state for the grid */

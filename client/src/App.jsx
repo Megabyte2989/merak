@@ -10,16 +10,17 @@ import Gallery from './components/AboutUs/Gallery';
 import GovProjects from './components/AboutUs/GovProjects';
 import Success from './components/AboutUs/Success';
 import TestimonialPage from './components/AboutUs/TestimonialPage';
+import Cart from './components/CartParts/Cart';
 import ContactUsMain from './components/ContactUs/ContactUsMain';
 import CategoriesPage from './components/FindTraining/CategoriesPage';
 import CourseDetailsPage from './components/FindTraining/CourseDetailsPage';
-import NotFoundPage from './components/FindTraining/NotFoundPage'; // Import the NotFoundPage component
 import Promotions from './components/FindTraining/Promotions';
 import RegistrationFormPage from './components/FindTraining/RegistrationFormPage';
 import SectorsPage from './components/FindTraining/SectorsPage';
 import Foot from './components/Foot';
 import Landing from './components/Landing/Landing';
 import Navbar from './components/Navbar';
+import NotFoundPage from './components/NotFoundPage'; // Import the NotFoundPage component
 import PartnersAndAuthorizations from './components/PartnersAndAuthorizations';
 import CertificationVerification from './components/Resources/CertificationVerification';
 import LearningMethods from './components/Resources/LearningMethods';
@@ -77,6 +78,7 @@ function App() {
 										element={<RegistrationFormPage />}
 									/>
 									<Route path="/promotions" element={<Promotions />} />
+									<Route path="/cart" element={<Cart />} />
 									<Route path="*" element={<NotFoundPage />} />{' '}
 									{/* Add this line */}
 									{/* Uncomment or add additional routes as needed */}

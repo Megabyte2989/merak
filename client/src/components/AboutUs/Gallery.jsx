@@ -55,7 +55,7 @@ const Gallery = () => {
 			url: './images/laptop.webp',
 			alt: 'Photo by Martin Sanchez',
 			label: 'Dev',
-		}
+		},
 	];
 
 	// Carousel functionality
@@ -108,7 +108,6 @@ const Gallery = () => {
 				tabIndex={0}
 				role="region"
 				aria-label="Image slider"
-				
 			>
 				<AnimatePresence mode="wait">
 					<motion.div
@@ -146,10 +145,16 @@ const Gallery = () => {
 				</AnimatePresence>
 
 				{/* Controls */}
-				<button onClick={prevSlide} className="cta-button absolute left-4 top-1/2">
+				<button
+					onClick={prevSlide}
+					className="cta-button absolute left-4 top-1/2 text-white "
+				>
 					<FiChevronLeft size={24} />
 				</button>
-				<button onClick={nextSlide} className="cta-button absolute right-4 top-1/2">
+				<button
+					onClick={nextSlide}
+					className="cta-button absolute right-4 top-1/2 text-white"
+				>
 					<FiChevronRight size={24} />
 				</button>
 			</div>
@@ -162,8 +167,8 @@ const Gallery = () => {
 							Our Gallery
 						</h2>
 						<p className="text-gray-500 dark:text-gray-300">
-							Explore our collection of high-quality images showcasing the latest
-							in technology and innovation.
+							Explore our collection of high-quality images showcasing the
+							latest in technology and innovation.
 						</p>
 					</div>
 
