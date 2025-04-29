@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Common hover styles for links */
+.link-hover {
+	@apply rounded-lg duration-150 p-2 w-[90%];
+}
+
+.link-hover:hover {
+	@apply bg-dogwood-rose translate-x-2;
+}
+
+/* Common styles for active links */
+.link-active {
+	@apply bg-dogwood-rose  translate-x-2 translate-y-1;
+}
+
+/* Hidden state for the grid */
+.hidden-grid {
+	@apply opacity-0 pointer-events-none transition-opacity duration-300;
+}
+
+/* Visible state for the grid */
+.visible-grid {
+	@apply opacity-100;
+}
+
+@layer components {
+	.buttonMain {
+		font-family: 'Poppins', sans-serif;
+		/* Ensure fallback */
+		border-radius: 2rem;
+		padding: 1rem 1.5rem;
+		/* Combine padding shorthand */
+		color: white;
+		cursor: pointer;
+		transition:
+			background-color 0.3s ease,
+			transform 0.2s ease;
+		/* Add smooth effects */
+	}
+
+	.buttonMain:hover {
+		transform: scale(1.05);
+		/* Slight zoom on hover */
+	}
+
+	.buttonMain:active {
+		transform: scale(0.98);
+		/* Slight compression on click */
+	}
+}

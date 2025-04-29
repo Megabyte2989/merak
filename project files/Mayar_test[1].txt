@@ -1,0 +1,321 @@
+
+[
+{
+        "id": 1,
+        "name": "Adobe",
+        "introduction": "Let New Horizons push your creative skills further than you ever thought possible with our full range of Adobe training. Become a master of graphic design, desktop publishing, web design and animation with Adobe classes taught by experienced trainers.\n\nThe Adobe product line continues to be the standard for professionals, businesses and hobbyists. Regardless of your experience level with Adobe products, you will walk away from our classes with new tips, tricks, and tools to make your work more efficient.",
+        "photo": "Adobe"
+    }
+
+]
+
+
+
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+[
+    {
+        "id": 1,
+        "name": "Adobe Acrobat Training",
+        "category_id": 1,
+        "Category": {
+            "name": "Adobe"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Adobe Captivate Training",
+        "category_id": 1,
+        "Category": {
+            "name": "Adobe"
+        }
+    },
+    {
+        "id": 3,
+        "name": "Adobe Illustrator Training",
+        "category_id": 1,
+        "Category": {
+            "name": "Adobe"
+        }
+    },
+    {
+        "id": 4,
+        "name": "Adobe InDesign Training",
+        "category_id": 1,
+        "Category": {
+            "name": "Adobe"
+        }
+    },
+    {
+        "id": 5,
+        "name": "Adobe Photoshop Training",
+        "category_id": 1,
+        "Category": {
+            "name": "Adobe"
+        }
+    },
+    {
+        "id": 6,
+        "name": "Adobe Premiere Pro",
+        "category_id": 1,
+        "Category": {
+            "name": "Adobe"
+        }
+    },
+    {
+        "id": 7,
+        "name": "Additional Adobe Training",
+        "category_id": 1,
+        "Category": {
+            "name": "Adobe"
+        }
+    }
+]
+
+
+
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+
+[
+    {
+        "id": 1,
+        "name": "Adobe Acrobat Pro DC - Introduction",
+        "introduction": "Adobe Acrobat Pro DC puts the power of the Portable Document Format, literally, at your fingertips. By taking advantage of the functionality & features available in Acrobat, you will ensure the integrity of your documents regardless of who views them.",
+        "duration": null,
+        "price": 999,
+        "sector_id": 1,
+        "delivery_method": null,
+        "overview": "Adobe Acrobat Pro DC puts the power of the Portable Document Format, literally, at your fingertips. By taking advantage of the functionality & features available in Acrobat, you will ensure the integrity of your documents regardless of who views them.",
+        "objective": "In this course, you will create and work with PDF documents. You will:\nAccess information in a PDF document\nCreate and save PDF documents\nNavigate content in a PDF document\nModify PDF documents\nReview PDF documents\nConvert PDF documents",
+        "why_attend": "This course is for individuals who are new to Adobe Acrobat Pro, but need to create and share PDF files and PDF portfolios. Students should have some experience using office productivity applications, such as word processor, a multimedia presentation application, or a spreadsheet application.",
+        "prequisites": "To ensure your success in this course, you should have basic experience with computers and exposure to Windows 8, as well as common productivity tools such as Microsoft Office Word & Microsoft Office PowerPoint. You can obtain this level of skill & knowledge by taking the following courses: Using Microsoft Windows 8 Microsoft Windows 8 Transition from Windows 7 Microsoft Office Word 2013: Part 1 Microsoft Office PowerPoint 2013: Part 1",
+        "certification": false,
+        "agenda": "1 - Accessing PDF Documents\nTopic A: Open a PDF Document\nTopic B: Browse a PDF Document\n2 - Creating and Saving PDF Documents\nTopic A: Create and Save a PDF Document from an Existing Document\nTopic B: Create a PDF Document from a Web Page\nTopic C: Combine Multiple PDF Documents\n3 - Navigating Content in a PDF Document\nTopic A: Perform a Search in a PDF Document\nTopic B: Search Multiple PDF Documents\nTopic C: Work with Bookmarks\nTopic D: Create Links and Buttons\n4 - Modifying PDF Documents\nTopic A: Manipulate PDF Document Pages\nTopic B: Edit Content in a PDF Document\nTopic C: Add Page Elements\n5 - Reviewing PDF Documents\nTopic A: Add Comments and Markup\nTopic B: Compare PDF Documents\nTopic C: Initiate and Manage a Review\nTopic D: Digitally Sign PDF Documents\n6 - Converting PDF Files\nTopic A: Reduce the File Size of a PDF Document\nTopic B: Optimize PDF Files\nTopic C: Convert and Reuse PDF Document Content",
+        "Sector": {
+            "id": 1,
+            "name": "Adobe Acrobat Training",
+            "category_id": 1
+        }
+    },
+    {
+        "id": 2,
+        "name": "Adobe Acrobat Pro DC - Advanced",
+        "introduction": "In this course, students will use Adobe Acrobat Pro DC to convert technical documents to PDF files, enhance PDF documents, create interactive PDF forms, and prepare PDF files for commercial printing.",
+        "duration": null,
+        "price": 999,
+        "sector_id": 1,
+        "delivery_method": null,
+        "overview": "In this course, students will learn to use advanced document tools and modify document properties, compare documents, enhance scans, as well as enhance documents by adding rich media such as sound, video, and interactive buttons. Students will learn to use the measurement tool, the distance tool, the perimeter tool and the area tool. Students will create interactive forms from a Word document or InDesign document, add form elements, add check boxes and radio buttons, and distribute forms for feedback. Students will understand the importance of accessibility and test for accessibility. Finally, students will understand signatures, create signatures, and add signatures to a document.",
+        "objective": ".Customize the Acrobat Pro DC workspace.\n.Create PDFs from technical documents.\n.Enhance PDF documents.\n.Create interactive PDF forms.\n.Finalize PDF files for commercial printing.",
+        "why_attend": "The target students for this course are office professionals with a foundational understanding of Adobe Acrobat Pro DC who want to use the advanced productivity features and the creative features of Acrobat Pro DC.",
+        "prequisites": "Adobe Acrobat Introduction or equivalent experience",
+        "certification": false,
+        "agenda": "1 - Introduction\nIntroduction\n2 - Advanced Document Tools\nUsing Document Properties\nComparing Documents\nEnhancing Scans\n3 - Adding Rich Media\nAdding Sound\nAdding Video\nAdding Buttons\n4 - Using the Measurement Tools\nUnderstanding the Measurement Tool\nUsing the Distance Tools\nUsing the Perimeter Tool\nUsing the Area Tool\n5 - Creating Forms\nCreating a Form from a Word Document\nCreating a Form from InDesign\nAdding Form Elements\nAdding Check Boxes and Radio Buttons\nDistributing Forms\n6 - Understanding Accessibility\nWhat is Accessibility?\nRunning an Accessibility Test\n7 - Creating Signatures and Certificates\nWhat is a Digital Signature?\nCreating a Digital Signature\nAdding a Signature to a Document\n8 - Conclusion\nCourse Recap",
+        "Sector": {
+            "id": 1,
+            "name": "Adobe Acrobat Training",
+            "category_id": 1
+        }
+    },
+    {
+        "id": 3,
+        "name": "Adobe Captivate 2019 - The Essentials",
+        "introduction": "This course teaches the core Adobe Captivate skills needed to create eLearning courses.",
+        "duration": null,
+        "price": 999,
+        "sector_id": 2,
+        "delivery_method": null,
+        "overview": "A course that teaches the core Adobe Captivate skills needed to create eLearning courses.",
+        "objective": ".You will learn how to create a soft-skills lesson from scratch.\n.You will learn to record and produce software demonstrations, interactive training simulations, and Video Demos.\n.By the time you finish, you will know how to add such standard objects to a slide as text captions, images, characters, videos, Smart Shapes, and more.\n.You will record, import, and edit audio.\n.You will also further enhance the learner experience by adding interactivity via click boxes, buttons, text entry boxes, and quizzes.\n.You will learn how to import existing PowerPoint content into Captivate.\n.You will learn to publish a Captivate project as SWF, PDF, or HTML5 so that your content can be used on virtually any device including desktop computers, laptops, smart phones, and tablets.",
+        "why_attend": "",
+        "prequisites": "Basic computer literacy\nBasic PC operating system navigation skills\nBasic Internet usage skills\nBasic IP address knowledge",
+        "certification": false,
+        "agenda": "1 - EXPLORING CAPTIVATE\nExplore a Finished Captivate Project\nZoom and Magnify\nNavigate a Project\nExplore and Reset the Workspace\nPreview the Entire Project\n2 - NEW PROJECTS & SOFT SKILLS ELEARNING\nCreate a Blank Project\nAdd Images to Placeholders\nImport Images\nUse a Smart Shape as a Button\nDisable Click Sounds\n3 - SCREEN RECORDINGS\nRehearse a Script\nReview Recording Settings\nReview Recording Modes\nRecord Using Multiple Modes\nRecord a Custom Simulation\nRecord a Demonstration that Pans\nManually Record the Screen\n4 - VIDEO DEMOS\nRecord a Video Demo\nAdd a Video Zoom\nAdd a Video Pan\nSmooth a Mouse Path and Show Visual Clicks\nSplit a Video\nTrim a Video\nInsert a Video Project into a Standard Project\nPublish a Video Demo\n5 - CAPTIONS, STYLES, TIMING, AND ROUND TRIPPING\nInsert and Edit Text Captions\nEdit the Default Caption Style\nChange a Callout Type Used by a Text Caption\nControl Slide Timing\nControl Slide Object Timing\nCheck Spelling\nAlign Slide Objects\nExport Captions to Word\nImport Captions from Word into Captivate\n6 - POINTERS, PATHS, PATHS, BOXES, AND BUTTONS\nControl Mouse Effects\nEdit a Mouse Path\nClone an Object Style\nInsert a Highlight Box\nInsert an Image Button\nControl Appear After Timing\n7 - IMAGES AND VIDEOS\nInsert, Resize, and Restore an Image\nImport Images into the Library\nResize, Transform, and Align Images\nManage Unused Library Assets\nCreate an Image Slideshow\nInsert a Video\nSet Video Properties\n8 - AUDIO\nWork with Rollover Captions\nImport Audio onto a Slide Object\nImport Background Audio\nAdd a Slide Note\nCalibrate a Microphone\nRecord Slide Audio\nImport Audio onto a Slide\nEdit an Audio File\nInsert Silence\nConvert Text-to-Speech\n9 - STATES, ANIMATIONS, AND OBJECT EFFECTS\nChange State Views for a Button\nAdd an Animation to a slide\nInsert a Text Animation\nApply an Effect to a Slide Object\nApply a Free Fall Effect to an Object\n10 - SOFTWARE SIMULATIONS\nHide the Mouse\nReplace Phrases\nInsert a Click Box\nInsert a Text Entry Box\n11 - WORKING WITH POWERPOINT\nCreate a Project from a Presentation\nEdit the Source Presentation\nSynchronize with Source\nRescale a Project\n12 - QUIZZING\nEdit Quizzing Object Styles\nSet the Quiz Preferences\nQuestion Slides\nInsert Question Slides\nEdit a Question Slide\nCompare Submit All to Submit Buttons\nInsert a Knowledge Check\nReview a GIFT File\nImport a GIFT File into a Project\nCreate Question Pools\nMove Questions to Pools\nInsert Random Question Slides\n13 - PUBLISHING\nApply a Skin\nEdit, Save, and Delete a Skin\nName Slides\nCheck Publish Settings and Add a Loading Screen\nPublish as SWF and PDF\nRun the HTML5 Tracker\nPublish as HTML5",
+        "Sector": {
+            "id": 2,
+            "name": "Adobe Captivate Training",
+            "category_id": 1
+        }
+    },
+    {
+        "id": 4,
+        "name": "Adobe Captivate 2019 - Beyond The Essentials",
+        "introduction": "This course teaches the higher-end, more advanced functionality of Adobe Captivate 2019.",
+        "duration": null,
+        "price": 999,
+        "sector_id": 2,
+        "delivery_method": null,
+        "overview": "A course that teaches the higher-end, more advanced functionality of Adobe Captivate 2019.",
+        "objective": ".You will learn advanced Adobe Captivate concepts.\n.You will learn to create highly interactive software simulation and to control the text that appears in the recording’s text captions by editing Captivates text capture templates.\n.You will create responsive lessons (using Fluid Boxes and Breakpoints) that automatically reflow to fit just about any kind of display including desktops, laptops, tablets, and smart phones.\n.Learn new features that Captivate now supports; such as, Virtual Reality with 360-degree images and videos along with interactive videos.\n.Fine-tune your Captivate production skills by leveraging object styles, master slides, themes, and advanced actions.\n.Engage your learners by adding variables, widgets, and learner interactions (including drag and drop) to your eLearning.\n.Learn to create object styles, apply them globally, and import and export them. Knock large projects down to size by learning to create branch groups.\n.Create branching scenarios that allow learners to plot their own path through your course.\n.You will also learn to create templates.\n.Ensure your eLearning can be used by people with disabilities by adding such 508-compliant features as accessibility text, keyboard shortcuts, and closed captions.\n.Enable Captivates reporting features and, along the way, learn about Learning Management Systems, SCORM, SCOs, Manifests, and content packages.",
+        "why_attend": "",
+        "prequisites": "Adobe Captivate 2019 The Essentials or equivalent experience",
+        "certification": false,
+        "agenda": "1 - INTERACTIVE SOFTWARE SIMULATIONS AND CAPTION PRE-EDITING\nRehearse a Script\nSet Recording Preferences\nRecord a Simulation\nEdit a Text Capture Template\n2 - OBJECT STYLES, PROJECT SHARING, AND BRANCHING\nCreate a New Style\nApply an Object Style Globally\nExport and Import an Object Style\nName a Slide\nCopy/Paste Project Assets\nUse Buttons to Create a Branch\nExplore the Branching View\nCreate a Branch Group\n3 - VARIABLES AND WIDGETS\nAdd Project Information\nInsert a System Variable\nEdit a System Variable\nCreate a User Variable\nUse a Variable to Gather Learner Data\nInsert and Format a Widget\n4 - INTERACTIVE VIDEOS AND VIRTUAL REALITY\nInsert an Interactive Video\nAdd Bookmarks\nAdd Slide Overlays\nCreate a Virtual Reality Project\nAdd a Text Hotspot\nAdd an Audio Hotspot\nAdd a Quiz to a Virtual Reality Project\n5 - INTERACTIONS\nInsert a Process Circle\nCreate a Basic Drag and Drop Interaction\nManage Drag and Drop Buttons and Write Captions\nCreate a “Trick” Retry Slide\nExplore an Advanced Drag and Drop Project\nCreate an Advanced Drag and Drop Interaction\nChange the States of a Smart Shape\nUse States to Swap Images\n6 - ACCESSIBLE ELEARNING\nSet Document Information\nEnable Accessibility\nAdd Accessibility Text to Slides\nImport Slide Audio\nAdd Shortcut Keys\nAdd Closed Captions\nSet a Tab Order\n7 - ADVANCED ACTIONS\nUse a Completed Action\nName Objects\nCreate a Mask\nControl Object Visibility\nCreate a Standard Advanced Action,\nAttach an Action to a Button\nGroup Timeline Objects\nCreate a Variable\nCreate a Conditional Action\nCreate Decision Blocks\n8 - PROJECT TEMPLATES AND MASTER SLIDES\nWork with the Main Master Slide\nWork with Content Masters\nApply a Master to Filmstrip Slides\nEdit a Master\nApply a Theme\nCreate a Custom Theme\nReview a Template\nCreate a Project Based on a Template\nCreate a Project Template\n9 - RESPONSIVE PROJECTS\nCustomize Breakpoints\nSave a Standard Project As Responsive\nInsert and Name Fluid Boxes\nResize Fluid Boxes\nAdd Content to Fluid Boxes\nSwitch Modes\nUse the Position Inspector\nModify a Single Breakpoint\nExclude from View\nAdd a New Breakpoint\nPosition and Link Objects\nEdit Breakpoint Object Styles\n10 - REPORTING RESULTS\nSet Quiz Reporting Options\nCreate a Manifest File\nReport a Button Interaction\nAdjust Slide Object Interaction\nPreview in SCORM Cloud\nPublish a Content Package\nCreate an Inquisiq LMS Account\nCreate an LMS Course\nAttach a Lesson to a Course\nTest an eLearning Course",
+        "Sector": {
+            "id": 2,
+            "name": "Adobe Captivate Training",
+            "category_id": 1
+        }
+    },
+    {
+        "id": 5,
+        "name": "Adobe Illustrator CC - Introduction",
+        "introduction": "Adobe® Illustrator® CC is the component within Creative Cloud used to create \"drawn\" graphics, while enabling its users to integrate content from other domains (such as photo-oriented graphics and animation, which belong to Adobe® Photoshop® and other applications).",
+        "duration": null,
+        "price": 999,
+        "sector_id": 3,
+        "delivery_method": null,
+        "overview": "To meet the demands of individuals and organizations for flexible, reusable, and easily modified visual content, Adobe Systems has created a cadre of applications that collectively provide a scalable, end-to-end solution for nearly every type of visual design project one can contemplate. Called Creative Cloud®, the collection of applications perform specialized design tasks while interoperating among each other to deliver content.\nThis course focuses on Adobe® Illustrator® CC , the component within Creative Cloud used to create \"drawn\" graphics, while enabling its users to integrate content from other domains (such as photo-oriented graphics and animation, which belong to Adobe® Photoshop® and other applications). With Illustrator's many easily used tools, you will discover that not only can you unlock the same creative impulses you've always had as you've picked up a pencil to sketch out an idea, but also capture those multiple ideas and \"what ifs\" during the creative process in ways that you never imagined. And for those of you who are just embarking on building your creative skills, you will be surprised at \"how good\" your work will appear, even at the outset of your exploration of the world of graphic design.\nThis course is a great component of your preparation for the Adobe Certified Associate (ACA) Graphic Design & Illustration Using Adobe Illustrator exam.",
+        "objective": ".Upon successful completion of this course, you will be able to use Adobe Illustrator CC to create illustrations that include graphics and text.\n.Identify the components and capabilities of Illustrator.\n.Create basic shapes.\n.Create custom paths.\n.Create graphics that contain custom text.\n.Customize objects.\n.Customize basic shapes.\n.Prepare documents for deployment.",
+        "why_attend": "This course is intended for designers, publishers, pre-press professionals, marketing communications professionals, or people switching to a design job or taking on design responsibilities and who need to use Illustrator to create illustrations, logos, advertisements, or other graphic documents. It is also useful for anyone interested in working toward the Adobe Certified Professional Graphic Design and Illustration Using Adobe Illustrator exam certification.",
+        "prequisites": "To ensure your success in this course, you should be familiar with the basic functions of your computer's operating system, such as creating folders, launching programs, and working with windows. You should also have basic Windows application skills, such as copying and pasting objects, formatting text, saving files, and so on.\nFamiliarity with basic design terminology, such as palettes, color modes, shapes, text, and paths, is highly recommended.",
+        "certification": false,
+        "agenda": "1 - Introducing Illustrator\nTopic A: Apply Design Principles, Elements, and Graphics Composition\nTopic B: Evaluate Graphics Scalability\nTopic C: Navigate the User Interface\nTopic D: Customize the User Interface\n2 - Creating Documents Containing Basic Shapes\nTopic A: Create Documents\nTopic B: Save Documents\nTopic C: Draw Basic Shapes\n3 - Creating Documents Containing Customized Paths\nTopic A: Draw Paths\nTopic B: Modify Paths\n4 - Creating Graphics Containing Customized Text\nTopic A: Insert Text\nTopic B: Apply Flow Text Along a Path\nTopic C: Insert Bounded and Threaded Text\nTopic D: Apply Text Styles\nTopic E: Insert Typographical Characters\n5 - Customizing Objects\nTopic A: Import, Place, and Link Graphics\nTopic B: Alter the Appearance of Objects\n6 - Customizing Basic Shapes\nTopic A: Apply Strokes and Brushes\nTopic B: Fill Shapes\nTopic C: Apply Graphics Styles\nTopic D: Distort Text with Text Envelopes\n7 - Preparing Documents for Deployment\nTopic A: Update Text\nTopic B: Wrap Text\nTopic C: Hyphenate Text\nTopic D: Optimize Content for Print\nTopic E: Optimize Content for the Web\nTopic F: Optimize Content for PDF Documents",
+        "Sector": {
+            "id": 3,
+            "name": "Adobe Illustrator Training",
+            "category_id": 1
+        }
+    },
+    {
+        "id": 6,
+        "name": "Adobe Illustrator CC - Advanced",
+        "introduction": "In this course, you will use painting tools, manage colors\n format type, work with effects, prepare artwork for commercial printing, and prepare graphics for the web.",
+        "duration": null,
+        "price": 999,
+        "sector_id": 3,
+        "delivery_method": null,
+        "overview": "You have created simple artwork by using the basic drawing and painting tools available in Adobe® Illustrator®. You now want to use advanced tools, options, and effects to create complex artwork. In addition, you want to ensure that your artwork is ready for commercial printing and also save it for the web. In this course, you will draw complex illustrations and enhance them by using various painting options. You will also use painting tools, manage colors, format type, work with effects, prepare artwork for commercial printing, and prepare graphics for the web. This course is a great component of your preparation for the Adobe Certified Associate (ACA) Graphic Design & Illustration Using Adobe Illustrator exam.",
+        "objective": ".Upon successful completion of this course, students will be able to use Adobe Illustrator to create complex illustrations, format illustrations and type, and prepare documents for print and web.\n.Draw complex illustrations.\n.Enhance artwork by using painting tools.\n.Customize colors and swatches.\n.Format type.\n.Enhance the appearance of artwork.\n.Prepare content for deployment.\n.Set up project requirements",
+        "why_attend": "This course is intended for designers, publishers, pre-press professionals, marketing communications professionals, or people taking on design responsibilities who need to use Illustrator to create illustrations, logos, advertisements, or other graphic documents. It is also useful for anyone interested in working toward the Adobe Certified Professional Graphic Design and Illustration Using Adobe Illustrator exam certification.",
+        "prequisites": "To ensure your success in this course, you should be familiar with basic computer functions such as creating folders, launching programs, and working with Windows. You should also have basic Windows application skills, such as copying and pasting objects, formatting text, and saving files. Familiarity with basic design terminology, such as palettes, color modes, shapes, text, and paths, is highly recommended.",
+        "certification": false,
+        "agenda": "1 - Drawing Complex Illustrations\nTopic A: Apply the Grid, Guides, and Info Panel\nTopic B: Combine Objects to Create Complex Illustrations\nTopic C: Organize Artwork with Layers\nTopic D: Create a Perspective Drawing\nTopic E: Trace Artwork\n2 - Enhancing Artwork Using Painting Tools\nTopic A: Paint Objects Using Fills and Strokes\nTopic B: Paint Objects Using Live Paint Groups\nTopic C: Paint with Custom Brushes\nTopic D:Add Transparency and Blending Modes\nTopic E: Apply Meshes to Objects\nTopic F: Apply Patterns\n3 - Customizing Colors and Swatches\nTopic A: Manage Colors\nTopic B: Customize Swatches\nTopic C: Manage Color Groups\nTopic D: Adjust Color\n4 - Formatting Type\nTopic A: Set Character Formats\nTopic B: Apply Advanced Formatting Options to Type\n5 - Enhancing the Appearance of Artwork\nTopic A: Apply Effects to an Object\nTopic B: Create Graphic Styles\nTopic C: Apply a Mask to an Object\nTopic D: Apply Symbols and Symbol Sets\nTopic E: Work with 3D Objects\n6 -Preparing Content for Deployment\nTopic A: Prepare Artwork for Printing\nTopic B: Prepare Transparency and Colors for Printing\nTopic C:Create Slices and Image Maps\nTopic D: Save Graphics for the Web\nTopic E: Prepare Documents for Video\nTopic F: Prepare Files for Other Applications\n7 -Setting Project Requirements\nTopic A: Identify the Purpose, Audience, and Audience Needs\nTopic B: Determine and Evaluate Standard Copyright Rules for Artwork, Graphics, and Graphics Use\nTopic C:Determine and Evaluate Project Management Tasks and Responsibilities",
+        "Sector": {
+            "id": 3,
+            "name": "Adobe Illustrator Training",
+            "category_id": 1
+        }
+    },
+    {
+        "id": 7,
+        "name": "Adobe InDesign CC - Introduction",
+        "introduction": "In this course, you will use Adobe InDesign CC to create and deliver professional looking printed \nand interactive documents.",
+        "duration": null,
+        "price": 999,
+        "sector_id": 4,
+        "delivery_method": null,
+        "overview": "Giving your documents a well-designed, professional look will put you a step ahead in the marketplace cluttered with all kinds of communications. Paragraph and character styles that allow you to format pages of text uniformly, layout features that help you to build alternate size configurations of your document, and various panels that enable you to easily customize both text and graphics; Adobe® InDesign® CC has all the tools you need to elevate the look of your document and get it out to the people who need to see it, whether it be in print or on the web. This course is a great component of your preparation for the Adobe Certified Associate (ACA) Print & Digital Media Publication Using Adobe InDesign exam.",
+        "objective": ".In this course, you will use Adobe InDesign CC to create and deliver professional looking printed and interactive documents.\n.Navigate the InDesign interface.\n.Create a new document.\n.Customize a document using color, swatches, gradients, and styles.\n.Manage page elements.\n.Add tables.\n.Prepare documents for deployment.",
+        "why_attend": "This course is intended for students who want to use the basic tools and features of InDesign for creating professional page layouts and designs.",
+        "prequisites": "To ensure your success in this course, you should be familiar with the functions of your computer's operating system such as creating folders, launching programs, copying and pasting objects, formatting text, retrieving files, and saving files.",
+        "certification": false,
+        "agenda": "1 - Getting Started with InDesign\nTopic A: Identify Components of the InDesign Interface\nTopic B: Customize the InDesign Interface\nTopic C: Apply the Navigation Controls and Set Preferences\n2 - Designing a Document\nTopic A: Establish Project Requirements\nTopic B: Apply Design Principles\nTopic C: Create a New Document\nTopic D: Add Text to a Document\nTopic E: Add Graphics to a Document\n3 - Customizing a Document\nTopic A: Format Characters and Paragraphs\nTopic B: Apply Colors, Swatches, and Gradients\nTopic C: Create and Apply Styles\n4 - Working with Page Elements\nTopic A: Arrange and Align Objects\nTopic B: Apply Layers\nTopic C: Transform and Manipulate Objects\nTopic D: Thread Text Frames\nTopic E: Edit Text\n5 - Building Tables\nTopic A: Create and Modify a New Table\nTopic B: Format a Table\n6 - Preparing a Document for Delivery\nTopic A: Resolve Errors in a Document\nTopic B: Export Files for Printing and for the Web",
+        "Sector": {
+            "id": 4,
+            "name": "Adobe InDesign Training",
+            "category_id": 1
+        }
+    },
+    {
+        "id": 8,
+        "name": "Adobe InDesign CC - Advanced",
+        "introduction": "In Adobe® InDesign® CC: Part 2, you will learn advanced InDesign techniques to enhance the look and functionality of your documents.",
+        "duration": null,
+        "price": 999,
+        "sector_id": 4,
+        "delivery_method": null,
+        "overview": "In Adobe® InDesign® CC: Part 1 you were introduced to the many features that help you create professional looking documents. Now you need to create much lengthier interactive documents that need to be accessed across a range of devices. In Adobe® InDesign® CC: Part 2, you will learn advanced InDesign techniques to enhance the look and functionality of your documents. Using Adobe InDesign, you can create interactive documents and export them for viewing in a web browser with various features such as buttons, page transitions, movies and audio files, hyperlinks, and animation. You have the ability to assign color profiles and establish print presets. In creating longer documents, you'll be able to include such features as a table of contents, footnotes, cross-references, and an index. This course is a great component of your preparation for the Adobe Certified Associate (ACA) Print & Digital Media Publication Using Adobe InDesign CC exam.",
+        "objective": ".Upon successful completion of this course, you will be able to use Adobe InDesign CC to create and deliver professional looking printed and interactive documents.\n.Prepare documents for multiple formats.\n.Manage advanced page layouts.\n.Manage styles.\n.Build complex paths.\n.Manage external files and create dynamic documents.\n.Manage long documents.\n.Publish InDesign files for other formats and customize print settings.",
+        "why_attend": "This course is intended for students who want to expand their entry-level knowledge of Adobe InDesign by using advanced features and collaboration tools.",
+        "prequisites": "Adobe InDesign CC - Introduction",
+        "certification": false,
+        "agenda": "1 - Preparing Documents for Multiple Formats\nTopic A: Build Layout Versions\nTopic B: Link Content\n2 - Managing Advanced Page Elements\nTopic A: Create Repeating Content\nTopic B: Change Text Layouts\nTopic C: Create Transparency\nTopic D: Anchor Objects and Manage a Library\n3 - Managing Styles\nTopic A: Import Styles from Microsoft Word Documents\nTopic B: Manage Styles\n4 - Building Complex Paths\nTopic A: Create Bezier Paths\nTopic B: Create Clipping Paths\nTopic C: Create Compound Paths\n5 - Managing External Files and Creating Dynamic Documents\nTopic A: Import External Files\nTopic B: Create Document Sections\nTopic C: Insert Text Variables\nTopic D: Create Interactive Documents\n6 - Managing Long Documents\nTopic A: Create a Book\nTopic B: Build a Table of Contents\nTopic C: Create Hyperlinks and Cross-References\nTopic D: Generate an Index and Insert Footnotes\n7 - Publishing InDesign Files for Other Formats and Customizing Print Settings\nTopic A: Export PDF Files for Print\nTopic B: Export Interactive PDF Files\nTopic C: Export Files for the Web\nTopic D: Manage Colors\nTopic E: Preview the Print Output\nTopic F: Create Print Presets",
+        "Sector": {
+            "id": 4,
+            "name": "Adobe InDesign Training",
+            "category_id": 1
+        }
+    },
+    {
+        "id": 9,
+        "name": "Adobe Photoshop CC - Introduction",
+        "introduction": "This course focuses on some of the basic features of Photoshop so that the student can navigate the environment and use Photoshop tools to work with photographic images.",
+        "duration": null,
+        "price": 999,
+        "sector_id": 5,
+        "delivery_method": null,
+        "overview": "Adobe® Photoshop® CC: Introduction focuses on some of the basic features of Photoshop so that the student can navigate the environment and use Photoshop tools to work with photographic images. In addition, the orientation to Adobe® Bridge and organization of files in Bridge is covered. Although Photoshop is used by a variety of professionals, from photographers to designers to videographers, Photoshop Part 1 will focus mainly on the photography component. The illustration and animation techniques are covered in subsequent levels of Photoshop.\nThis course is a great component of your preparation for the Adobe Certified Associate (ACA) Visual Design Using Adobe Photoshop CC exam.",
+        "objective": ".This course will prepare you to use the most common basic features of Adobe Photoshop.\n.Identify the components and capabilities of Photoshop.\n.Create basic images.\n.Manage selections and layers.\n.Modify and repair images, and manage color.\n.Refine images by adjusting layers, using camera raw, and applying advanced image refinement.\n.Import, export, organize, and save files.",
+        "why_attend": "Target students include professional or amateur photographers who want to use the robust features of Photoshop to enhance, modify, and organize their photographs, and anyone interested in working toward the Visual Design Using Adobe Photoshop CC certification.",
+        "prequisites": "To ensure your success in this course, you should have a basic comfort level with digital photography. For example, you have used a digital camera and have downloaded images to your computer or other storage device.",
+        "certification": false,
+        "agenda": "1 - Getting Started with Photoshop\nTopic A: Organize Photoshop Assets by Using Adobe Bridge\nTopic B: Organize the Photoshop Workspace\nTopic C: Customize the Photoshop Workspace\n2 - Creating Basic Images\nTopic A: Manage Image Elements and Formats\nTopic B: Apply Design Principles, Elements, and Graphic Composition\nTopic C: Work with Digital Devices\n3 - Managing Selections and Layers\nTopic A: Use Selection Tools\nTopic B: Manage Layers\n4 - Adjusting Images\nTopic A: Modify Images\nTopic B: Repair Images\nTopic C: Implement Color Management\n5 - Refining Images\nTopic A: Adjust Layers\nTopic B: Apply Camera Raw\nTopic C: Refine Images by Using Advanced Tools\n6 - Managing Files in a Production Workflow\nTopic A: Import, Export, and Organize Files\nTopic B: Save Images for the Web\nTopic C: Save Images for Print\nTopic D: Format Images for Other Programs",
+        "Sector": {
+            "id": 5,
+            "name": "Adobe Photoshop Training",
+            "category_id": 1
+        }
+    },
+    {
+        "id": 10,
+        "name": "Adobe Photoshop CC - Advanced",
+        "introduction": "This course delves into some of the more advanced image creation and editing techniques, and offers you hands-on activities that demonstrate how these techniques can be used in combination to create exciting visual effects.",
+        "duration": null,
+        "price": 999,
+        "sector_id": 5,
+        "delivery_method": null,
+        "overview": "Adobe® Photoshop® is a leading graphic creation application, popular among graphic designers, illustrators, and photographers. Photoshop's numerous features work together to provide a comprehensive toolset for you, the design professional. This course delves into some of the more advanced image creation and editing techniques, and offers you hands-on activities that demonstrate how these techniques can be used in combination to create exciting visual effects. This course is a great component of your preparation for the Adobe Certified Associate (ACA) Visual Design Using Adobe Photoshop CC exam.",
+        "objective": ".This course will prepare you to use the most common basic features of Adobe Photoshop.\n.Use brushes, gradients, and tool presets to create raster images.\n.Apply vector paths, shape drawing tools, type, and type special effects.\n.Apply advanced layer techniques with masks, filters, layers, and smart objects.\n.Apply actions and batch processing to automate tasks.\n.Edit video by using timelines, transitions, graphics, titles, and animation.\n.Set project requirements by identifying the purpose, audience, copyright rules, and project management tasks.",
+        "why_attend": "Target students include professional or amateur photographers who want to use the robust features of Photoshop to enhance, modify, and organize their photographs, and anyone interested in working toward the Visual Communication with Adobe Photoshop exam certification.",
+        "prequisites": "To ensure your success in this course, you should have experience with the following tasks: Identify the basic components of Adobe® Bridge and the Photoshop workspace. Define image size and resolution. Add and modify Photoshop layers. Use tools to select, crop, and move images. Work with image adjustment properties to correct and retouch photographic images. Open and modify an image in Adobe® Camera Raw. Prepare images for print and web. To meet these prerequisites, you can take this course: Adobe Photoshop CC - Introduction",
+        "certification": false,
+        "agenda": "1 - Creating Raster Images\nTopic A: Draw with Brushes\nTopic B: Create Gradients\nTopic C: Apply Tool Presets\n2 - Applying Vector Image Tools\nTopic A: Create Images with Vector Paths\nTopic B: Apply the Shape Drawing Tools\nTopic C: Work with Type\nTopic D: Apply Type Special Effects\n3 - Applying Advanced Layer Techniques\nTopic A: Modify Images with Masks\nTopic B: Apply Special Effects by Using Filters\nTopic C: Apply Special Effects to Layers\nTopic D: Apply Smart Objects for Nondestructive Editing\n4 - Automating Tasks\nTopic A: Create and Apply Actions\nTopic B: Batch Process Files with Photoshop and Adobe Bridge\n5 - Editing Video\nTopic A: Edit Video\nTopic B: Add Graphics, Titles, and Animation to Video\n6 - Setting Project Requirements\nTopic A: Identify Purpose, Audience, and Audience Needs\nTopic B: Adhere to Copyright Rules for Artwork, Graphics, and Graphics Use\nTopic C: Determine and Evaluate Project Management Tasks and Responsibilities",
+        "Sector": {
+            "id": 5,
+            "name": "Adobe Photoshop Training",
+            "category_id": 1
+        }
+    },
+    {
+        "id": 11,
+        "name": "Animate Fundamentals: An Introduction to Animate",
+        "introduction": "Adobe Animate CC provides a comprehensive authoring environment for creating interactive and media-rich applications.",
+        "duration": null,
+        "price": 999,
+        "sector_id": 7,
+        "delivery_method": null,
+        "overview": "Adobe Animate CC provides a comprehensive authoring environment for creating interactive and media-rich applications. Animate CC is widely used to create engaging projects integrating video, sound, graphics, and animation. You can create original content in Animate CC or import assets from other Adobe applications such as Photoshop or Illustrator. Animate CC lets you easily design animation add video and sound, then use a language to integrate sophisticated interactivity.\nWith Animate CC you have the opportunity to use HTML5 or ActionScript as the interactive language. There is also the chance to Preview the new standard WebGL.\nUse Animate CC to build innovative and immersive Web sites, to create stand-alone applications for the desktop, or to create apps to distribute to mobile devices running on the Android or the iOS system.\nWith extensive controls for animation, intuitive and flexible drawing tools, and a powerful object-oriented coding language, Animate CC delivers one of the only robust environments that let your imagination become reality.",
+        "objective": "",
+        "why_attend": "Video, animation and graphics professionals who need a working knowledge of Adobe Animate CC.",
+        "prequisites": "Practical working knowledge of Mac OS X or Windows skills.\nAdobe Photoshop CC - Introduction class or equivalent experience is recommended.",
+        "certification": false,
+        "agenda": "Note: The curricula below comprise activities typically covered in a class at this skill level. The instructor may, at his/her discretion, adjust the lesson plan to meet the needs of the class.\nLesson 1: Getting Acquainted\nStarting Adobe Animate and opening a file\nUnderstanding document types and creating a new document\nGetting to know the workspace\nWorking with the Library panel\nUnderstanding the Timeline panel\nUsing the Properties panel\nUsing the Tools panel\nAdding layer effects\nUndoing steps in Animate\nPreviewing your movie\nModifying the content and Stage\nSaving your movie\nLesson 2: Creating Graphics and Text\nUnderstanding strokes and fills\nCreating shapes\nMaking selections\nEditing shapes\nUsing gradient fills\nUsing variable-width strokes\nUsing swatches and tagged swatches\nCreating curves\nUsing transparency to create depth\nBeing expressive with the Fluid Brush and custom brushes\nCreating and editing text\nAligning and distributing objects\nAbout symbols\nCreating symbols\nManaging symbol instances\nApplying filters for special effects\nConverting and exporting art\nLesson 3: Animating Symbols\nAbout animation\nUnderstanding the project file\nAnimating position\nChanging the pacing and timing\nAnimating transparency\nAnimating filters\nAnimating transformations\nEditing multiple frames\nChanging the path of the motion\nSwapping tween targets\nCreating nested animations\nEasing\nFrame-by-frame animation\nAnimating 3D motion\nExporting your final movie\nLesson 4: Advanced Motion Tweening\nAbout the Motion Editor\nUnderstanding the project file\nAdding motion tweens\nEditing property curves\nViewing options for the Motion Editor\nCopying and pasting curves\nAdding complex eases\nLesson 5: Character Animation with Tweens\nLayer parenting\nUsing classic tweens\nMaking and animating deformations\nGraphic symbols for lip-syncing dialogue\nLesson 6: Controlling the Camera\nAnimating camera moves\nGetting started\nUsing the camera\nCreating depth\nAttaching layers to the camera for fixed graphics\nExporting your final movie\nLesson 7: Animating Shapes and Using Masks\nAnimating shapes\nUnderstanding the project file\nCreating a shape tween\nChanging the pace\nAdding more shape tweens\nCreating a looping animation\nUsing shape hints\nPreviewing animations with onion skinning\nAnimating color\nCreating and using masks\nAnimating the mask and masked layers\nEasing a shape tween\nLesson 8: Creating Interactive Navigation\nAbout interactive movies\nActionScript and JavaScript\nCreating buttons\nPreparing the timeline\nCreating destination keyframes\nNavigating the Actions panel\nAdding JavaScript interactivity with the Actions panel wizard\nCreating a Home button\nPlaying animation at the destination\nAnimated buttons\nLesson 9: Creating Virtual Reality Environments\nAbout virtual reality\nVR Panorama and VR 360 documents\nCreating a texture layer\nCreating new scenes\nAdding interactivity\nAdding graphics and animation\nMoving the camera position\nPublishing VR projects\nLesson 10: Working with Sound and Video\nUnderstanding the project file\nUsing sounds\nUnderstanding video\nUsing Adobe Media Encoder CC\nUnderstanding encoding options\nPlayback of external video in your project\nAdding a video without playback controls\nLesson 11: Publishing\nUnderstanding publishing\nConverting to HTML5 Canvas\nPublishing for HTML5\nPublishing a desktop application\nPublishing to mobile device",
+        "Sector": {
+            "id": 7,
+            "name": "Additional Adobe Training",
+            "category_id": 1
+        }
+    },
+    {
+        "id": 12,
+        "name": "Audition Fundamentals: An Introduction to Audition CC",
+        "introduction": "Adobe Audition CC software delivers the cross-platform tools that video and film professionals, broadcast engineers, and audio specialists need for recording, editing, mixing, creating soundtracks, and restoring audio.",
+        "duration": null,
+        "price": 999,
+        "sector_id": 7,
+        "delivery_method": null,
+        "overview": "Adobe Audition CC software delivers the cross-platform tools that video and film professionals, broadcast engineers, and audio specialists need for recording, editing, mixing, creating soundtracks, and restoring audio. A new, high-performance audio playback engine drastically speeds up operation; enables work on multiple simultaneous audio and multitrack files; and allows effects, noise reduction, and audio sweetening processing in the background. Royalty-free content makes creating sound beds, scores, and soundscapes easy. Native 5.1 surround sound capability and roundtrip editing with Adobe Premiere® Pro CC software promote a smooth video production workflow, while Open Media Format (OMF) and XML support project exchange with Avid Pro Tools and third-party NLEs.",
+        "objective": "",
+        "why_attend": "This class is designed for those who want to learn music production and composition using Adobe Audition.",
+        "prequisites": "Practical working knowledge of computers and basic Mac OS X or Windows skills.\nBasic knowledge of audio terminology is recommended.",
+        "certification": false,
+        "agenda": "Lesson 1: Set up Adobe Audition CC\nAudio interface basics\nMac OS audio setup\nWindows setup\nTesting inputs\nUsing external interfaces\nKeyboard Shortcuts\nLesson 2: The Audition Interface/h3>\nTwo applications in one\nAudition workspaces\nExplore the interface\nLesson 3: Waveform Editing/h3>\nOpen a file\nVideo files\nSelect regions\nCut, Copy, and Paste\nUse multiple clipboards\nMix paste\nCreate a loop\nShowing waveform data under the cursor\nAdd fades\nLesson 4: Effects/h3>\nEffects basics\nUsing the Effects Rack\nEffect categories\nAmplitude and Compression effects\nDelay and echo effects\nFilter and EQ effects\nModulation effects\nNoise reduction/restoration\nReverb effects\nSpecial effects\nStereo imagery effects\nTime and Pitch effects\nThird-party effects (VST and AU)\nUsing the Effects menu\nPresets and favorites\nLesson 5: Audio Restoration/h3>\nAbout audio restoration\nReducing hiss\nReducing crackles\nReducing pops and clicks\nReducing broadband noise\nDe-humming a file\nRemoving artifacts\nManual sound removal\nThe Spot Healing brush\nAutomated sound removal\nLesson 6: Mastering/h3>\nMastering basics\nEqualization\nDynamics\nAmbience\nStereo imaging\nPush the drum hits; then apply the\nchanges\nMastering diagnostic\nLesson 7: Sound Design/h3>\nAbout sound design\nGenerate noise, speech, and tones\nCreating rain sounds\nCreating a babbling brook\nCreating insects at night\nCreating an alien choir\nCreating sci-fi machine effects\nCreating an alien drone flyby\nExtracting frequency bands\nLesson 8: Creating and Recording Files/h3>\nRecording into the Waveform Editor\nRecording into the Multitrack Editor\nChecking remaining free space\nDragging into an Audition editor\nImporting tracks as individual files from an audio CD\nLesson 9: Multitrack Sessions/h3>\nAbout multitrack production\nCreate a multitrack session\nMultitrack session templates\nMultitrack and Waveform Editor integration\nChanging track colors\nThe Tracks panel\nLoop selections for playback\nTrack controls\nChannel mapping in the Multitrack Editor\nThe Multitrack Editor Effects Rack\nLesson 10: Multitrack Session Mixing/h3>\nCreate a mixtape\nMixing or exporting a collection of clips as a single file\nMerge clips into a single file\nEditing clip length\nClip edits: Split, Trim, Volume\nExtend a clip via looping\nRemix\nLesson 11: Automation/h3>\nAbout automation\nClip automation\nTrack automation\nLesson 12: Video Sound Tracks/h3>\nMultitrack session video\nAudition integration with Adobe\nPremiere Pro CC\nAutomatic Speech Alignment\nAdding effects\nLesson 13: The Essential Sound Panel/h3>\nAutomating tasks\nAssigning audio types\nEssential Sound panel presets\nLesson 14: The Multitrack Mixer/h3>\nAudio Mixer basics\nLesson 15: Creating Music with Sound Libraries/h3>\nAbout sound libraries\nDownload Adobe sound effects\nPreparing\nBuilding a rhythm track\nAdding more percussion\nAdding melodic elements\nUsing loops with different pitch and tempo\nAdding effects\nLesson 16: Recording and Output in the Multitrack Editor/h3>\nGetting ready to record a track\nSetting up the metronome\nFile management\nRecording a part in a track\nRecording an additional part (overdub)\nPunching over a mistake\nComposite recording\nExporting a stereo mix of the song\nExporting with Adobe Media Encoder",
+        "Sector": {
+            "id": 7,
+            "name": "Additional Adobe Training",
+            "category_id": 1
+        }
+    }
+]
