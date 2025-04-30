@@ -43,7 +43,7 @@ const SectorsPage = () => {
 				{currentCategory && (
 					<div className="mb-6 flex items-center">
 						<img
-							src={`/categoriesImages/${currentCategory.photo}.webp`}
+							src={currentCategory.photo}
 							alt={currentCategory.name}
 							className="w-fit h-40 object-cover rounded-md mb-4 mr-4"
 						/>

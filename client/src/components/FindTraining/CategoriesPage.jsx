@@ -29,7 +29,7 @@ const CategoriesPage = () => {
           <div key={category.id} className="bg-white shadow-xl rounded-lg p-6 hover:shadow-2xl transition-shadow">
             <div className="flex items-start mb-4">
               <img
-                src={`/categoriesImages/${category.photo}.webp`}
+                src={category.photo}
                 alt={category.name}
                 className="w-24 h-24 rounded-lg mr-4"
               />
