@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { AnimatePresence, motion } from 'framer-motion';
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { useTrainingContext } from '../contexts/trainingContext';
+import { useTrainingContext } from '../contexts/TrainingContext';
 
 function Example() {
 	const [activeFlyout, setActiveFlyout] = useState(null);

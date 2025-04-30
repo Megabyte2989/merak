@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useTrainingContext } from '../contexts/trainingContext';
+import { useTrainingContext } from '../contexts/TrainingContext';
 
 export const Foot = () => {
   const { categories } = useTrainingContext();

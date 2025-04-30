@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { useTrainingContext } from '../../contexts/trainingContext';
+import { useTrainingContext } from '../../contexts/TrainingContext';
 
 const SectorsPage = () => {
 	const { courses, sectors, categories } = useTrainingContext();

@@ -25,7 +25,7 @@ import CertificationVerification from './components/Resources/CertificationVerif
 import LearningMethods from './components/Resources/LearningMethods';
 import WeHire from './components/Resources/WeHire';
 import Webinars from './components/Resources/Webinars';
-import { TrainingProvider } from './contexts/trainingContext';
+import { TrainingProvider } from './contexts/TrainingContext';
 
 function App() {
 	return (

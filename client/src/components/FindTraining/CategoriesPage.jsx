@@ -1,7 +1,7 @@
 // CategoriesPage.jsx
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { useTrainingContext } from "../../contexts/trainingContext";
+import { useTrainingContext } from "../../contexts/TrainingContext";
 
 const CategoriesPage = () => {
   const { categories, sectors } = useTrainingContext();
