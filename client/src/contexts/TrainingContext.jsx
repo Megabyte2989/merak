@@ -8,6 +8,7 @@ export const useTrainingContext = () => {
 
 export const TrainingProvider = ({ children }) => {
 	const dispatch = useDispatch();
+	
 
 	// Fetch data from the Redux store
 	const categories = useSelector(state => state.categories.categoriesData);
