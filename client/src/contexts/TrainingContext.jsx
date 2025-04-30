@@ -1,9 +1,5 @@
 import { createContext, useContext, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchCategories } from '../Redux/Slices/categoriesSlice';
-import { fetchCourses } from '../Redux/Slices/coursesSlice'; // Assuming you have this slice
-import { fetchSectors } from '../Redux/Slices/sectorsSlice';
-
 const TrainingContext = createContext();
 
 export const useTrainingContext = () => {
@@ -20,13 +16,7 @@ export const TrainingProvider = ({ children }) => {
 
 	// Fetch data on component mount
 	useEffect(() => {
-		try {
-			dispatch(fetchCategories());
-			dispatch(fetchSectors());
-			dispatch(fetchCourses());
-		} catch (error) {
-			console.error('Error fetching data:', error.message);
-		}
+		// No fetch dispatch calls needed as backend is removed
 	}, [dispatch]);
 
 	// Provide the context value
