@@ -28,12 +28,12 @@ export const Foot = () => {
           <a href="/" aria-label="Go home" className="inline-flex items-center">
             <img
               src="/images/New_Horizons_Logo.webp"
-              alt="New Horizons Logo"
+              alt="edusphere Logo"
               className="w-34"
             />
           </a>
           <p className="mt-4 text-sm text-ghost-white leading-relaxed">
-            New Horizons Cairo offers industry-recognized certifications and
+            edusphere Cairo offers industry-recognized certifications and
             training programs to help you achieve your professional goals.
           </p>
         </div>
@@ -133,7 +133,7 @@ export const Foot = () => {
       </div>
 
       <div className="mt-12 text-center text-sm" style={{ color: footerColor, borderTop: '1px solid var(--raisin-black)', paddingTop: '1.5rem', marginTop: '3rem' }}>
-        © {year} New Horizons Cairo. All rights reserved.
+        © {year} edusphere Cairo. All rights reserved.
       </div>
     </footer>
   );

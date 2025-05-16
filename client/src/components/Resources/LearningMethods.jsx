@@ -64,7 +64,7 @@ const LearningMethods = () => {
 					Learning and Delivery Methods
 				</h1>
 				<p className="text-lg max-w-2xl mx-auto">
-					New Horizons offers a variety of learning methods to suit your
+					edusphere offers a variety of learning methods to suit your
 					schedule and preferred learning style.
 				</p>
 			</div>

@@ -13,13 +13,13 @@ const stories = [
     name: "Sara Youssef",
     role: "Frontend Engineer",
     image: "/images/woman1.webp",
-    story: "Thanks to New Horizons' guidance, I became a Frontend Engineer and now work on projects for international clients. I was hesitant at first, but the instructors encouraged me to take on challenging assignments like building a dynamic e-commerce site from scratch. The mock interviews and feedback sessions really boosted my confidence. Now, I specialize in creating visually stunning and user-friendly interfaces for global brands, and it feels amazing to see my work impact so many users worldwide. New Horizons was a turning point in my career journey!"
+    story: "Thanks to edusphere' guidance, I became a Frontend Engineer and now work on projects for international clients. I was hesitant at first, but the instructors encouraged me to take on challenging assignments like building a dynamic e-commerce site from scratch. The mock interviews and feedback sessions really boosted my confidence. Now, I specialize in creating visually stunning and user-friendly interfaces for global brands, and it feels amazing to see my work impact so many users worldwide. edusphere was a turning point in my career journey!"
   },
   {
     name: "Omar El-Sayed",
     role: "Backend Developer",
     image: "/images/man3.webp",
-	story:"The practical training gave me the confidence to excel as a Backend Developer at a multinational corporation. During the MERN stack course, I learned to design scalable APIs and secure authentication systems. One of my favorite projects was creating a booking platform for events, which taught me a lot about database optimization. Now, I’m part of a team that handles high-traffic applications, and my work directly impacts thousands of users. I owe my career leap to New Horizons—they gave me the skills and confidence to chase my dreams!"
+	story:"The practical training gave me the confidence to excel as a Backend Developer at a multinational corporation. During the MERN stack course, I learned to design scalable APIs and secure authentication systems. One of my favorite projects was creating a booking platform for events, which taught me a lot about database optimization. Now, I’m part of a team that handles high-traffic applications, and my work directly impacts thousands of users. I owe my career leap to edusphere—they gave me the skills and confidence to chase my dreams!"
   }
 ];
 
@@ -34,18 +34,18 @@ const Success = () => {
   return (
     <div>
       <Helmet>
-        <title>Share Your Success Story - New Horizons</title>
+        <title>Share Your Success Story - edusphere</title>
         <meta
           name="description"
-          content="Share your success story with us! Explore inspiring stories from trainees and clients at New Horizons."
+          content="Share your success story with us! Explore inspiring stories from trainees and clients at edusphere."
         />
         <meta
           name="keywords"
-          content="success story, New Horizons, trainees, clients, career growth, inspiring stories"
+          content="success story, edusphere, trainees, clients, career growth, inspiring stories"
         />
-        <meta property="og:title" content="Share Your Success Story - New Horizons" />
-        <meta property="og:description" content="Share your success story with us! Explore inspiring stories from trainees and clients at New Horizons." />
-        <meta property="og:image" content="/images/New Horizons Logo.webp" />
+        <meta property="og:title" content="Share Your Success Story - edusphere" />
+        <meta property="og:description" content="Share your success story with us! Explore inspiring stories from trainees and clients at edusphere." />
+        <meta property="og:image" content="/images/edusphere Logo.webp" />
       </Helmet>
 
       {/* Hero Section */}

@@ -45,7 +45,7 @@ const Webinars = () => {
                     Explore Upcoming Webinars
                 </h1>
                 <p className="mb-8 text-lg font-normal text-dogwood-rose md:text-xl lg:text-xl sm:px-16 xl:px-48">
-                    From New Horizons
+                    From edusphere
                 </p>
 
                 {/* Search Bar */}

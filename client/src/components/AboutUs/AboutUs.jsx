@@ -69,17 +69,17 @@ const AboutUs = () => {
 	return (
 		<div className="about-us-container">
 			<Helmet>
-				<title>About Us | New Horizons</title>
+				<title>About Us | edusphere</title>
 				<meta
 					name="description"
-					content="Discover New Horizons with our professional training courses. Learn more about our mission, vision, and frequently asked questions to enhance your career."
+					content="Discover edusphere with our professional training courses. Learn more about our mission, vision, and frequently asked questions to enhance your career."
 				/>
-				<meta property="og:title" content="About Us | New Horizons" />
+				<meta property="og:title" content="About Us | edusphere" />
 				<meta
 					property="og:description"
-					content="Discover New Horizons with our professional training courses. Learn more about our mission, vision, and frequently asked questions to enhance your career."
+					content="Discover edusphere with our professional training courses. Learn more about our mission, vision, and frequently asked questions to enhance your career."
 				/>
-				<meta property="og:image" content="/images/New Horizons Logo.webp" />
+				<meta property="og:image" content="/images/edusphere Logo.webp" />
 				{/* <meta property="og:url" content="" /> */}
 			</Helmet>
 
@@ -93,7 +93,7 @@ const AboutUs = () => {
 						transition={{ duration: 0.8 }}
 						className="hero-title text-5xl md:text-6xl font-extrabold bg-clip-text tracking-tight text-transparent bg-dark-purple"
 					>
-						Discover New Horizons
+						Discover edusphere
 					</motion.h1>
 					<motion.p
 						initial={{ opacity: 0, y: 50 }}
@@ -113,7 +113,7 @@ const AboutUs = () => {
 					transition={{ duration: 1, delay: 0.4 }}
 					src="/images/about-us.webp"
 					style={{ willChange: 'opacity, scale' }}
-					alt="Professional Training and Development with New Horizons"
+					alt="Professional Training and Development with edusphere"
 					className="hero-image mx-auto mt-6 rounded-lg shadow-xl w-full md:w-1/2"
 				/>
 			</section>

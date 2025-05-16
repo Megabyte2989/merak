@@ -15,7 +15,7 @@ function LandingSec1() {
 				</h1>
 
 				<p className="text-sm lg:text-base  mb-5">
-					New Horizons offers hands-on virtual and in-person modern IT &
+					edusphere offers hands-on virtual and in-person modern IT &
 					Technology training for team optimization and career development. We
 					deliver the IT Training and Certification outcomes you are looking
 					for:
@@ -29,7 +29,7 @@ function LandingSec1() {
 
 				<p className="text-sm lg:text-base  mb-5">
 					Whether you're looking to upskill your team, advance your own skills,
-					or would like private training for your organization, New Horizons can
+					or would like private training for your organization, edusphere can
 					provide the real-world training to take you and your team to the next
 					level. Get Started Today!
 				</p>

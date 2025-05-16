@@ -4,24 +4,24 @@ function GovProjects() {
 	return (
 		<div>
 			<Helmet>
-				<title>Government Projects - New Horizons</title>
+				<title>Government Projects - edusphere</title>
 				<meta
 					name="description"
 					content="Explore our portfolio of government projects that empower national development through collaboration."
 				/>
 				<meta
 					name="keywords"
-					content="government projects, public service, collaboration, New Horizons"
+					content="government projects, public service, collaboration, edusphere"
 				/>
 				<meta
 					property="og:title"
-					content="Government Projects - New Horizons"
+					content="Government Projects - edusphere"
 				/>
 				<meta
 					property="og:description"
 					content="Explore our portfolio of government projects that empower national development through collaboration."
 				/>
-				<meta property="og:image" content="/images/New Horizons Logo.webp" />
+				<meta property="og:image" content="/images/edusphere Logo.webp" />
 				{/* <meta
 					property="og:url"
 					content="https://yourwebsite.com/gov-projects"

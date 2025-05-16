@@ -45,7 +45,7 @@ const CertificationVerification = () => {
           Empowering Future Tech Leaders
         </h1>
         <p className="mt-4 text-lg md:text-xl">
-          Verify your certifications and showcase your skills. New Horizons
+          Verify your certifications and showcase your skills. edusphere
           Tech Training is your gateway to a brighter career.
         </p>
       </div>

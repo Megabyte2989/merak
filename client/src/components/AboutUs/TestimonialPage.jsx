@@ -15,42 +15,42 @@ const TestimonialPage = () => {
 	const testimonials = [
 		{
 			quote:
-				'“The training at New Horizons was a game-changer. The instructors were patient and supportive, and the curriculum was comprehensive. I’m now much more proficient in my role and feel more confident in my abilities.”',
+				'“The training at edusphere was a game-changer. The instructors were patient and supportive, and the curriculum was comprehensive. I’m now much more proficient in my role and feel more confident in my abilities.”',
 			name: 'Ahmed Ali',
 			role: 'Digital Marketing Specialist',
 			image: '/images/man1.webp',
 		},
 		{
 			quote:
-				'“I was impressed by the quality of the training at New Horizons. The hands-on exercises and real-world projects helped solidify my understanding of the concepts. I’m grateful for the opportunity to learn from such experienced instructors.”',
+				'“I was impressed by the quality of the training at edusphere. The hands-on exercises and real-world projects helped solidify my understanding of the concepts. I’m grateful for the opportunity to learn from such experienced instructors.”',
 			name: 'Mohamed Hassan',
 			role: 'Data Analyst',
 			image: '/images/man2.webp',
 		},
 		{
 			quote:
-				'“New Horizons provided me with the skills and knowledge I needed to succeed in my career. The flexible learning options and personalized support made it easy to balance my work and studies. I highly recommend their programs to anyone looking to advance their career.”',
+				'“edusphere provided me with the skills and knowledge I needed to succeed in my career. The flexible learning options and personalized support made it easy to balance my work and studies. I highly recommend their programs to anyone looking to advance their career.”',
 			name: 'Karim Ibrahim',
 			role: 'Project Manager',
 			image: '/images/man3.webp',
 		},
 		{
 			quote:
-				'“I’ve taken multiple courses from New Horizons, and every single one has exceeded my expectations. The content is engaging, and the support team is always there to help when needed. My career has grown thanks to their excellent training programs!.”',
+				'“I’ve taken multiple courses from edusphere, and every single one has exceeded my expectations. The content is engaging, and the support team is always there to help when needed. My career has grown thanks to their excellent training programs!.”',
 			name: 'Waad Akram',
 			role: 'UI/UX Designer',
 			image: '/images/woman1.webp',
 		},
 		{
 			quote:
-				'“An incredible experience! The training at New Horizons was top-notch. The instructors are knowledgeable and the materials are up to date. I learned so much in just a few weeks. Highly recommend!.”',
+				'“An incredible experience! The training at edusphere was top-notch. The instructors are knowledgeable and the materials are up to date. I learned so much in just a few weeks. Highly recommend!.”',
 			name: 'Sara Ahmed',
 			role: 'Freelance React Developer',
 			image: '/images/woman2.webp',
 		},
 		{
 			quote:
-				'“New Horizons truly helped me level up my skills. The interactive approach to learning made complex topics much easier to understand. I can now confidently apply what I’ve learned to real-world projects!”',
+				'“edusphere truly helped me level up my skills. The interactive approach to learning made complex topics much easier to understand. I can now confidently apply what I’ve learned to real-world projects!”',
 			name: 'Salma Hany',
 			role: 'Web Developer',
 			image: '/images/woman3.webp',
@@ -74,22 +74,22 @@ const TestimonialPage = () => {
 	return (
 		<div>
 			<Helmet>
-				<title>Client Testimonials - New Horizons</title>
+				<title>Client Testimonials - edusphere</title>
 				<meta
 					name="description"
-					content="Read what our satisfied clients say about New Horizons' services."
+					content="Read what our satisfied clients say about edusphere' services."
 				/>
 				<meta
 					name="keywords"
-					content="New Horizons, client testimonials, success stories, reviews, career growth, training, services, feedback"
+					content="edusphere, client testimonials, success stories, reviews, career growth, training, services, feedback"
 				/>
 				<meta
 					property="og:title"
-					content="Client Testimonials - New Horizons"
+					content="Client Testimonials - edusphere"
 				/>
 				<meta
 					property="og:description"
-					content="Read what our satisfied clients say about New Horizons' services."
+					content="Read what our satisfied clients say about edusphere' services."
 				/>
 				<meta property="og:image" content="path/to/preview-image.webp" />
 				<meta
@@ -141,7 +141,7 @@ const TestimonialPage = () => {
 							</h2>
 							<br />
 							<p className="text-lg font-medium text-white font-pj">
-								20 people have said how good New Horizons services are
+								20 people have said how good edusphere services are
 							</p>
 						</div>
 

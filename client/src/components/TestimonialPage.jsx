@@ -9,7 +9,7 @@ const TestimonialPage = () => {
   const testimonials = [
     {
       quote:
-        "“An incredible experience! The training at New Horizons was top-notch. The instructors are knowledgeable and the materials are up to date. I learned so much in just a few weeks. Highly recommend!.”",
+        "“An incredible experience! The training at edusphere was top-notch. The instructors are knowledgeable and the materials are up to date. I learned so much in just a few weeks. Highly recommend!.”",
       name: "Sara Ahmed",
       role: "Freelance React Developer",
       image:
@@ -17,7 +17,7 @@ const TestimonialPage = () => {
     },
     {
       quote:
-        "“New Horizons truly helped me level up my skills. The interactive approach to learning made complex topics much easier to understand. I can now confidently apply what I’ve learned to real-world projects!”",
+        "“edusphere truly helped me level up my skills. The interactive approach to learning made complex topics much easier to understand. I can now confidently apply what I’ve learned to real-world projects!”",
       name: "Salma Hany",
       role: "Web Developer",
       image:
@@ -25,7 +25,7 @@ const TestimonialPage = () => {
     },
     {
       quote:
-        "“I’ve taken multiple courses from New Horizons, and every single one has exceeded my expectations. The content is engaging, and the support team is always there to help when needed. My career has grown thanks to their excellent training programs!.”",
+        "“I’ve taken multiple courses from edusphere, and every single one has exceeded my expectations. The content is engaging, and the support team is always there to help when needed. My career has grown thanks to their excellent training programs!.”",
       name: "Waad Akram",
       role: "UI/UX Designer",
       image:
@@ -81,7 +81,7 @@ const TestimonialPage = () => {
               </ h2>
               <br />
               <p className="text-lg font-medium text-white font-pj">
-                20 people have said how good New Horizons services are
+                20 people have said how good edusphere services are
               </p>
             </div>
 

@@ -5,17 +5,17 @@ function CropProjects() {
 	return (
 		<div>
 			<Helmet>
-				<title>CROP Projects | New Horizons</title>
+				<title>CROP Projects | edusphere</title>
 				<meta
 					name="description"
-					content="Explore New Horizons through our CROP projects. Discover our initiatives in empowering national development, collaboration, and public service."
+					content="Explore edusphere through our CROP projects. Discover our initiatives in empowering national development, collaboration, and public service."
 				/>
-				<meta property="og:title" content="CROP Projects | New Horizons" />
+				<meta property="og:title" content="CROP Projects | edusphere" />
 				<meta
 					property="og:description"
-					content="Explore New Horizons through our CROP projects. Discover our initiatives in empowering national development, collaboration, and public service."
+					content="Explore edusphere through our CROP projects. Discover our initiatives in empowering national development, collaboration, and public service."
 				/>
-				<meta property="og:image" content="/images/New Horizons Logo.webp" />
+				<meta property="og:image" content="/images/edusphere Logo.webp" />
 				{/* <meta
 					property="og:url"
 					content="https://www.newhorizons.com/crop-projects"

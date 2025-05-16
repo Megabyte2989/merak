@@ -94,10 +94,10 @@ const Gallery = () => {
 	return (
 		<div>
 			<Helmet>
-				<title>Gallery | New Horizons</title>
+				<title>Gallery | edusphere</title>
 				<meta
 					name="description"
-					content="Explore New Horizons through our Gallery. Discover high-quality images showcasing the latest in technology, AI, web development, and innovation."
+					content="Explore edusphere through our Gallery. Discover high-quality images showcasing the latest in technology, AI, web development, and innovation."
 				/>
 			</Helmet>
 

@@ -13,13 +13,13 @@ const PartnersAndAuthorizations = () => {
 								Collaborating with top vendors to provide world-class training
 							</h1>
 							<h2 className="text-4xl text-[#fbfcff] font-extrabold mx-auto md:text-5xl">
-								New Horizons Cairo{' '}
+								edusphere Cairo{' '}
 								<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#250f38] to-[#94086a]">
 									Partners & Authorizations
 								</span>
 							</h2>
 							<p className="text-white max-w-2xl mx-auto">
-								New Horizons Cairo is an authorized training partner <br /> for
+								edusphere Cairo is an authorized training partner <br /> for
 								many industry-recognized software and certification companies
 								and <br /> organizations.
 							</p>
@@ -56,42 +56,42 @@ const PartnersAndAuthorizations = () => {
 									img: './images/microsoftlogo.webp',
 									title: 'Microsoft Learning Partner',
 									description:
-										'Every Microsoft course at New Horizons Cairo follows Microsoft Office Curriculum (MOC), and is taught by Microsoft Certified instructors to ensure the best possible training in Microsoft products.',
+										'Every Microsoft course at edusphere Cairo follows Microsoft Office Curriculum (MOC), and is taught by Microsoft Certified instructors to ensure the best possible training in Microsoft products.',
 									link: 'https://www.microsoft.com/',
 								},
 								{
 									img: './images/ciscologo.webp',
 									title: 'Cisco Learning Partner',
 									description:
-										'Cisco learning partners are the only authorized sources for commercial Cisco training. This ensures instructors at New Horizons Cairo are distinctively qualified to provide Cisco authorized training.',
+										'Cisco learning partners are the only authorized sources for commercial Cisco training. This ensures instructors at edusphere Cairo are distinctively qualified to provide Cisco authorized training.',
 									link: 'https://www.cisco.com/',
 								},
 								{
 									img: './images/comptia.webp',
 									title: 'CompTIA Authorized Partner',
 									description:
-										'As a member of the CompTIA Authorized Partner program, New Horizons Cairo delivers CompTIA-approved curriculum designed for industry-recognized CompTIA certifications.',
+										'As a member of the CompTIA Authorized Partner program, edusphere Cairo delivers CompTIA-approved curriculum designed for industry-recognized CompTIA certifications.',
 									link: 'https://www.comptia.org/',
 								},
 								{
 									img: './images/vmware.webp',
 									title: 'VMware Authorized Training Partner',
 									description:
-										'New Horizons Cairo is a VMware training partner, preparing students to manage server and desktop virtualization while achieving VMware certifications.',
+										'edusphere Cairo is a VMware training partner, preparing students to manage server and desktop virtualization while achieving VMware certifications.',
 									link: 'https://www.vmware.com/',
 								},
 								{
 									img: './images/ibm.webp',
 									title: 'IBM Training Partner',
 									description:
-										'New Horizons Cairo provides IBM authorized training on the design, installation, maintenance, and troubleshooting of IBM software and systems.',
+										'edusphere Cairo provides IBM authorized training on the design, installation, maintenance, and troubleshooting of IBM software and systems.',
 									link: 'https://www.ibm.com/',
 								},
 								{
 									img: './images/citrix.webp',
 									title: 'Citrix Learning Partner',
 									description:
-										'New Horizons Cairo is a Citrix Authorized Learning Center. Our training equips you with real-world skills to enhance productivity with Citrix mobile technology solutions.',
+										'edusphere Cairo is a Citrix Authorized Learning Center. Our training equips you with real-world skills to enhance productivity with Citrix mobile technology solutions.',
 									link: 'https://www.citrix.com/',
 								},
 							].map((partner, index) => (
