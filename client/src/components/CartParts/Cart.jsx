@@ -19,33 +19,44 @@ function Cart() {
 	};
 
 	return (
-		<div className="p-8 bg-slate-500 text-white h-[100vh]">
-			<h2 className="text-3xl text-center bg-dogwood-rose p-3 rounded-md font-medium uppercase ">
+		<div className="p-8 bg-slate-800 text-white min-h-screen">
+			<h2 className="text-4xl text-center bg-rose-600 p-4 rounded-lg font-bold uppercase tracking-wide shadow-md">
 				Your Cart
 			</h2>
-			<h3 className="text-center text-green-400 text-2xl">
-				Total Price: ${totalPrice}
+
+			<h3 className="text-center text-green-300 text-2xl mt-6 mb-8 font-semibold">
+				Total Price: ${totalPrice.toFixed(2)}
 			</h3>
 
 			{cart.length === 0 ? (
-				<p>Cart is empty</p>
+				<p className="text-center text-lg text-gray-300">
+					Your cart is currently empty.
+				</p>
 			) : (
-				<ul className="space-y-2">
+				<ul className="space-y-4">
 					{cart.map(item => (
 						<li
 							key={item.id}
-							className="flex flex-col text-center md:flex-row space-y-2 md:space-y-0 p-6 bg-slate-400 rounded-sm justify-around items-center"
+							className="flex flex-col md:flex-row gap-4 md:gap-0 items-center justify-between bg-slate-700 p-6 rounded-lg shadow-md"
 						>
-							<p>{item.name}</p>
-							<p>{item.price}$</p>
-							<div className="flex gap-2">
+							<div className="flex flex-col md:flex-row md:items-center gap-4">
+								<p className="text-lg font-medium">{item.name}</p>
+								<p className="text-green-400 font-semibold">
+									${item.price.toFixed(2)}
+								</p>
+							</div>
+
+							<div className="flex gap-3">
 								<button
 									onClick={() => removeFromCart(item.id)}
-									className="bg-red-500 p-3 rounded-md"
+									className="bg-red-500 hover:bg-red-600 transition-colors p-2 px-4 rounded-md font-semibold"
 								>
 									Remove
 								</button>
-								<button className="bg-orange-400 p-3 rounded-md">
+								<button
+									className="bg-orange-400 hover:bg-orange-500 transition-colors p-2 px-4 rounded-md font-semibold"
+									onClick={() => alert('Thanks for reaching this step!')}
+								>
 									Checkout
 								</button>
 							</div>

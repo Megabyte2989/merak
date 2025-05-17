@@ -4,8 +4,8 @@ const app = express()
 const dotenv = require('dotenv')
 const categoriesRoutes = require('./Routes/categoriesRoutes')
 const sectorRoutes= require('./Routes/sectorsRoutes')
-const sequelize = require('./Database/db')
 const coursesRoutes = require('./Routes/coursesRoutes')
+const connectDB = require('./Database/db')
 
 app.use(cors())
 app.use(express.json()); 
@@ -13,15 +13,7 @@ dotenv.config()
 
 const PORT = process.env.PORT;
 
-sequelize
-    .authenticate()
-    .then(() => {
-        console.log('Database connected successfully.');
-        sequelize.sync(); // Sync models with the database
-    })
-    .catch((err) => {
-        console.error('Error connecting to the database:', err);
-    });
+connectDB();
 
 
 app.use('/api',categoriesRoutes)

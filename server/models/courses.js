@@ -1,68 +1,49 @@
-const { DataTypes } = require('sequelize');
-const sequelize = require('../Database/db'); // Make sure to import your Sequelize instance
+const mongoose = require('mongoose');
 
-const Course = sequelize.define('Course', {
-  id: {
-    type: DataTypes.INTEGER,
-    autoIncrement: true,
-    primaryKey: true,
-  },
-  name: {
-    type: DataTypes.STRING(255),
-    allowNull: false,
-  },
-  introduction: {
-    type: DataTypes.STRING(300),
-    allowNull: false,
-  },
-  duration: {
-    type: DataTypes.INTEGER,
-    validate: {
-      min: 0,  // Ensures duration >= 0
+const courseSchema = new mongoose.Schema({
+    name: {
+        type: String,
+        required: true,
     },
-  },
-  price: {
-    type: DataTypes.INTEGER,
-    defaultValue: 999,
-    allowNull: false,
-  },
-  sector_id: {
-    type: DataTypes.INTEGER,
-    allowNull: false,
-  },
-  delivery_method: {
-    type: DataTypes.STRING(255),
-  },
-  overview: {
-    type: DataTypes.STRING(5000),
-    allowNull: false,
-  },
-  objective: {
-    type: DataTypes.TEXT,
-    allowNull: false,
-  },
-  why_attend: {
-    type: DataTypes.STRING(2000),
-  },
-  prequisites: {
-    type: DataTypes.TEXT,
-    allowNull: false,
-  },
-  certification: {
-    type: DataTypes.BOOLEAN,
-    defaultValue: false,
-  },
-  agenda: {
-    type: DataTypes.TEXT,
-  },
-},{
-    timestamps:false
+    introduction: {
+        type: String,
+    },
+    duration: {
+        type: Number,
+        default: 0, // Default duration is 0 if not provided
+    },
+    price: {
+        type: Number,
+        default: 0, // Default price is 0 if not provided
+    },
+    sector_id: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Sector', // Reference to the Sector model
+        required: true,
+    },
+    delivery_method: {
+        type: String,
+        default: '', // Default to an empty string if not provided
+    },
+    overview: {
+        type: String,
+    },
+    objective: {
+        type: String,
+    },
+    why_attend: {
+        type: String,
+    },
+    prerequisites: {
+        type: String,
+    },
+    certification: {
+        type: Boolean,
+        default: false, // Default to false if not provided
+    },
+    agenda: {
+        type: String,
+    },
 });
 
-// Define the relationship to the sectors table
-Course.belongsTo(require('./sectors'), {
-  foreignKey: 'sector_id',
-  onDelete: 'CASCADE',
-});
-
-module.exports = Course;
+module.exports = mongoose.model('Course', courseSchema);

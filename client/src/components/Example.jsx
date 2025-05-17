@@ -284,14 +284,14 @@ const CoursesContent = () => {
 					{categories.map(category => {
 						// Find the first sector for this category
 						const firstSector = sectors.find(
-							sector => sector.category_id === category.id
+							sector => sector.category_id === category._id
 						);
 
 						return (
 							<Link
 								key={category.id}
 								className="link-hover font-sans text-[0.9rem]  flex"
-								to={`/sectors/${firstSector?.id}`}
+								to={`/sectors/${firstSector?._id}`}
 							>
 								<FontAwesomeIcon
 									icon={faArrowAltCircleRight}

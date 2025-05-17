@@ -12,11 +12,9 @@ const CourseDetailsPage = () => {
 	const navigate = useNavigate();
 	const { courses } = useTrainingContext();
 
-	const Currentcourse = courses.find(
-		course => course.id === parseInt(courseId)
-	);
-
-	console.log(Currentcourse);
+	const Currentcourse = courses.find(course => {
+		return course._id === courseId;
+	});
 
 	if (!Currentcourse) {
 		return (

@@ -1,20 +1,11 @@
 const express = require('express');
 const router = express.Router();
 const Category = require('../models/categories')
-const Sector = require('../models/sectors')
 
 router.get('/categories', async (req, res) => {
     try {
-        const categories = await Category.findAll({
-            attributes: ['id', 'name', 'introduction', 'photo'], // Category fields
-            include: [
-                {
-                    model: Sector, // Include the Sector model
-                    as: 'sectors', // Alias defined in the association
-                    attributes: ['id', 'name'], // Sector fields
-                },
-            ],
-        });
+        const categories = await Category.find({}, '_id name introduction photo') // Select fields
+        
         res.json(categories);
     } catch (error) {
         console.error('Error fetching categories with sectors from DB', error);
@@ -22,4 +13,4 @@ router.get('/categories', async (req, res) => {
     }
 });
 
-module.exports = router;
+module.exports = router;    

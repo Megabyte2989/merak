@@ -1,34 +1,20 @@
-const { DataTypes } = require('sequelize');
-const sequelize = require('../Database/db');
-const Category = require('./categories');
+const mongoose = require('mongoose');
 
- const Sector = sequelize.define('Sector', 
-{
-    id:{
-        type:DataTypes.INTEGER,
-        autoIncrement:true,
-        primaryKey: true,
+const sectorSchema = new mongoose.Schema({
+    name: {
+        type: String,
+        required: true,
     },
-    name:{
-        type:DataTypes.STRING(255),
-        allowNull:false,
-
+    introduction: {
+        type: String,
     },
-    category_id: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
+    photo: {
+        type: String,
     },
-},{
-    timestamps:false
-})
-
-Sector.belongsTo(Category,{
-    foreignKey:'category_id',
-    onDelete:'cascade'
-})
-Category.hasMany(Sector, {
-    foreignKey: 'category_id', // Matches the `category_id` field in the Sector model
-    as: 'sectors', // Alias for accessing related sectors
+    additional_details: {
+        type: Object,
+        default: {}, // Default to an empty object if no additional details are provided
+    },
 });
 
-module.exports = Sector
+module.exports = mongoose.model('Sector', sectorSchema);

@@ -6,11 +6,12 @@ const SectorsPage = () => {
 	const { courses, sectors, categories } = useTrainingContext();
 	const navigate = useNavigate();
 	const { sectorId } = useParams();
-	const sectorIdAsNumber = parseInt(sectorId, 10);
+	// const sectorIdAsNumber = parseInt(sectorId, 10);
 
 	// Find the current sector based on sectorId
-	const currentSector = sectors.find(sector => sector.id === sectorIdAsNumber);
-
+	const currentSector = sectors.find(sector => {
+		return sector._id === sectorId;
+	});
 	// If no sector is found, display a message or redirect
 	if (!currentSector) {
 		return (
@@ -32,9 +33,9 @@ const SectorsPage = () => {
 	);
 
 	// Find all courses related to the current sector
-	const relatedCourses = courses.filter(
-		course => course.sector_id === sectorIdAsNumber
-	);
+	const relatedCourses = courses.filter(course => {
+		return course.sector_id === sectorId;
+	});
 
 	return (
 		<div className="bg-[#191f37]">
@@ -55,13 +56,13 @@ const SectorsPage = () => {
 				<div className="flex flex-wrap justify-center gap-4 p-4 rounded-md mb-6">
 					{relatedSectors.map(sector => (
 						<div
-							key={sector.id}
+							key={sector._id}
 							className={`px-4 py-2 rounded-lg cursor-pointer whitespace-nowrap transition-colors ${
-								sector.id === sectorIdAsNumber
+								sector._id === sectorId
 									? 'bg-blue-600 text-white'
 									: 'bg-white border border-gray-300 hover:bg-blue-100'
 							}`}
-							onClick={() => navigate(`/sectors/${sector.id}`)}
+							onClick={() => navigate(`/sectors/${sector._id}`)}
 						>
 							{sector.name}
 						</div>
@@ -74,12 +75,13 @@ const SectorsPage = () => {
 				<h2 className="text-2xl font-bold mt-10 mb-4 text-white px-20 py-5">
 					Courses in {currentSector.name}
 				</h2>
+
 				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-28">
 					{relatedCourses.length > 0 ? (
 						relatedCourses.map(course => (
 							<div
-								onClick={() => navigate(`/courses/${course.id}`)}
-								key={course.id}
+								onClick={() => navigate(`/courses/${course._id}`)}
+								key={course._id}
 								className="group bg-white border transform transition-transform duration-75 hover:scale-105 border-gray-300 p-4 rounded-lg hover:text-raisin-black hover:shadow-lg hover:bg-blue-100 cursor-pointer"
 							>
 								<h3 className="text-lg font-bold group-hover:text-dogwood-rose text-[#0b4a9b]">
