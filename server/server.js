@@ -11,6 +11,12 @@ app.use(cors())
 app.use(express.json()); 
 dotenv.config()
 
+const allowedOrigins = ['https://merak.mayaryouness.tech'];
+
+app.use(cors({
+  origin: allowedOrigins,
+}));
+
 const PORT = process.env.PORT;
 
 connectDB();
