@@ -4,7 +4,7 @@ import axios from "axios";
 
 export const fetchCategories = createAsyncThunk('categories/fetchCategories',async(_,thunkAPI)=>{
     try {
-        const response = await axios.get('/api/categories');
+        const response = await axios.get('https://newhorizonbackend.vercel.app/api/categories');
         return response.data
     } catch (error) {
         const message = error.response?.data?.message || error.message || 'Failed to fetch categories';
