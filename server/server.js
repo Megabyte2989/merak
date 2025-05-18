@@ -26,6 +26,9 @@ app.use('/api',categoriesRoutes)
 app.use('/api',sectorRoutes)
 app.use('/api',coursesRoutes)
 
+app.get('/',(req,res)=>{
+    res.send('hello world')
+})
 
 // app.get('/api/test', (req, res) => {
 //     // Query for categories table
